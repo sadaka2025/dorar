@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SearchMovieTile from "../SearchMovieTile/SearchMovieTile";
-import { allVideos } from "../../data/allVideos";
+import { allVideos } from "../MovieModal/allVideos";
 
 export default function SearchResults({ search, onSelect }) {
   const filtered = React.useMemo(() => {

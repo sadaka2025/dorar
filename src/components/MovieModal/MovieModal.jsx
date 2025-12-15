@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { hide, selectMovieModal } from "../../redux/reducers/movieModalSlice";
 import { AiOutlinePlayCircle, AiFillStar } from "react-icons/ai";
-import { allVideos } from "../../data/allVideos";
+import { allVideos } from "./allVideos";
 import VideoInfoModal from "./VideoInfoModal";
 import "./VideoInfoModal.css";
 

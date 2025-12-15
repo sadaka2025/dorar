@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 body {
-    background-color: rgb(55 55 55);
+  background-image: url("https://img.freepik.com/premium-photo/fond-noir-et-gris-dgrad-science-technologie_1309778-72282.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 :root {
-    color-scheme: dark;
+  color-scheme: dark;
 }
 
 /*https://stackoverflow.com/a/16675080*/
 .div_columns {
-    direction:ltr;
+  direction: ltr;
 }

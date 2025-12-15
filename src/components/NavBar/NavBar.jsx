@@ -33,7 +33,16 @@ export default function NavBar() {
   }
 
   return (
-    <div className="px-4 py-1 drop-shadow-xl flex items-center bg-neutral-800 sticky top-0 z-40 w-screen">
+    <div
+      className="px-4 py-1 drop-shadow-xl flex items-center bg-neutral-800 sticky top-0 z-40 w-screen"
+      style={{
+        backgroundImage:
+          'url("https://st2.depositphotos.com/8843414/12482/v/450/depositphotos_124824108-stock-illustration-abstract-hexagon-molecular-structure-pattern.jpg")',
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
       <div style={{ transform: "scale(0.55)", transformOrigin: "left center" }}>
         <Logo />
       </div>

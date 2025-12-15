@@ -1,0 +1,13 @@
+import motounData from "../../data/motoun.json";
+import nourData from "../../data/nour-alyakine.json";
+import meetData from "../../data/meetData.json";
+import dorarData from "../../data/dorarData.json";
+import bjomaaData from "../../data/bjomaaData.json";
+
+export const allVideos = [
+  ...motounData.map((v) => ({ ...v, dataset: "motoun" })),
+  ...nourData.map((v) => ({ ...v, dataset: "nour" })),
+  ...meetData.map((v) => ({ ...v, dataset: "meeting" })),
+  ...dorarData.map((v) => ({ ...v, dataset: "dorar" })),
+  ...bjomaaData.map((v) => ({ ...v, dataset: "bjomaa" })),
+];
