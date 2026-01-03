@@ -11,8 +11,6 @@ export default function SideBar({ onSelectGenre }) {
   const dispatch = useDispatch();
 
   const categories = [
-    { id: "motoun", title: "المتون الشرعية", videos: motounData },
-
     {
       id: "meeting",
       title: " فوائد و عبر من اللقاءات المباشرة ",
@@ -30,6 +28,7 @@ export default function SideBar({ onSelectGenre }) {
       videos: bjomaaData,
     },
     { id: "dorar", title: " درر مشايخنا ", videos: dorarData },
+    { id: "motoun", title: "المتون الشرعية", videos: motounData },
   ];
 
   return (
