@@ -262,15 +262,15 @@
     "title": "اللقاء المباشر الثاني في مادة الحديث",
     "description": "الحديث",
     "thumbnail": "/images/prof/hadith.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1g7J_ror7pmYXqzZ_G7JLs2NJtw09VLbQ/preview",
     "subject": "hadith",
     "subjectLabel": "الحديث",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "—",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1AvTd1C8gG4vr91CB9TDIsZL2djr8ZuUS/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1ePwweGOh8FFOiUxL4FZyB9bX0vmGfAL4/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "hadith-2-0-1",
