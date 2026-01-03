@@ -27,7 +27,8 @@ export default function NavBar() {
 
   // Fonction pour gérer la sélection d'un film
   function handleSelectMovie(movie) {
-    dispatch(showMovie({ id: movie.id, dataset: movie.dataset }));
+    dispatch(showMovie({ uid: movie.uid })); // uid = `${dataset}-${v.id ?? i}`
+
     setShowSearch(false); // fermer le dropdown
     setSearch(""); // vider le champ de recherche si tu veux
   }

@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { setGenre } from "../../redux/reducers/selectedGenresSlice";
 import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
-import meetData from "../../data/meetData.json";
+import meetData from "../../data/meetings-flat.json";
 import dorarData from "../../data/dorarData.json";
 import bjomaaData from "../../data/bjomaaData.json";
 
@@ -18,7 +18,7 @@ export default function SideBar({ onSelectGenre }) {
       title: " فوائد و عبر من اللقاءات المباشرة ",
       videos: meetData,
     },
-    { id: "dorar", title: " درر مشايخنا ", videos: dorarData },
+
     {
       id: "nour",
       title: "سلسلة في السيرة مع الدكتور منير كمنتري ",
@@ -29,6 +29,7 @@ export default function SideBar({ onSelectGenre }) {
       title: "سلسلة في العقيدة النورية مع الاستاذ محمد بن جمعة ",
       videos: bjomaaData,
     },
+    { id: "dorar", title: " درر مشايخنا ", videos: dorarData },
   ];
 
   return (

@@ -59,6 +59,7 @@ export default function MovieModal() {
                     className="rounded-lg h-full w-full object-cover"
                     alt={video.title}
                   />
+
                   <div className="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 transition flex justify-center items-center">
                     <AiOutlinePlayCircle size={80} className="text-white" />
                   </div>
@@ -99,6 +100,11 @@ export default function MovieModal() {
               >
                 {video.title}
               </h1>
+              {video.semesterLabel && (
+                <div className="text-sm text-cyan-300 font-arabic px-3">
+                  📘 {video.semesterLabel}
+                </div>
+              )}
 
               <div className="flex items-center gap-2">
                 <AiFillStar size={18} className="text-yellow-500" />
@@ -114,38 +120,22 @@ export default function MovieModal() {
                 {video.description}
               </p>
 
-              {/* Boutons qui ouvrent le sous-modal */}
-              <div className="flex gap-3 mt-4">
-                <button
-                  className="px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition font-bold font-arabic"
-                  onClick={() =>
-                    setChildModal({
-                      title: "فوائد و عبر من هذا الجزء",
-                      content: <p>{video.fawaaid}</p>,
-                    })
-                  }
-                >
-                  فوائد و عبر من هذا الجزء
-                </button>
-
-                <button
-                  className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-bold font-arabic"
-                  onClick={() =>
-                    setChildModal({
-                      title: "وقفات ايمانية درر الشيخ",
-                      content: <p>{video.dorar}</p>,
-                    })
-                  }
-                >
-                  وقفات ايمانية درر الشيخ
-                </button>
-                {/* Bouton pour ouvrir le PDF */}
-                {video.pdf && (
+              {/* Boutons PDF spécifiques */}
+              <div className="flex flex-col gap-3 mt-4">
+                {video.textPdf && (
                   <button
-                    onClick={() => window.open(video.pdf, "_blank")}
-                    className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                    onClick={() => window.open(video.textPdf, "_blank")}
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-bold font-arabic"
                   >
-                    Voir le PDF
+                    النص المستخرج من اللقاء
+                  </button>
+                )}
+                {video.fawaaidPdf && (
+                  <button
+                    onClick={() => window.open(video.fawaaidPdf, "_blank")}
+                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                  >
+                    فوائد و عبر و وقفات ايمانية من اللقاء
                   </button>
                 )}
               </div>

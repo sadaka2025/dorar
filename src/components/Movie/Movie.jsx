@@ -33,26 +33,31 @@ export default function Movie({ data, dataset }) {
           className="text-neutral-500 text-xs line-clamp-3"
           style={{
             fontFamily: "'Arabic Typesetting', serif",
+            textAlign: "center",
             fontSize: "18px",
             padding: "0.75rem",
             color: "yellow", // couleur par défaut
             transition: "color 0.3s", // animation douce au survol
           }}
         >
-          {data.description ?? ""}
+          {data.description ?? ""} <br />
+          {data.semesterLabel ?? ""}
+          <br />
+          {data.title ?? ""}
         </p>
-        <p
-          className="text-neutral-100 text-sm line-clamp-1"
+        <button
           style={{
             fontFamily: "'Arabic Typesetting', serif",
-            fontSize: "22px",
+            textAlign: "center",
+            fontSize: "18px",
             padding: "0.75rem",
             color: "yellow", // couleur par défaut
             transition: "color 0.3s", // animation douce au survol
           }}
+          className="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1 rounded-lg shadow text-sm whitespace-nowrap"
         >
-          {data.title ?? "Untitled"}
-        </p>
+          عرض تفاصيل اللقاء
+        </button>
       </div>
     </motion.div>
   );
