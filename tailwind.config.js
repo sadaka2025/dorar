@@ -4,12 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-gray': '#373737'
+        "dark-gray": "#373737",
       },
     },
   },
-  plugins: [
-    // ...
-    require('@tailwindcss/line-clamp')
-  ],
-}
+};
