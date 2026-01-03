@@ -202,15 +202,15 @@
     "title": "اللقاء المباشر الثاني في مادة الأخلاق",
     "description": "الأخلاق",
     "thumbnail": "/images/prof/akhlaq.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1lD9l7JMkj_WCdm9mt4w8AjViCcsdcwRV/preview",
     "subject": "akhlaq",
     "subjectLabel": "الأخلاق",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "—",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/12bJ_f8ibOEPxPkz4M2l6BdrI2w95wyiW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1kqhAj2S5B4BA25jxN0MLw7z9rvg5GPB_/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "akhlaq-2-0-1",
@@ -315,7 +315,7 @@
     "professor": "—",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1Y5lHbvJeb3Tiy0B2Bk1r9mZAyhhUX36S/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1r3dZs-qrxhZQEjc8Se1LgQ0CyZ3103zF/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/1Z-zHiknp24K3GjFH06BFogUOyjS3cJLf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "aqida-1-0-2",
