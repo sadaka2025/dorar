@@ -1,8 +1,12 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { hide, selectMovieModal } from "../../redux/reducers/movieModalSlice";
-import { AiOutlinePlayCircle, AiFillStar } from "react-icons/ai";
+import {
+  AiOutlinePlayCircle,
+  AiFillStar,
+  AiOutlineClose,
+} from "react-icons/ai";
 import { allVideos } from "./allVideos";
 import VideoInfoModal from "./VideoInfoModal";
 import "./VideoInfoModal.css";
@@ -15,6 +19,7 @@ export default function MovieModal() {
     (v) => v.id === movieId && v.dataset === dataset
   );
 
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [childModal, setChildModal] = useState(null);
 
   if (!enabled || !video) return null;
@@ -23,19 +28,43 @@ export default function MovieModal() {
     typeof video.url === "string" &&
     (video.url.includes("youtu") || video.url.includes("drive.google"));
 
+  const getEmbedUrl = (url) => {
+    if (!url) return "";
+
+    // YouTube watch → embed
+    if (url.includes("youtube.com/watch")) {
+      const videoId = new URL(url).searchParams.get("v");
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+
+    // YouTube short → embed
+    if (url.includes("youtu.be/")) {
+      const videoId = url.split("youtu.be/")[1];
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+
+    // Google Drive
+    if (url.includes("drive.google.com")) {
+      return url.replace("/view", "/preview");
+    }
+
+    return url;
+  };
+
   return (
     <>
+      {/* MODAL PRINCIPAL */}
       <motion.div
-        className="fixed inset-0 z-50 bg-black/80 flex justify-center items-center p-4 overflow-y-auto"
+        className="fixed inset-0 z-40 bg-black/80 flex justify-center items-center p-4 overflow-y-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
         <motion.div
-          className="bg-neutral-900 rounded-xl shadow-xl text-white w-full max-w-[900px] flex flex-col md:flex-row"
-          initial={{ scale: 0.8 }}
+          className="bg-neutral-900 rounded-xl shadow-xl text-white w-full max-w-[900px]"
+          initial={{ scale: 0.85 }}
           animate={{ scale: 1 }}
         >
-          {/* Bouton fermer */}
+          {/* HEADER */}
           <div className="flex justify-end p-3">
             <button
               onClick={() => dispatch(hide())}
@@ -45,97 +74,61 @@ export default function MovieModal() {
             </button>
           </div>
 
-          {/* Contenu vidéo + PDF + infos */}
+          {/* CONTENU */}
           <div className="flex flex-col md:flex-row w-full">
-            {/* Vidéo */}
-            <div className="relative w-full md:w-1/2 flex justify-center items-center p-4">
-              {isExternalLink ? (
-                <div
-                  className="cursor-pointer relative w-full"
-                  onClick={() => window.open(video.url, "_blank")}
-                >
-                  <img
-                    src={video.thumbnail}
-                    className="rounded-lg h-full w-full object-cover"
-                    alt={video.title}
-                  />
-
-                  <div className="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 transition flex justify-center items-center">
-                    <AiOutlinePlayCircle size={80} className="text-white" />
-                  </div>
+            {/* MINIATURE */}
+            <div className="w-full md:w-1/2 p-4">
+              <div
+                onClick={() => setIsVideoOpen(true)}
+                className="relative cursor-pointer rounded-lg overflow-hidden"
+              >
+                <img
+                  src={video.thumbnail}
+                  alt={video.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/60 hover:bg-black/70 transition flex justify-center items-center">
+                  <AiOutlinePlayCircle size={90} className="text-white" />
                 </div>
-              ) : (
-                <div className="relative w-full flex justify-center items-center bg-black rounded-xl shadow-lg">
-                  <div className="relative w-full pb-[56.25%] overflow-hidden rounded-lg">
-                    <video
-                      controls
-                      autoPlay
-                      className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-                    >
-                      {Array.isArray(video.url) ? (
-                        video.url.map((src, i) => (
-                          <source key={i} src={src} type="video/mp4" />
-                        ))
-                      ) : (
-                        <source src={video.url} type="video/mp4" />
-                      )}
-                    </video>
-                  </div>
-                  <div className="absolute top-0 left-0 w-full h-full pointer-events-none rounded-lg border-8 border-gray-800"></div>
-                </div>
-              )}
+              </div>
             </div>
 
-            {/* Infos vidéo */}
+            {/* INFOS */}
             <div className="w-full md:w-1/2 p-5 space-y-4">
               <h1
-                className="text-3xl font-bold text-yellow-400 font-arabic"
+                className="font-arabic text-yellow-400"
                 style={{
                   fontFamily: "'Arabic Typesetting', serif",
                   fontSize: "40px",
-                  padding: "0.75rem",
-                  color: "yellow", // couleur par défaut
-                  transition: "color 0.3s", // animation douce au survol
                 }}
               >
                 {video.title}
               </h1>
+
               {video.semesterLabel && (
-                <div className="text-sm font-arabic px-3">
-                  <i
-                    className="fas fa-database"
-                    style={{ fontSize: "20px", color: "yellow" }}
-                  ></i>{" "}
-                  <span className="text-cyan-300">{video.semesterLabel}</span>
-                  <br />
-                  <i
-                    className="fas fa-user-tie"
-                    style={{ fontSize: "20px", color: "red" }}
-                  ></i>{" "}
-                  <span className="text-cyan-300">{video.professor}</span>
+                <div className="text-sm font-arabic space-y-1">
+                  <div className="text-cyan-300">📚 {video.semesterLabel}</div>
+                  <div className="text-cyan-300">👤 {video.professor}</div>
                 </div>
               )}
 
               <div className="flex items-center gap-2">
-                <AiFillStar size={18} className="text-yellow-500" />
+                <AiFillStar className="text-yellow-500" />
                 <span className="text-gray-400 text-sm">
-                  {isExternalLink
-                    ? "Vidéo externe (YouTube / Google Drive)"
-                    : "Matériel audio/vidéo local"}
+                  {isExternalLink ? "Vidéo externe" : "Vidéo locale"}
                 </span>
               </div>
 
-              <p className="text-gray-300 text-sm leading-relaxed line-clamp-6 font-arabic">
-                <strong>Description: </strong>
-                {video.description}
+              <p className="text-gray-300 text-sm leading-relaxed font-arabic">
+                <strong>الوصف:</strong> {video.description}
               </p>
 
-              {/* Boutons PDF spécifiques */}
-              <div className="flex flex-col gap-3 mt-4">
+              {/* PDF */}
+              <div className="flex flex-col gap-3 pt-4">
                 {video.textPdf && (
                   <button
                     onClick={() => window.open(video.textPdf, "_blank")}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-bold font-arabic"
+                    className="btn-primary"
                   >
                     النص المستخرج من اللقاء
                   </button>
@@ -143,25 +136,17 @@ export default function MovieModal() {
                 {video.fawaaidPdf && (
                   <button
                     onClick={() => window.open(video.fawaaidPdf, "_blank")}
-                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                    className="btn-secondary"
                   >
-                    فوائد و عبر و وقفات ايمانية من اللقاء
+                    فوائد و عبر
                   </button>
                 )}
                 {video.motounPdf && (
                   <button
                     onClick={() => window.open(video.motounPdf, "_blank")}
-                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                    className="btn-secondary"
                   >
-                    ابيات المتون
-                  </button>
-                )}
-                {video.motoun1Pdf && (
-                  <button
-                    onClick={() => window.open(video.motoun1Pdf, "_blank")}
-                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
-                  >
-                    الجزء الثاني من المتون
+                    أبيات المتون
                   </button>
                 )}
               </div>
@@ -170,7 +155,62 @@ export default function MovieModal() {
         </motion.div>
       </motion.div>
 
-      {/* Sous-modal */}
+      {/* MODAL VIDEO STYLE e.sia.watch */}
+      <AnimatePresence>
+        {isVideoOpen && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center"
+            style={{
+              backgroundImage: "url('/images/1.avif')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute top-6 right-6 text-white text-3xl hover:scale-110 transition"
+            >
+              <AiOutlineClose />
+            </button>
+
+            <motion.div
+              className="w-full max-w-5xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+            >
+              {isExternalLink ? (
+                <iframe
+                  src={getEmbedUrl(video.url)}
+                  className="w-full h-full"
+                  allow="autoplay; fullscreen"
+                  allowFullScreen
+                />
+              ) : (
+                <video
+                  autoPlay
+                  controls
+                  className="w-full h-full object-contain"
+                >
+                  {Array.isArray(video.url) ? (
+                    video.url.map((src, i) => (
+                      <source key={i} src={src} type="video/mp4" />
+                    ))
+                  ) : (
+                    <source src={video.url} type="video/mp4" />
+                  )}
+                </video>
+              )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* SOUS MODAL */}
       {childModal && (
         <VideoInfoModal
           open={!!childModal}
