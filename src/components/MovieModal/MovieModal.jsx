@@ -101,8 +101,18 @@ export default function MovieModal() {
                 {video.title}
               </h1>
               {video.semesterLabel && (
-                <div className="text-sm text-cyan-300 font-arabic px-3">
-                  📘 {video.semesterLabel}
+                <div className="text-sm font-arabic px-3">
+                  <i
+                    className="fas fa-database"
+                    style={{ fontSize: "20px", color: "yellow" }}
+                  ></i>{" "}
+                  <span className="text-cyan-300">{video.semesterLabel}</span>
+                  <br />
+                  <i
+                    className="fas fa-user-tie"
+                    style={{ fontSize: "20px", color: "red" }}
+                  ></i>{" "}
+                  <span className="text-cyan-300">{video.professor}</span>
                 </div>
               )}
 
@@ -136,6 +146,22 @@ export default function MovieModal() {
                     className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
                   >
                     فوائد و عبر و وقفات ايمانية من اللقاء
+                  </button>
+                )}
+                {video.motounPdf && (
+                  <button
+                    onClick={() => window.open(video.motounPdf, "_blank")}
+                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                  >
+                    ابيات المتون
+                  </button>
+                )}
+                {video.motoun1Pdf && (
+                  <button
+                    onClick={() => window.open(video.motoun1Pdf, "_blank")}
+                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                  >
+                    الجزء الثاني من المتون
                   </button>
                 )}
               </div>
