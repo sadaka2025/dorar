@@ -51,5 +51,6 @@
     "tailwindcss": "^3.1.8",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3"
-  }
+  },
+  "homepage": "https://courses-tv.vercel.app/"
 }
