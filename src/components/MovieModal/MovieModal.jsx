@@ -128,7 +128,7 @@ export default function MovieModal() {
                 {video.textPdf && (
                   <button
                     onClick={() => window.open(video.textPdf, "_blank")}
-                    className="btn-primary"
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-bold font-arabic"
                   >
                     النص المستخرج من اللقاء
                   </button>
@@ -136,7 +136,7 @@ export default function MovieModal() {
                 {video.fawaaidPdf && (
                   <button
                     onClick={() => window.open(video.fawaaidPdf, "_blank")}
-                    className="btn-secondary"
+                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
                   >
                     فوائد و عبر
                   </button>
@@ -144,7 +144,7 @@ export default function MovieModal() {
                 {video.motounPdf && (
                   <button
                     onClick={() => window.open(video.motounPdf, "_blank")}
-                    className="btn-secondary"
+                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
                   >
                     أبيات المتون
                   </button>
