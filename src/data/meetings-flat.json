@@ -80,15 +80,15 @@
     "title": "اللقاء المباشر الثاني في مادة الفقه",
     "description": "الفقه",
     "thumbnail": "/images/prof/fiqh.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1VK_fxqY908Grv6BqXGIn7cRmaCs7XY2g/preview",
     "subject": "fiqh",
     "subjectLabel": "الفقه",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1Y95SIMxGvNTGCsf37MKWlRE5juqvnHTZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1yTJjrmgV0C0S5TfZTTRe60Q1X9wvhyHW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "fiqh-2-0-1",

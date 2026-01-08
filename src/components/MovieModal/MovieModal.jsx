@@ -31,19 +31,16 @@ export default function MovieModal() {
   const getEmbedUrl = (url) => {
     if (!url) return "";
 
-    // YouTube watch → embed
     if (url.includes("youtube.com/watch")) {
-      const videoId = new URL(url).searchParams.get("v");
-      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      const id = new URL(url).searchParams.get("v");
+      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
     }
 
-    // YouTube short → embed
     if (url.includes("youtu.be/")) {
-      const videoId = url.split("youtu.be/")[1];
-      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      const id = url.split("youtu.be/")[1];
+      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
     }
 
-    // Google Drive
     if (url.includes("drive.google.com")) {
       return url.replace("/view", "/preview");
     }
@@ -53,7 +50,7 @@ export default function MovieModal() {
 
   return (
     <>
-      {/* MODAL PRINCIPAL */}
+      {/* ================= MODAL PRINCIPAL ================= */}
       <motion.div
         className="fixed inset-0 z-40 bg-black/80 flex justify-center items-center p-4 overflow-y-auto"
         initial={{ opacity: 0 }}
@@ -74,10 +71,9 @@ export default function MovieModal() {
             </button>
           </div>
 
-          {/* CONTENU */}
-          <div className="flex flex-col md:flex-row w-full">
+          <div className="flex flex-col md:flex-row">
             {/* MINIATURE */}
-            <div className="w-full md:w-1/2 p-4">
+            <div className="md:w-1/2 p-4">
               <div
                 onClick={() => setIsVideoOpen(true)}
                 className="relative cursor-pointer rounded-lg overflow-hidden"
@@ -87,48 +83,42 @@ export default function MovieModal() {
                   alt={video.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/60 hover:bg-black/70 transition flex justify-center items-center">
-                  <AiOutlinePlayCircle size={90} className="text-white" />
+                <div className="absolute inset-0 bg-black/60 hover:bg-black/70 flex justify-center items-center">
+                  <AiOutlinePlayCircle size={90} />
                 </div>
               </div>
             </div>
 
             {/* INFOS */}
-            <div className="w-full md:w-1/2 p-5 space-y-4">
+            <div className="md:w-1/2 p-5 space-y-4">
               <h1
                 className="font-arabic text-yellow-400"
-                style={{
-                  fontFamily: "'Arabic Typesetting', serif",
-                  fontSize: "40px",
-                }}
+                style={{ fontFamily: "'Arabic Typesetting'", fontSize: "40px" }}
               >
                 {video.title}
               </h1>
 
               {video.semesterLabel && (
-                <div className="text-sm font-arabic space-y-1">
-                  <div className="text-cyan-300">📚 {video.semesterLabel}</div>
-                  <div className="text-cyan-300">👤 {video.professor}</div>
+                <div className="text-sm font-arabic space-y-1 text-cyan-300">
+                  <div>📚 {video.semesterLabel}</div>
+                  <div>👤 {video.professor}</div>
                 </div>
               )}
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 text-sm text-gray-400">
                 <AiFillStar className="text-yellow-500" />
-                <span className="text-gray-400 text-sm">
-                  {isExternalLink ? "Vidéo externe" : "Vidéo locale"}
-                </span>
+                {isExternalLink ? "Vidéo externe" : "Vidéo locale"}
               </div>
 
               <p className="text-gray-300 text-sm leading-relaxed font-arabic">
                 <strong>الوصف:</strong> {video.description}
               </p>
 
-              {/* PDF */}
               <div className="flex flex-col gap-3 pt-4">
                 {video.textPdf && (
                   <button
                     onClick={() => window.open(video.textPdf, "_blank")}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-bold font-arabic"
+                    className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 font-bold"
                   >
                     النص المستخرج من اللقاء
                   </button>
@@ -136,7 +126,7 @@ export default function MovieModal() {
                 {video.fawaaidPdf && (
                   <button
                     onClick={() => window.open(video.fawaaidPdf, "_blank")}
-                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
                   >
                     فوائد و عبر
                   </button>
@@ -144,7 +134,7 @@ export default function MovieModal() {
                 {video.motounPdf && (
                   <button
                     onClick={() => window.open(video.motounPdf, "_blank")}
-                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-bold font-arabic"
+                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
                   >
                     أبيات المتون
                   </button>
@@ -155,62 +145,67 @@ export default function MovieModal() {
         </motion.div>
       </motion.div>
 
-      {/* MODAL VIDEO STYLE e.sia.watch */}
+      {/* ================= MODAL VIDEO AVEC CADRE ================= */}
       <AnimatePresence>
         {isVideoOpen && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center"
-            style={{
-              backgroundImage: "url('/images/1.avif')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
+            className="fixed inset-0 z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
+            {/* ================= FOND ================= */}
+            <div
+              className="absolute inset-0 z-0"
+              style={{
+                backgroundImage: 'url("/images/1.avif")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            />
+
+            {/* ================= VIDEO ================= */}
+            {isExternalLink ? (
+              <iframe
+                src={getEmbedUrl(video.url)}
+                className="absolute inset-0 w-full h-full z-10"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+              />
+            ) : (
+              <video
+                autoPlay
+                controls
+                className="absolute inset-0 w-full h-full object-contain z-10"
+              >
+                <source src={video.url} type="video/mp4" />
+              </video>
+            )}
+
+            {/* ========== OVERLAY (OPTIONNEL) ========== */}
+            {/* 👉 Assombrit SANS rendre la vidéo fade */}
+            <div className="absolute inset-0 z-15 bg-black/20 pointer-events-none" />
+
+            {/* ================= CADRE PNG ================= */}
+            <img
+              src="/images/tester.png"
+              className="absolute inset-0 w-full h-full z-20 pointer-events-none"
+              alt="frame"
+            />
+
+            {/* ================= CLOSE ================= */}
             <button
               onClick={() => setIsVideoOpen(false)}
-              className="absolute top-6 right-6 text-white text-3xl hover:scale-110 transition"
+              className="absolute top-6 right-6 z-30 text-white text-4xl"
             >
               <AiOutlineClose />
             </button>
-
-            <motion.div
-              className="w-full max-w-5xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
-            >
-              {isExternalLink ? (
-                <iframe
-                  src={getEmbedUrl(video.url)}
-                  className="w-full h-full"
-                  allow="autoplay; fullscreen"
-                  allowFullScreen
-                />
-              ) : (
-                <video
-                  autoPlay
-                  controls
-                  className="w-full h-full object-contain"
-                >
-                  {Array.isArray(video.url) ? (
-                    video.url.map((src, i) => (
-                      <source key={i} src={src} type="video/mp4" />
-                    ))
-                  ) : (
-                    <source src={video.url} type="video/mp4" />
-                  )}
-                </video>
-              )}
-            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* SOUS MODAL */}
+      {/* ================= SOUS MODAL ================= */}
       {childModal && (
         <VideoInfoModal
           open={!!childModal}
