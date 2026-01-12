@@ -73,7 +73,8 @@
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/fiqh-resume.pdf"
   },
   {
     "id": "fiqh-1-0-2",
@@ -88,7 +89,11 @@
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1Y95SIMxGvNTGCsf37MKWlRE5juqvnHTZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1yTJjrmgV0C0S5TfZTTRe60Q1X9wvhyHW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/1yTJjrmgV0C0S5TfZTTRe60Q1X9wvhyHW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "textExtraction": "/PDFs/year2/htmlExtractionCourse/s1/akhlaq/ec1akhlaqs1.html#sent1",
+    "pdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year2/htmlExtractionCourse/s1/akhlaq/ec1akhlaqs1.pdf",
+    "qna": "https://yacobstud-zitouna.vercel.app/ar/quizcourse?json=https%3A%2F%2Fezmteknvhyqohppuivpe.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fquizlibre%2Fyear2%2Fs1%2Fakhlaq%2Fakhlaq_course0.json",
+    "resumesemester": "/PDFs/fiqh-resume.pdf"
   },
   {
     "id": "fiqh-2-0-1",
@@ -195,7 +200,8 @@
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1qTvg6FhLjgnPCMyCLLvljIlOaqa1QTnP/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/19fFkat4Hs86qpNDp4S6MRc9YseAc-s2G/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/19fFkat4Hs86qpNDp4S6MRc9YseAc-s2G/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/akhlaq-resume.pdf"
   },
   {
     "id": "akhlaq-1-0-2",
@@ -210,7 +216,8 @@
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/12bJ_f8ibOEPxPkz4M2l6BdrI2w95wyiW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1kqhAj2S5B4BA25jxN0MLw7z9rvg5GPB_/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/1kqhAj2S5B4BA25jxN0MLw7z9rvg5GPB_/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/akhlaq-resume.pdf"
   },
   {
     "id": "akhlaq-2-0-1",
@@ -315,7 +322,8 @@
     "professor": "الشيخ محمد بن  عياد",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1Y5lHbvJeb3Tiy0B2Bk1r9mZAyhhUX36S/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1Z-zHiknp24K3GjFH06BFogUOyjS3cJLf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/1Z-zHiknp24K3GjFH06BFogUOyjS3cJLf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/aqida-resume.pdf"
   },
   {
     "id": "aqida-1-0-2",
@@ -330,7 +338,8 @@
     "professor": "الشيخ محمد بن  عياد",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1aCrRbU-dhNQVKINwUEOogtTtUi7OyCYZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1TDrfAc9otqXNPwNVdJEEBdiTYXQa55Wh/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/1TDrfAc9otqXNPwNVdJEEBdiTYXQa55Wh/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/aqida-resume.pdf"
   },
   {
     "id": "aqida-2-0-1",
@@ -375,7 +384,8 @@
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/114N9s404xBPLxsG8NiMUqmxPGppf4pn3/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1AnwDeu9Vi341ior_fn2SIDQgBsYkWcNO/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/1AnwDeu9Vi341ior_fn2SIDQgBsYkWcNO/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/sira-resume.pdf"
   },
   {
     "id": "sirah-1-0-2",
@@ -390,7 +400,8 @@
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1nJNw5fUzcY3yOfhPQIv8e2o149XSt2jR/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/14hiQQeAgmFQiwNgQPl-Os_8WJgOsHY7i/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
+    "fawaaidPdf": "https://docs.google.com/document/d/14hiQQeAgmFQiwNgQPl-Os_8WJgOsHY7i/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/sira-resume.pdf"
   },
   {
     "id": "sirah-2-0-1",

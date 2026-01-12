@@ -139,6 +139,14 @@ export default function MovieModal() {
                     أبيات المتون
                   </button>
                 )}
+                {video.resumesemester && (
+                  <button
+                    onClick={() => window.open(video.resumesemester, "_blank")}
+                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
+                  >
+                    ملخص السداسي الاول
+                  </button>
+                )}
               </div>
             </div>
           </div>
