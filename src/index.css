@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-image: url("https://img.freepik.com/premium-photo/fond-noir-et-gris-dgrad-science-technologie_1309778-72282.jpg");
+  background-image: url("./assets/cadre.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

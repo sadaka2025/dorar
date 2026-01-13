@@ -3,31 +3,40 @@ import { useDispatch } from "react-redux";
 import { setGenre } from "../../redux/reducers/selectedGenresSlice";
 import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
-import meetData from "../../data/meetings-flat.json";
+import year1Meetings from "../../data/years/year1/meetings-flat.json";
+import year2Meetings from "../../data/years/year2/meetings-flat.json";
+import year3Meetings from "../../data/years/year3/meetings-flat.json";
+import year4Meetings from "../../data/years/year4/meetings-flat.json";
+import year5Meetings from "../../data/years/year5/meetings-flat.json";
 import dorarData from "../../data/dorarData.json";
 import bjomaaData from "../../data/bjomaaData.json";
 
-export default function SideBar({ onSelectGenre }) {
+export default function SideBar() {
   const dispatch = useDispatch();
 
   const categories = [
     {
       id: "meeting",
-      title: " فوائد و عبر من اللقاءات المباشرة ",
-      videos: meetData,
+      title: "فوائد و عبر من اللقاءات المباشرة",
+      videos: [
+        ...year1Meetings.map((v) => ({ ...v, year: 1 })),
+        ...year2Meetings.map((v) => ({ ...v, year: 2 })),
+        ...year3Meetings.map((v) => ({ ...v, year: 3 })),
+        ...year4Meetings.map((v) => ({ ...v, year: 4 })),
+        ...year5Meetings.map((v) => ({ ...v, year: 5 })),
+      ],
     },
-
     {
       id: "nour",
-      title: "سلسلة في السيرة مع الدكتور منير كمنتري ",
+      title: "سلسلة في السيرة مع الدكتور منير كمنتري",
       videos: nourData,
     },
     {
       id: "bjomaa",
-      title: "سلسلة في العقيدة النورية مع الاستاذ محمد بن جمعة ",
+      title: "سلسلة في العقيدة النورية مع الاستاذ محمد بن جمعة",
       videos: bjomaaData,
     },
-    { id: "dorar", title: " درر مشايخنا ", videos: dorarData },
+    { id: "dorar", title: "درر مشايخنا", videos: dorarData },
     { id: "motoun", title: "المتون الشرعية", videos: motounData },
   ];
 
@@ -46,13 +55,14 @@ export default function SideBar({ onSelectGenre }) {
         <div
           key={cat.id}
           onClick={() => dispatch(setGenre(cat))}
-          className="cursor-pointer hover:bg-cyan-600"
+          className="cursor-pointer hover:bg-cyan-600 font-bold"
           style={{
             fontFamily: "'Arabic Typesetting', serif",
             fontSize: "40px",
             padding: "0.75rem",
-            color: "yellow", // couleur par défaut
-            transition: "color 0.3s", // animation douce au survol
+            color: "yellow",
+            transition: "color 0.3s",
+            textAlign: "center",
           }}
         >
           {cat.title}
