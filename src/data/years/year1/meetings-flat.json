@@ -4,30 +4,30 @@
     "title": "اللقاء المباشر الأول في مادة النحو",
     "description": "النحو",
     "thumbnail": "/images/prof/n1.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/18DUWah9RdTRRQjGDwq7Z74x82QHPizz7/preview",
     "subject": "nahw",
     "subjectLabel": "النحو",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1I9jvOtoTT1UeKabvpeVme5HZP-j1rqPO/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/14fR3Y6IFZzHgkw-RE3RhZWrYBye3L96D/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "nahw-1-0-2",
     "title": "اللقاء المباشر الثاني في مادة النحو",
     "description": "النحو",
     "thumbnail": "/images/prof/n2.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/14lMVET9aMtsbYleJPSCeaBg5fslEg2n2/preview",
     "subject": "nahw",
     "subjectLabel": "النحو",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1ZTyUZmUju4YNXURMSc6CegR-q7ZlJ3Ha/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1oxHC9R1RerXlLvKzxx-bzybWUmtiHzFw/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "nahw-2-0-1",
@@ -59,35 +59,41 @@
     "textPdf": "/PDFs/",
     "fawaaidPdf": "/PDFs/"
   },
+
   {
     "id": "fiqh-1-0-1",
     "title": "اللقاء المباشر الأول في مادة الفقه",
     "description": "الفقه",
     "thumbnail": "/images/prof/fiqh.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1ZSeixlO73Pfdc3oihfrICX47sTuRblee/preview",
     "subject": "fiqh",
     "subjectLabel": "الفقه",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/fiqh-resume.pdf"
   },
   {
     "id": "fiqh-1-0-2",
     "title": "اللقاء المباشر الثاني في مادة الفقه",
     "description": "الفقه",
     "thumbnail": "/images/prof/fiqh.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1VK_fxqY908Grv6BqXGIn7cRmaCs7XY2g/preview",
     "subject": "fiqh",
     "subjectLabel": "الفقه",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1Y95SIMxGvNTGCsf37MKWlRE5juqvnHTZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1yTJjrmgV0C0S5TfZTTRe60Q1X9wvhyHW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "textExtraction": "/PDFs/year2/htmlExtractionCourse/s1/akhlaq/ec1akhlaqs1.html#sent1",
+    "pdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year2/htmlExtractionCourse/s1/akhlaq/ec1akhlaqs1.pdf",
+    "qna": "https://yacobstud-zitouna.vercel.app/ar/quizcourse?json=https%3A%2F%2Fezmteknvhyqohppuivpe.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fquizlibre%2Fyear2%2Fs1%2Fakhlaq%2Fakhlaq_course0.json",
+    "resumesemester": "/PDFs/fiqh-resume.pdf"
   },
   {
     "id": "fiqh-2-0-1",
@@ -119,35 +125,36 @@
     "textPdf": "/PDFs/",
     "fawaaidPdf": "/PDFs/"
   },
+
   {
     "id": "tajwid-1-0-1",
     "title": "اللقاء المباشر الأول في مادة التجويد",
     "description": "التجويد",
     "thumbnail": "/images/prof/tajwid.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1YZmPMeOF0LMD37fS9EVh01aLxLWKUGxc/preview",
     "subject": "tajwid",
     "subjectLabel": "التجويد",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ وحيد بن عثمان",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1hDZ61qlVvgvPMs_STa4w4An0c78SA2Em/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/18pOtP1wYG_Xr8XyFtPkWIkHZF4MtKfPl/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "tajwid-1-0-2",
     "title": "اللقاء المباشر الثاني في مادة التجويد",
     "description": "التجويد",
     "thumbnail": "/images/prof/tajwid.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1c5xd5F89xSKkxLW77qZSdZCGgADR_L1D/preview",
     "subject": "tajwid",
     "subjectLabel": "التجويد",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ وحيد بن عثمان",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1HQ0I-hGtHy6NqZ0WdDNGnsGn5zGM68UQ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1YBcBVWOBzPIsnp4jeXJn_63--LqDo4Cn/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "tajwid-2-0-1",
@@ -179,35 +186,38 @@
     "textPdf": "/PDFs/",
     "fawaaidPdf": "/PDFs/"
   },
+
   {
     "id": "akhlaq-1-0-1",
     "title": "اللقاء المباشر الأول في مادة الأخلاق",
     "description": "الأخلاق",
     "thumbnail": "/images/prof/akhlaq.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1tGyCAwkZ_idPHX09p9orh_UEgub_keER/preview",
     "subject": "akhlaq",
     "subjectLabel": "الأخلاق",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1qTvg6FhLjgnPCMyCLLvljIlOaqa1QTnP/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/19fFkat4Hs86qpNDp4S6MRc9YseAc-s2G/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/akhlaq-resume.pdf"
   },
   {
     "id": "akhlaq-1-0-2",
     "title": "اللقاء المباشر الثاني في مادة الأخلاق",
     "description": "الأخلاق",
     "thumbnail": "/images/prof/akhlaq.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1lD9l7JMkj_WCdm9mt4w8AjViCcsdcwRV/preview",
     "subject": "akhlaq",
     "subjectLabel": "الأخلاق",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/12bJ_f8ibOEPxPkz4M2l6BdrI2w95wyiW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1kqhAj2S5B4BA25jxN0MLw7z9rvg5GPB_/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/akhlaq-resume.pdf"
   },
   {
     "id": "akhlaq-2-0-1",
@@ -244,30 +254,30 @@
     "title": "اللقاء المباشر الأول في مادة الحديث",
     "description": "الحديث",
     "thumbnail": "/images/prof/hadith.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/11FpUiD1gsVxCb-EmxkB5_-TzeW5rZSHM/preview",
     "subject": "hadith",
     "subjectLabel": "الحديث",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1LefgSoGuZ7fX5LNUjatDTThiRQWa-NPy/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1ioWKaDgK8-sJPmSmxazutxNSyTTFqTIt/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "hadith-1-0-2",
     "title": "اللقاء المباشر الثاني في مادة الحديث",
     "description": "الحديث",
     "thumbnail": "/images/prof/hadith.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1g7J_ror7pmYXqzZ_G7JLs2NJtw09VLbQ/preview",
     "subject": "hadith",
     "subjectLabel": "الحديث",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1AvTd1C8gG4vr91CB9TDIsZL2djr8ZuUS/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1ePwweGOh8FFOiUxL4FZyB9bX0vmGfAL4/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true"
   },
   {
     "id": "hadith-2-0-1",
@@ -304,30 +314,32 @@
     "title": "اللقاء المباشر الأول في مادة العقيدة",
     "description": "العقيدة",
     "thumbnail": "/images/prof/aqida.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1wugdyVNRrREMEjUW4WEu624ue9H_ERzH/preview",
     "subject": "aqida",
     "subjectLabel": "العقيدة",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ محمد بن  عياد",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1Y5lHbvJeb3Tiy0B2Bk1r9mZAyhhUX36S/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1Z-zHiknp24K3GjFH06BFogUOyjS3cJLf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/aqida-resume.pdf"
   },
   {
     "id": "aqida-1-0-2",
     "title": "اللقاء المباشر الثاني في مادة العقيدة",
     "description": "العقيدة",
     "thumbnail": "/images/prof/aqida.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1z5H7GJ_WXS1O-so77iaYp7zPB6ps-7Y3/preview",
     "subject": "aqida",
     "subjectLabel": "العقيدة",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ محمد بن  عياد",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1aCrRbU-dhNQVKINwUEOogtTtUi7OyCYZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1TDrfAc9otqXNPwNVdJEEBdiTYXQa55Wh/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/aqida-resume.pdf"
   },
   {
     "id": "aqida-2-0-1",
@@ -364,30 +376,32 @@
     "title": "اللقاء المباشر الأول في مادة السيرة",
     "description": "السيرة",
     "thumbnail": "/images/prof/sirah.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1dLODVOIUDo8eE4nT00ttUmFeoq6__ggD/view?usp=sharing",
     "subject": "sirah",
     "subjectLabel": "السيرة",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/114N9s404xBPLxsG8NiMUqmxPGppf4pn3/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1AnwDeu9Vi341ior_fn2SIDQgBsYkWcNO/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/sira-resume.pdf"
   },
   {
     "id": "sirah-1-0-2",
     "title": "اللقاء المباشر الثاني في مادة السيرة",
     "description": "السيرة",
     "thumbnail": "/images/prof/sirah.jpg",
-    "url": "",
+    "url": "https://drive.google.com/file/d/1SOj5fpVFH37NIjNN7p249PsrOEgFBV5O/preview",
     "subject": "sirah",
     "subjectLabel": "السيرة",
     "semester": 1,
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "https://docs.google.com/document/d/1nJNw5fUzcY3yOfhPQIv8e2o149XSt2jR/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/14hiQQeAgmFQiwNgQPl-Os_8WJgOsHY7i/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/sira-resume.pdf"
   },
   {
     "id": "sirah-2-0-1",
