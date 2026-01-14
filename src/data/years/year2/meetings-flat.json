@@ -236,6 +236,22 @@
     "resumesemester": "/PDFs/akhlaq-resume.pdf"
   },
   {
+    "id": "akhlaq-1-0-6",
+    "title": "اللقاء المباشر الثالث في مادة الأخلاق",
+    "description": "الأخلاق",
+    "thumbnail": "/images/prof/akhlaq.jpg",
+    "url": "https://drive.google.com/file/d/1Y3xqA5h6lugGE4V30_d9KpzFrq2hGLxi/preview",
+    "subject": "akhlaq",
+    "subjectLabel": "الأخلاق",
+    "semester": 1,
+    "semesterLabel": "السداسي الأول",
+    "professor": "الشيخ منير كمنتري",
+    "dataset": "meeting",
+    "textPdf": "https://docs.google.com/document/d/1_cF53J92b7MXrLOh-0KNXbU6r-CT_1Jm/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1sKyUqXLOeu3rE7Czrsa3i-nFmTN40ogc/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/akhlaq-resume.pdf"
+  },
+  {
     "id": "akhlaq-2-0-4",
     "title": "اللقاء المباشر الأول في مادة الأخلاق",
     "description": "الأخلاق",
