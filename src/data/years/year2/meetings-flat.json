@@ -90,9 +90,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1Y95SIMxGvNTGCsf37MKWlRE5juqvnHTZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1yTJjrmgV0C0S5TfZTTRe60Q1X9wvhyHW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "textExtraction": "/PDFs/year2/htmlExtractionCourse/s1/akhlaq/ec1akhlaqs1.html#sent1",
-    "pdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year2/htmlExtractionCourse/s1/akhlaq/ec1akhlaqs1.pdf",
-    "qna": "https://yacobstud-zitouna.vercel.app/ar/quizcourse?json=https%3A%2F%2Fezmteknvhyqohppuivpe.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fquizlibre%2Fyear2%2Fs1%2Fakhlaq%2Fakhlaq_course0.json",
+
     "resumesemester": "/PDFs/fiqh-resume.pdf"
   },
   {
@@ -371,6 +369,22 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1aCrRbU-dhNQVKINwUEOogtTtUi7OyCYZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1TDrfAc9otqXNPwNVdJEEBdiTYXQa55Wh/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "resumesemester": "/PDFs/aqida-resume.pdf"
+  },
+  {
+    "id": "aqida-1-0-6",
+    "title": "اللقاء المباشر الثالث في مادة العقيدة",
+    "description": "العقيدة",
+    "thumbnail": "/images/prof/aqida.jpg",
+    "url": "https://drive.google.com/file/d/1LyFYnTmatT4RYhk_hKG1-DKllhuxyLvI/preview",
+    "subject": "aqida",
+    "subjectLabel": "العقيدة",
+    "semester": 1,
+    "semesterLabel": "السداسي الأول",
+    "professor": "الشيخ محمد بن  عياد",
+    "dataset": "meeting",
+    "textPdf": "https://docs.google.com/document/d/1mjubbHk7EfgFgI8cK0yf4riuxhXCR1GM/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+    "fawaaidPdf": "https://docs.google.com/document/d/1CJ5BoAw6ixQTpyCgrcOpclMaMiwZA29t/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/aqida-resume.pdf"
   },
   {
