@@ -16,7 +16,7 @@ export default function MovieModal() {
   const { movieId, dataset, enabled } = useSelector(selectMovieModal);
 
   const video = allVideos.find(
-    (v) => v.id === movieId && v.dataset === dataset
+    (v) => v.id === movieId && v.dataset === dataset,
   );
 
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -144,7 +144,15 @@ export default function MovieModal() {
                     onClick={() => window.open(video.resumesemester, "_blank")}
                     className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
                   >
-                    ملخص السداسي الاول
+                    نموذج 1 ملخص السداسي الاول
+                  </button>
+                )}
+                {video.resumesemester1 && (
+                  <button
+                    onClick={() => window.open(video.resumesemester1, "_blank")}
+                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
+                  >
+                    نموذج 2 ملخص السداسي الاول
                   </button>
                 )}
               </div>
