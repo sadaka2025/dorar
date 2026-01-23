@@ -155,6 +155,17 @@ export default function MovieModal() {
                     نموذج 2 ملخص السداسي الاول
                   </button>
                 )}
+                {video.matns?.map((matn) => (
+                  <a
+                    key={matn.key}
+                    href={matn.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-yellow-400 font-bold hover:text-yellow-500 underline mb-1"
+                  >
+                    ▶️ {matn.label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>

@@ -90,6 +90,20 @@
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "zakat",
+        "label": "متن الزكاة",
+        "url": "https://youtu.be/5o3ct8cXuKQ?si=7dJRS_AQvFVFBJY0",
+        "type": "youtube"
+      },
+      {
+        "key": "siyam",
+        "label": "متن الصيام",
+        "url": "https://youtu.be/SeJH6mhqr90?si=JB4KP_o58OYucpgc",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/fiqh-resume-marwa-trimech.pdf",
@@ -107,6 +121,20 @@
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "zakat",
+        "label": "متن الزكاة",
+        "url": "https://youtu.be/5o3ct8cXuKQ?si=7dJRS_AQvFVFBJY0",
+        "type": "youtube"
+      },
+      {
+        "key": "siyam",
+        "label": "متن الصيام",
+        "url": "https://youtu.be/SeJH6mhqr90?si=JB4KP_o58OYucpgc",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "https://docs.google.com/document/d/1Y95SIMxGvNTGCsf37MKWlRE5juqvnHTZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1yTJjrmgV0C0S5TfZTTRe60Q1X9wvhyHW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
 
@@ -125,11 +153,28 @@
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
-    "textPdf": "https://docs.google.com/document/d/1qLPpUqf8swA5qMYmtGbT9eYrMG4k1Wrt/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "fawaaidPdf": "https://docs.google.com/document/d/1yqfU4uHD1jt3qx_o2zjopikUoZ0FaTn6/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
+
+    "matns": [
+      {
+        "key": "zakat",
+        "label": "متن الزكاة",
+        "url": "https://youtu.be/5o3ct8cXuKQ?si=7dJRS_AQvFVFBJY0",
+        "type": "youtube"
+      },
+      {
+        "key": "siyam",
+        "label": "متن الصيام",
+        "url": "https://youtu.be/SeJH6mhqr90?si=JB4KP_o58OYucpgc",
+        "type": "youtube"
+      }
+    ],
+
+    "textPdf": "https://docs.google.com/document/d/1qLPpUqf8swA5qMYmtGbT9eYrMG4k1Wrt/edit",
+    "fawaaidPdf": "https://docs.google.com/document/d/1yqfU4uHD1jt3qx_o2zjopikUoZ0FaTn6/edit",
     "resumesemester": "/PDFs/fiqh-resume-marwa-trimech.pdf",
     "resumesemester1": "/PDFs/fiqh-resume-mohamed.pdf"
   },
+
   {
     "id": "fiqh-2-0-3",
     "title": "اللقاء المباشر الأول في مادة الفقه",
