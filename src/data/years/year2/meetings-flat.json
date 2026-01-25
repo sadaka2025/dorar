@@ -102,6 +102,12 @@
         "label": "متن الصيام",
         "url": "https://youtu.be/SeJH6mhqr90?si=JB4KP_o58OYucpgc",
         "type": "youtube"
+      },
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
       }
     ],
     "textPdf": "https://docs.google.com/document/d/1INZImZ4rW5VsbambcAGYQqvH-6qk1lZz/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
@@ -132,6 +138,12 @@
         "key": "siyam",
         "label": "متن الصيام",
         "url": "https://youtu.be/SeJH6mhqr90?si=JB4KP_o58OYucpgc",
+        "type": "youtube"
+      },
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
         "type": "youtube"
       }
     ],
@@ -166,6 +178,12 @@
         "label": "متن الصيام",
         "url": "https://youtu.be/SeJH6mhqr90?si=JB4KP_o58OYucpgc",
         "type": "youtube"
+      },
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
       }
     ],
 
@@ -187,6 +205,14 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "/PDFs/",
     "fawaaidPdf": "/PDFs/"
   },
@@ -202,6 +228,14 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "/PDFs/",
     "fawaaidPdf": "/PDFs/"
   },
@@ -221,7 +255,8 @@
     "textPdf": "https://docs.google.com/document/d/1hDZ61qlVvgvPMs_STa4w4An0c78SA2Em/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/18pOtP1wYG_Xr8XyFtPkWIkHZF4MtKfPl/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/tajwidimg.pdf",
-    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf"
+    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
   },
   {
     "id": "tajwid-1-0-5",
@@ -238,7 +273,8 @@
     "textPdf": "https://docs.google.com/document/d/1HQ0I-hGtHy6NqZ0WdDNGnsGn5zGM68UQ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1YBcBVWOBzPIsnp4jeXJn_63--LqDo4Cn/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/tajwidimg.pdf",
-    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf"
+    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
   },
   {
     "id": "tajwid-1-0-6",
@@ -255,7 +291,8 @@
     "textPdf": "https://docs.google.com/document/d/1UmKaT-BnvW8R01HTa2EwkXiR-W8LhYv1/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/15g07ItAU7pn6dlJfxdxiqNj8McTKDIPP/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
     "resumesemester": "/PDFs/tajwidimg.pdf",
-    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf"
+    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
   },
   {
     "id": "tajwid-2-0-2",
@@ -459,7 +496,8 @@
     "textPdf": "https://docs.google.com/document/d/1Y5lHbvJeb3Tiy0B2Bk1r9mZAyhhUX36S/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1Z-zHiknp24K3GjFH06BFogUOyjS3cJLf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/aqida-resume-amira.pdf",
-    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf"
+    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/aqida-resume-ECOLE.pdf"
   },
   {
     "id": "aqida-1-0-5",
@@ -476,7 +514,8 @@
     "textPdf": "https://docs.google.com/document/d/1aCrRbU-dhNQVKINwUEOogtTtUi7OyCYZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1TDrfAc9otqXNPwNVdJEEBdiTYXQa55Wh/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/aqida-resume-amira.pdf",
-    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf"
+    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/aqida-resume-ECOLE.pdf"
   },
   {
     "id": "aqida-1-0-6",
@@ -493,7 +532,8 @@
     "textPdf": "https://docs.google.com/document/d/1mjubbHk7EfgFgI8cK0yf4riuxhXCR1GM/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1CJ5BoAw6ixQTpyCgrcOpclMaMiwZA29t/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/aqida-resume-amira.pdf",
-    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf"
+    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/aqida-resume-ECOLE.pdf"
   },
   {
     "id": "aqida-2-0-2",

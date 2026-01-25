@@ -72,6 +72,14 @@
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
     "fawaaidPdf": "",
     "resumesemester": "/PDFs/"
@@ -88,6 +96,14 @@
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
     "fawaaidPdf": "",
     "resumesemester": "/PDFs/"
@@ -104,6 +120,14 @@
     "semesterLabel": "السداسي الأول",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
     "fawaaidPdf": "",
     "resumesemester": "/PDFs/"
@@ -121,6 +145,14 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
     "fawaaidPdf": "/PDFs/"
   },
@@ -136,6 +168,14 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ عبد الفتاح حسين",
     "dataset": "meeting",
+    "matns": [
+      {
+        "key": "kayrwania",
+        "label": "مراجع قيروانية",
+        "url": "https://www.youtube.com/@aljamiaa.alqayrawania/videos",
+        "type": "youtube"
+      }
+    ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
     "fawaaidPdf": "/PDFs/"
   },

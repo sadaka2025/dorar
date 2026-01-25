@@ -155,6 +155,14 @@ export default function MovieModal() {
                     نموذج 2 ملخص السداسي الاول
                   </button>
                 )}
+                {video.resumesemester2 && (
+                  <button
+                    onClick={() => window.open(video.resumesemester2, "_blank")}
+                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
+                  >
+                    نموذج 3 ملخص السداسي الاول
+                  </button>
+                )}
                 {video.matns?.map((matn) => (
                   <a
                     key={matn.key}
