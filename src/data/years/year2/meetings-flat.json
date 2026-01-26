@@ -14,7 +14,8 @@
     "textPdf": "https://docs.google.com/document/d/1I9jvOtoTT1UeKabvpeVme5HZP-j1rqPO/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/14fR3Y6IFZzHgkw-RE3RhZWrYBye3L96D/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/nahw-resume-mohamed.pdf",
-    "resumesemester1": "/PDFs/nahw-resume-cours.pdf"
+    "resumesemester1": "/PDFs/nahw-resume-cours.pdf",
+    "resumesemester2": "/PDFs/nahw-resume-kirwan.pdf"
   },
   {
     "id": "nahw-1-0-4",
@@ -31,7 +32,8 @@
     "textPdf": "https://docs.google.com/document/d/1ZTyUZmUju4YNXURMSc6CegR-q7ZlJ3Ha/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1oxHC9R1RerXlLvKzxx-bzybWUmtiHzFw/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "resumesemester": "/PDFs/nahw-resume-mohamed.pdf",
-    "resumesemester1": "/PDFs/nahw-resume-cours.pdf"
+    "resumesemester1": "/PDFs/nahw-resume-cours.pdf",
+    "resumesemester2": "/PDFs/nahw-resume-kirwan.pdf"
   },
   {
     "id": "nahw-1-0-5",
@@ -48,7 +50,8 @@
     "textPdf": "https://docs.google.com/document/d/1GvvHE41uiv2HoGfc7L9wWGWEPfXjKTcL/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1xL0X3fv37j9KQQsqkp8Wif0Oc3v1HLPX/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
     "resumesemester": "/PDFs/nahw-resume-mohamed.pdf",
-    "resumesemester1": "/PDFs/nahw-resume-cours.pdf"
+    "resumesemester1": "/PDFs/nahw-resume-cours.pdf",
+    "resumesemester2": "/PDFs/nahw-resume-kirwan.pdf"
   },
   {
     "id": "nahw-2-0-3",
@@ -257,7 +260,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1hDZ61qlVvgvPMs_STa4w4An0c78SA2Em/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/18pOtP1wYG_Xr8XyFtPkWIkHZF4MtKfPl/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/tajwidimg.pdf",
+    "resumesemester": "/PDFs/tajwid-resume-image.pdf",
     "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
     "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
   },
@@ -275,7 +278,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1HQ0I-hGtHy6NqZ0WdDNGnsGn5zGM68UQ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1YBcBVWOBzPIsnp4jeXJn_63--LqDo4Cn/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/tajwidimg.pdf",
+    "resumesemester": "/PDFs/tajwid-resume-image.pdf",
     "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
     "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
   },
@@ -293,7 +296,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1UmKaT-BnvW8R01HTa2EwkXiR-W8LhYv1/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/15g07ItAU7pn6dlJfxdxiqNj8McTKDIPP/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/tajwidimg.pdf",
+    "resumesemester": "/PDFs/tajwid-resume-image.pdf",
     "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
     "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
   },
