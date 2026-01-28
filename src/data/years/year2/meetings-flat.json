@@ -13,9 +13,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1I9jvOtoTT1UeKabvpeVme5HZP-j1rqPO/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/14fR3Y6IFZzHgkw-RE3RhZWrYBye3L96D/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/nahw-resume-mohamed.pdf",
-    "resumesemester1": "/PDFs/nahw-resume-cours.pdf",
-    "resumesemester2": "/PDFs/nahw-resume-kirwan.pdf"
+    "resumesemester": "/PDFs/meetpdf/nahw-resume-mohamed.pdf",
+    "resumesemester1": "/PDFs/meetpdf/nahw-resume-cours.pdf",
+    "resumesemester2": "/PDFs/meetpdf/nahw-resume-kirwan.pdf"
   },
   {
     "id": "nahw-1-0-4",
@@ -31,9 +31,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1ZTyUZmUju4YNXURMSc6CegR-q7ZlJ3Ha/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1oxHC9R1RerXlLvKzxx-bzybWUmtiHzFw/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/nahw-resume-mohamed.pdf",
-    "resumesemester1": "/PDFs/nahw-resume-cours.pdf",
-    "resumesemester2": "/PDFs/nahw-resume-kirwan.pdf"
+    "resumesemester": "/PDFs/meetpdf/nahw-resume-mohamed.pdf",
+    "resumesemester1": "/PDFs/meetpdf/nahw-resume-cours.pdf",
+    "resumesemester2": "/PDFs/meetpdf/nahw-resume-kirwan.pdf"
   },
   {
     "id": "nahw-1-0-5",
@@ -49,9 +49,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1GvvHE41uiv2HoGfc7L9wWGWEPfXjKTcL/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1xL0X3fv37j9KQQsqkp8Wif0Oc3v1HLPX/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/nahw-resume-mohamed.pdf",
-    "resumesemester1": "/PDFs/nahw-resume-cours.pdf",
-    "resumesemester2": "/PDFs/nahw-resume-kirwan.pdf"
+    "resumesemester": "/PDFs/meetpdf/nahw-resume-mohamed.pdf",
+    "resumesemester1": "/PDFs/meetpdf/nahw-resume-cours.pdf",
+    "resumesemester2": "/PDFs/meetpdf/nahw-resume-kirwan.pdf"
   },
   {
     "id": "nahw-2-0-3",
@@ -65,8 +65,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "nahw-2-0-4",
@@ -80,8 +80,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
 
   {
@@ -118,8 +118,8 @@
     ],
     "textPdf": "https://docs.google.com/document/d/1GxadMZU431ulT7wiAstXy4627elYIQCf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1GxadMZU431ulT7wiAstXy4627elYIQCf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/fiqh-resume-marwa-trimech.pdf",
-    "resumesemester1": "/PDFs/fiqh-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/fiqh-resume-marwa-trimech.pdf",
+    "resumesemester1": "/PDFs/meetpdf/fiqh-resume-mohamed.pdf"
   },
   {
     "id": "fiqh-1-0-5",
@@ -156,8 +156,8 @@
     "textPdf": "https://docs.google.com/document/d/1Y95SIMxGvNTGCsf37MKWlRE5juqvnHTZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1yTJjrmgV0C0S5TfZTTRe60Q1X9wvhyHW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
 
-    "resumesemester": "/PDFs/fiqh-resume-marwa-trimech.pdf",
-    "resumesemester1": "/PDFs/fiqh-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/fiqh-resume-marwa-trimech.pdf",
+    "resumesemester1": "/PDFs/meetpdf/fiqh-resume-mohamed.pdf"
   },
   {
     "id": "fiqh-1-0-6",
@@ -195,8 +195,8 @@
 
     "textPdf": "https://docs.google.com/document/d/1qLPpUqf8swA5qMYmtGbT9eYrMG4k1Wrt/edit",
     "fawaaidPdf": "https://docs.google.com/document/d/1yqfU4uHD1jt3qx_o2zjopikUoZ0FaTn6/edit",
-    "resumesemester": "/PDFs/fiqh-resume-marwa-trimech.pdf",
-    "resumesemester1": "/PDFs/fiqh-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/fiqh-resume-marwa-trimech.pdf",
+    "resumesemester1": "/PDFs/meetpdf/fiqh-resume-mohamed.pdf"
   },
 
   {
@@ -219,8 +219,8 @@
         "type": "youtube"
       }
     ],
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "fiqh-2-0-4",
@@ -242,8 +242,8 @@
         "type": "youtube"
       }
     ],
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
 
   {
@@ -260,9 +260,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1hDZ61qlVvgvPMs_STa4w4An0c78SA2Em/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/18pOtP1wYG_Xr8XyFtPkWIkHZF4MtKfPl/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/tajwid-resume-image.pdf",
-    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
-    "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
+    "resumesemester": "/PDFs/meetpdf/tajwid-resume-image.pdf",
+    "resumesemester1": "/PDFs/meetpdf/tajwid-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/meetpdf/tajwid-resume-ECOLE.pdf"
   },
   {
     "id": "tajwid-1-0-5",
@@ -278,9 +278,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1HQ0I-hGtHy6NqZ0WdDNGnsGn5zGM68UQ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1YBcBVWOBzPIsnp4jeXJn_63--LqDo4Cn/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/tajwid-resume-image.pdf",
-    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
-    "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
+    "resumesemester": "/PDFs/meetpdf/tajwid-resume-image.pdf",
+    "resumesemester1": "/PDFs/meetpdf/tajwid-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/meetpdf/tajwid-resume-ECOLE.pdf"
   },
   {
     "id": "tajwid-1-0-6",
@@ -296,9 +296,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1UmKaT-BnvW8R01HTa2EwkXiR-W8LhYv1/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/15g07ItAU7pn6dlJfxdxiqNj8McTKDIPP/edit?usp=sharing&ouid=107362531769133765785&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/tajwid-resume-image.pdf",
-    "resumesemester1": "/PDFs/tajwid-resume-mohamed.pdf",
-    "resumesemester2": "/PDFs/tajwid-resume-ECOLE.pdf"
+    "resumesemester": "/PDFs/meetpdf/tajwid-resume-image.pdf",
+    "resumesemester1": "/PDFs/meetpdf/tajwid-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/meetpdf/tajwid-resume-ECOLE.pdf"
   },
   {
     "id": "tajwid-2-0-2",
@@ -312,8 +312,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ وحيد بن عثمان",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "tajwid-2-0-3",
@@ -327,8 +327,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ وحيد بن عثمان",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
 
   {
@@ -345,7 +345,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1qTvg6FhLjgnPCMyCLLvljIlOaqa1QTnP/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/19fFkat4Hs86qpNDp4S6MRc9YseAc-s2G/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/akhlaq-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/akhlaq-resume-mohamed.pdf"
   },
   {
     "id": "akhlaq-1-0-5",
@@ -361,7 +361,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/12bJ_f8ibOEPxPkz4M2l6BdrI2w95wyiW/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1kqhAj2S5B4BA25jxN0MLw7z9rvg5GPB_/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/akhlaq-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/akhlaq-resume-mohamed.pdf"
   },
   {
     "id": "akhlaq-1-0-6",
@@ -377,7 +377,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1_cF53J92b7MXrLOh-0KNXbU6r-CT_1Jm/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1sKyUqXLOeu3rE7Czrsa3i-nFmTN40ogc/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/akhlaq-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/akhlaq-resume-mohamed.pdf"
   },
   {
     "id": "akhlaq-2-0-4",
@@ -391,8 +391,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "akhlaq-2-0-5",
@@ -406,8 +406,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "hadith-1-0-3",
@@ -423,7 +423,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1LefgSoGuZ7fX5LNUjatDTThiRQWa-NPy/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1ioWKaDgK8-sJPmSmxazutxNSyTTFqTIt/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/hadith-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/hadith-resume-mohamed.pdf"
   },
   {
     "id": "hadith-1-0-4",
@@ -439,7 +439,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1AvTd1C8gG4vr91CB9TDIsZL2djr8ZuUS/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1ePwweGOh8FFOiUxL4FZyB9bX0vmGfAL4/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/hadith-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/hadith-resume-mohamed.pdf"
   },
   {
     "id": "hadith-1-0-5",
@@ -455,7 +455,7 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1aX0iRiGLSb6HzE51RmQuwElN_2N5Jc9K/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1paUSw09n2gl9t3_KCtfIrAe9MK94Pvw5/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/hadith-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/hadith-resume-mohamed.pdf"
   },
   {
     "id": "hadith-2-0-3",
@@ -469,8 +469,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "hadith-2-0-4",
@@ -484,8 +484,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "aqida-1-0-4",
@@ -501,9 +501,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1Y5lHbvJeb3Tiy0B2Bk1r9mZAyhhUX36S/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1Z-zHiknp24K3GjFH06BFogUOyjS3cJLf/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/aqida-resume-amira.pdf",
-    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf",
-    "resumesemester2": "/PDFs/aqida-resume-ECOLE.pdf"
+    "resumesemester": "/PDFs/meetpdf/aqida-resume-amira.pdf",
+    "resumesemester1": "/PDFs/meetpdf/aqida-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/meetpdf/aqida-resume-ECOLE.pdf"
   },
   {
     "id": "aqida-1-0-5",
@@ -519,9 +519,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1aCrRbU-dhNQVKINwUEOogtTtUi7OyCYZ/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1TDrfAc9otqXNPwNVdJEEBdiTYXQa55Wh/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/aqida-resume-amira.pdf",
-    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf",
-    "resumesemester2": "/PDFs/aqida-resume-ECOLE.pdf"
+    "resumesemester": "/PDFs/meetpdf/aqida-resume-amira.pdf",
+    "resumesemester1": "/PDFs/meetpdf/aqida-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/meetpdf/aqida-resume-ECOLE.pdf"
   },
   {
     "id": "aqida-1-0-6",
@@ -537,9 +537,9 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1mjubbHk7EfgFgI8cK0yf4riuxhXCR1GM/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1CJ5BoAw6ixQTpyCgrcOpclMaMiwZA29t/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/aqida-resume-amira.pdf",
-    "resumesemester1": "/PDFs/aqida-resume-mohamed.pdf",
-    "resumesemester2": "/PDFs/aqida-resume-ECOLE.pdf"
+    "resumesemester": "/PDFs/meetpdf/aqida-resume-amira.pdf",
+    "resumesemester1": "/PDFs/meetpdf/aqida-resume-mohamed.pdf",
+    "resumesemester2": "/PDFs/meetpdf/aqida-resume-ECOLE.pdf"
   },
   {
     "id": "aqida-2-0-2",
@@ -553,8 +553,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ محمد بن  عياد",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "aqida-2-0-3",
@@ -568,8 +568,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ محمد بن  عياد",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "sirah-1-0-3",
@@ -585,8 +585,8 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/114N9s404xBPLxsG8NiMUqmxPGppf4pn3/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/1AnwDeu9Vi341ior_fn2SIDQgBsYkWcNO/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/sira-resume-marwa-trimech.pdf",
-    "resumesemester1": "/PDFs/sira-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/sira-resume-marwa-trimech.pdf",
+    "resumesemester1": "/PDFs/meetpdf/sira-resume-mohamed.pdf"
   },
   {
     "id": "sirah-1-0-4",
@@ -602,8 +602,8 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1nJNw5fUzcY3yOfhPQIv8e2o149XSt2jR/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/14hiQQeAgmFQiwNgQPl-Os_8WJgOsHY7i/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/sira-resume-marwa-trimech.pdf",
-    "resumesemester1": "/PDFs/sira-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/sira-resume-marwa-trimech.pdf",
+    "resumesemester1": "/PDFs/meetpdf/sira-resume-mohamed.pdf"
   },
   {
     "id": "sirah-1-0-5",
@@ -619,8 +619,8 @@
     "dataset": "meeting",
     "textPdf": "https://docs.google.com/document/d/1H0jv7owTeIDrPReKqMZTJWy46K5zq5tg/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
     "fawaaidPdf": "https://docs.google.com/document/d/16uW1nZyl9nwZiS0Tvp7gonTkutC2O5wi/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/sira-resume-marwa-trimech.pdf",
-    "resumesemester1": "/PDFs/sira-resume-mohamed.pdf"
+    "resumesemester": "/PDFs/meetpdf/sira-resume-marwa-trimech.pdf",
+    "resumesemester1": "/PDFs/meetpdf/sira-resume-mohamed.pdf"
   },
   {
     "id": "sirah-2-0-4",
@@ -634,8 +634,8 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "sirah-2-0-5",
@@ -649,7 +649,7 @@
     "semesterLabel": "السداسي الثاني",
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
-    "textPdf": "/PDFs/",
-    "fawaaidPdf": "/PDFs/"
+    "textPdf": "/PDFs/meetpdf/",
+    "fawaaidPdf": "/PDFs/meetpdf/"
   }
 ]

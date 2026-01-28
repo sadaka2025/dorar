@@ -12,6 +12,29 @@ import VideoInfoModal from "./VideoInfoModal";
 import "./VideoInfoModal.css";
 
 export default function MovieModal() {
+  const renderDescription = (description) => {
+    if (!description) return null;
+
+    // Ancien format (string)
+    if (typeof description === "string") {
+      return description;
+    }
+
+    // Nouveau format (objet)
+    if (typeof description === "object") {
+      return (
+        <>
+          <span className="text-green-600 font-semibold">
+            {description.highlight}
+          </span>{" "}
+          {description.text}
+        </>
+      );
+    }
+
+    return null;
+  };
+
   const dispatch = useDispatch();
   const { movieId, dataset, enabled } = useSelector(selectMovieModal);
 
@@ -111,7 +134,7 @@ export default function MovieModal() {
               </div>
 
               <p className="text-gray-300 text-sm leading-relaxed font-arabic">
-                <strong>الوصف:</strong> {video.description}
+                <strong>الوصف:</strong> {renderDescription(video.description)}
               </p>
 
               <div className="flex flex-col gap-3 pt-4">

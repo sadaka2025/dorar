@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { setGenre } from "../../redux/reducers/selectedGenresSlice";
 import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
+import fiqhData from "../../data/fiqh.json";
 import year1Meetings from "../../data/years/year1/meetings-flat.json";
 import year2Meetings from "../../data/years/year2/meetings-flat.json";
 import year3Meetings from "../../data/years/year3/meetings-flat.json";
@@ -38,6 +39,11 @@ export default function SideBar() {
     },
     { id: "dorar", title: "درر مشايخنا", videos: dorarData },
     { id: "motoun", title: "المتون الشرعية", videos: motounData },
+    {
+      id: "fiqh",
+      title: " قضايا معاصرة فقه العبادات",
+      videos: fiqhData,
+    },
   ];
 
   return (

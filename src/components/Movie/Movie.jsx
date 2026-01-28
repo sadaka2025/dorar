@@ -45,8 +45,19 @@ export default function Movie({ video }) {
             transition: "color 0.3s",
           }}
         >
-          {video.description ?? ""} <br />
-          {video.semesterLabel ?? ""} <br />
+          {typeof video.description === "object" ? (
+            <>
+              <span className="text-green-600 font-semibold">
+                {video.description.highlight}
+              </span>{" "}
+              {video.description.text}
+            </>
+          ) : (
+            video.description
+          )}
+          <br />
+          {video.semesterLabel ?? ""}
+          <br />
           {video.title ?? ""}
         </p>
 

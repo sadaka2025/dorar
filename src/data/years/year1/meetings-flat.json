@@ -42,7 +42,7 @@
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/nahw/meeting2nahws2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "nahw-2-0-2",
@@ -57,7 +57,7 @@
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/nahw/meeting2nahws2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
 
   {
@@ -81,8 +81,8 @@
       }
     ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
-    "fawaaidPdf": "",
-    "resumesemester": "/PDFs/"
+
+    "fawaaidPdf": "/PDFs/hbibfiqh/tahara.pdf"
   },
   {
     "id": "fiqh-1-0-2",
@@ -105,8 +105,8 @@
       }
     ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
-    "fawaaidPdf": "",
-    "resumesemester": "/PDFs/"
+
+    "fawaaidPdf": "/PDFs/hbibfiqh/tahara.pdf"
   },
   {
     "id": "fiqh-1-0-3",
@@ -129,8 +129,8 @@
       }
     ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
-    "fawaaidPdf": "",
-    "resumesemester": "/PDFs/"
+
+    "fawaaidPdf": "/PDFs/hbibfiqh/tahara.pdf"
   },
 
   {
@@ -154,7 +154,7 @@
       }
     ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/hbibfiqh/salat.pdf"
   },
   {
     "id": "fiqh-2-0-2",
@@ -177,7 +177,7 @@
       }
     ],
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/hbibfiqh/salat.pdf"
   },
 
   {
@@ -240,7 +240,7 @@
     "professor": "الشيخ وحيد بن عثمان",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/tajwid/meeting1tajwids2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
 
   {
@@ -257,7 +257,7 @@
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
     "fawaaidPdf": "https://docs.google.com/document/d/19fFkat4Hs86qpNDp4S6MRc9YseAc-s2G/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/akhlaq-resume.pdf"
+    "resumesemester": "/PDFs/meetpdf/akhlaq-resume.pdf"
   },
   {
     "id": "akhlaq-1-0-2",
@@ -273,7 +273,7 @@
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
     "fawaaidPdf": "https://docs.google.com/document/d/1kqhAj2S5B4BA25jxN0MLw7z9rvg5GPB_/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/akhlaq-resume.pdf"
+    "resumesemester": "/PDFs/meetpdf/akhlaq-resume.pdf"
   },
   {
     "id": "akhlaq-1-0-3",
@@ -289,7 +289,7 @@
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
     "fawaaidPdf": "https://docs.google.com/document/d/1kqhAj2S5B4BA25jxN0MLw7z9rvg5GPB_/edit?usp=sharing&ouid=115610745579986688331&rtpof=true&sd=true",
-    "resumesemester": "/PDFs/akhlaq-resume.pdf"
+    "resumesemester": "/PDFs/meetpdf/akhlaq-resume.pdf"
   },
   {
     "id": "akhlaq-2-0-1",
@@ -304,7 +304,7 @@
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "akhlaq-2-0-2",
@@ -319,7 +319,7 @@
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "akhlaq-2-0-3",
@@ -334,7 +334,7 @@
     "professor": "الشيخ منير كمنتري",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "hadith-1-0-1",
@@ -379,7 +379,7 @@
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/hadith/meeting2hadiths2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "hadith-2-0-2",
@@ -394,7 +394,7 @@
     "professor": "الشيخ ماهر ثملاوي",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/hadith/meeting2hadiths2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "aqida-1-0-1",
@@ -410,7 +410,7 @@
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting3aqidas1.pdf",
     "fawaaidPdf": "",
-    "resumesemester": "/PDFs/"
+    "resumesemester": "/PDFs/meetpdf/"
   },
   {
     "id": "aqida-1-0-2",
@@ -426,7 +426,7 @@
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting3aqidas1.pdf",
     "fawaaidPdf": "",
-    "resumesemester": "/PDFs/"
+    "resumesemester": "/PDFs/meetpdf/"
   },
   {
     "id": "aqida-1-0-3",
@@ -442,7 +442,7 @@
     "dataset": "meeting",
     "textPdf": "",
     "fawaaidPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting3aqidas1.pdf",
-    "resumesemester": "/PDFs/"
+    "resumesemester": "/PDFs/meetpdf/"
   },
   {
     "id": "aqida-2-0-1",
@@ -457,7 +457,7 @@
     "professor": "الشيخ محمد بن  عياد",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/aqida/meeting1aqidas2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
 
   {
@@ -474,7 +474,7 @@
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf",
     "fawaaidPdf": "",
-    "resumesemester": "/PDFs/"
+    "resumesemester": "/PDFs/meetpdf/"
   },
   {
     "id": "sirah-1-0-2",
@@ -490,7 +490,7 @@
     "dataset": "meeting",
     "textPdf": "",
     "fawaaidPdf": "",
-    "resumesemester": "/PDFs/"
+    "resumesemester": "/PDFs/meetpdf/"
   },
   {
     "id": "sirah-2-0-1",
@@ -505,7 +505,7 @@
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "sirah-2-0-2",
@@ -520,7 +520,7 @@
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   },
   {
     "id": "sirah-2-0-3",
@@ -535,6 +535,6 @@
     "professor": "الشيخ مروان حمودة",
     "dataset": "meeting",
     "textPdf": "https://ezmteknvhyqohppuivpe.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
-    "fawaaidPdf": "/PDFs/"
+    "fawaaidPdf": "/PDFs/meetpdf/"
   }
 ]

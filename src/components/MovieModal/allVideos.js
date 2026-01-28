@@ -1,5 +1,6 @@
 import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
+import fiqhData from "../../data/fiqh.json";
 
 import year1Meetings from "../../data/years/year1/meetings-flat.json";
 import year2Meetings from "../../data/years/year2/meetings-flat.json";
@@ -25,4 +26,6 @@ export const allVideos = [
   // ================= AUTRES =================
   ...dorarData.map((v) => ({ ...v, dataset: "dorar" })),
   ...bjomaaData.map((v) => ({ ...v, dataset: "bjomaa" })),
+
+  ...fiqhData.map((v) => ({ ...v, dataset: "fiqh" })),
 ];
