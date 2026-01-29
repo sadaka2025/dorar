@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { setGenre } from "../../redux/reducers/selectedGenresSlice";
 import motounData from "../../data/motoun.json";
@@ -11,8 +10,12 @@ import year4Meetings from "../../data/years/year4/meetings-flat.json";
 import year5Meetings from "../../data/years/year5/meetings-flat.json";
 import dorarData from "../../data/dorarData.json";
 import bjomaaData from "../../data/bjomaaData.json";
+import React, { useState } from "react";
+import FiqhDetailsModal from "../MovieModal/FiqhDetailsModal.jsx";
 
 export default function SideBar() {
+  const [openModal, setOpenModal] = useState(null);
+
   const dispatch = useDispatch();
 
   const categories = [
@@ -43,6 +46,14 @@ export default function SideBar() {
       id: "fiqh",
       title: " قضايا معاصرة فقه العبادات",
       videos: fiqhData,
+      details: `
+كتاب « فقه العبادات على المذهب المالكي »، هو حصيلة ما ألقاه الشيخ
+« الحبيب بن طاهر »، خلال الدورات التكوينية التي نظمت للسادة أئمة
+الخمس والمؤذنين بمساجد تونس طيلة عشر سنوات...
+
+اعتمد الشيخ في كتابه « فقه العبادات على المذهب المالكي »،
+بالأساس على كتاب "أقرب المسالك للشيخ الدردير"...
+`,
     },
   ];
 
@@ -58,22 +69,50 @@ export default function SideBar() {
       }}
     >
       {categories.map((cat) => (
-        <div
-          key={cat.id}
-          onClick={() => dispatch(setGenre(cat))}
-          className="cursor-pointer hover:bg-cyan-600 font-bold"
-          style={{
-            fontFamily: "'Arabic Typesetting', serif",
-            fontSize: "40px",
-            padding: "0.75rem",
-            color: "yellow",
-            transition: "color 0.3s",
-            textAlign: "center",
-          }}
-        >
-          {cat.title}
+        <div key={cat.id} className="text-center mb-2">
+          {/* titre principal */}
+          <div
+            className="flex items-center justify-center gap-3"
+            style={{ direction: "rtl" }}
+          >
+            {/* titre principal */}
+            <div
+              onClick={() => dispatch(setGenre(cat))}
+              className="cursor-pointer hover:bg-cyan-600 font-bold px-2"
+              style={{
+                fontFamily: "'Arabic Typesetting', serif",
+                fontSize: "40px",
+                color: "yellow",
+                whiteSpace: "nowrap",
+              }}
+            >
+              {cat.title}
+            </div>
+
+            {/* bouton details */}
+            {cat.details && (
+              <span
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpenModal(cat);
+                }}
+                className="cursor-pointer underline"
+                style={{
+                  fontSize: "16px",
+                  color: "#ffd700",
+                  fontFamily: "Amiri",
+                  opacity: 0.9,
+                }}
+              >
+                اضغط للمزيد
+              </span>
+            )}
+          </div>
         </div>
       ))}
+      {openModal && (
+        <FiqhDetailsModal data={openModal} onClose={() => setOpenModal(null)} />
+      )}
     </div>
   );
 }

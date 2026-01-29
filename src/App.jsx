@@ -28,7 +28,7 @@ function App() {
     if (selectedGenre.id === "meeting") {
       return allVideos.filter(
         (v) =>
-          v.dataset === "meeting" && (!selectedYear || v.year === selectedYear)
+          v.dataset === "meeting" && (!selectedYear || v.year === selectedYear),
       );
     }
 
@@ -62,7 +62,7 @@ function App() {
               {/* Texte animé */}
               <div className="flex justify-center mb-2">
                 <Scene
-                  text="صلوا على النبي محمد ﷺ ❤️"
+                  text="صلوا على الحبيب محمد ﷺ ❤️"
                   className="mb-4 font-bold"
                   style={{
                     fontFamily: "'Arabic Typesetting', serif",
