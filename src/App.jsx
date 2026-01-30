@@ -73,19 +73,18 @@ function App() {
               </div>
 
               <div className="text-center">
-                <span className="text-4xl">
-                  👇
-                  <EffetcNewFix
-                    text={`🌿 ${selectedGenre.title}`}
-                    className="mb-4 font-bold"
-                    style={{
-                      fontFamily: "'Arabic Typesetting', serif",
-                      fontSize: "44px",
-                      color: "yellow",
-                    }}
-                  />
-                  👇
-                </span>
+                <span className="text-4xl">👇</span>
+
+                <EffetcNewFix
+                  text={`🌿 ${selectedGenre.title}`}
+                  as="h2"
+                  className="mb-4 font-bold"
+                  size="44px"
+                  color="#undefined" // tu peux remplacer par `undefined` pour garder la couleur par défaut
+                  fontFamily="'Arabic Typesetting', serif"
+                />
+
+                <span className="text-4xl">👇</span>
               </div>
 
               {/* Boutons des années (MEETING seulement) */}

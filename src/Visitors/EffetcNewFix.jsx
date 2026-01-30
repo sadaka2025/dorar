@@ -1,25 +1,28 @@
-// src/effects/AnimatedGlowTitle.jsx
 import React, { useEffect } from "react";
+
+const DEFAULT_COLOR = "#c9741aff"; // ancienne couleur EffetcNewFix
 
 export default function EffetcNewFix({
   text = "",
   className = "",
-  size = "2.5rem", // Taille du texte
-  color = "#ffffff", // Couleur du texte
-  glowColor = "#c9741aff", // Couleur du glow (lueur)
+  size = "2.5rem",
+  color, // optionnel
+  glowColor = "#c9741aff",
+  fontFamily = "'Amiri', 'Scheherazade', serif",
+  as = "h2",
 }) {
   useEffect(() => {
-    // Supprime les anciens styles pour éviter les doublons
-    const existingStyle = document.getElementById("dynamic-glow-style");
-    if (existingStyle) existingStyle.remove();
+    const styleId = `dynamic-glow-${glowColor.replace("#", "")}`;
+
+    if (document.getElementById(styleId)) return;
 
     const style = document.createElement("style");
-    style.id = "dynamic-glow-style";
+    style.id = styleId;
+
     style.textContent = `
       .glow-title {
         display: inline-block;
         font-weight: 700;
-        font-family: 'Amiri', 'Scheherazade', serif;
         white-space: nowrap;
         position: relative;
         text-align: center;
@@ -29,10 +32,10 @@ export default function EffetcNewFix({
       }
 
       .glow-title.glow {
-        animation: glowText 2s ease-in-out infinite;
+        animation: glowText-${styleId} 2s ease-in-out infinite;
       }
 
-      @keyframes glowText {
+      @keyframes glowText-${styleId} {
         0%, 100% {
           text-shadow:
             0 0 8px ${glowColor},
@@ -47,31 +50,28 @@ export default function EffetcNewFix({
         }
       }
     `;
+
     document.head.appendChild(style);
 
-    // ✅ Nettoyage sécurisé
     return () => {
-      try {
-        if (style && style.parentNode) {
-          style.parentNode.removeChild(style);
-        }
-      } catch (err) {
-        console.warn("EffetcNewFix cleanup skipped:", err);
-      }
+      if (style.parentNode) style.remove();
     };
   }, [glowColor]);
 
   if (!text) return null;
 
+  const Component = as;
+
   return (
-    <h2
+    <Component
       className={`glow-title glow ${className}`}
       style={{
         fontSize: size,
-        color: color,
+        color: color ?? DEFAULT_COLOR,
+        fontFamily,
       }}
     >
       {text}
-    </h2>
+    </Component>
   );
 }
