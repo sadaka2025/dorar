@@ -1,71 +1,306 @@
 [
   {
-    "id": 57,
+    "id": 63,
     "title": "الدرس 1",
-    "description": {
-      "highlight": "احكام الطهارة",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
-    },
-    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
-    "url": "",
-    "fawaaidPdf": "/PDFs/hbibfiqh/tahara.pdf",
-    "siraprof": "وصف الكتاب: يقول الشيخ الحبيب بن طاهر إن هذا الكتاب في فقه العبادات على المذهب المالكي، وهو حصيلة ما أُلقي خلال الدورات التكوينية التي نُظّمت للسادة أئمة الخمس والمؤذنين بجوامع ومساجد معتمديات باجة ونفزة وعمدون وتيبار طيلة عشر سنوات، حتى يتسنى للقائمين على بيوت الله تعالى اكتساب المعلومات الدينية اللازمة للقيام بمهامهم على أحسن الوجوه. وقد توخّى المؤلف الدقة والتفصيل واستيعاب المسائل، بحيث يغني في بابه عن الرجوع إلى غيره. واعتمد أساسًا على كتاب «أقرب المسالك» باعتباره المعتمد في المذهب المالكي، وهو مختصر فقهي للشيخ أحمد الدردير مع شرحه وتعليق الشيخ أحمد الصاوي. وقد اعتمد الدردير في مختصره على مختصر الشيخ خليل بن إسحاق، مع استبدال الأقوال الضعيفة بالأقوال المعتمدة. وقد مزج المؤلف في هذا الكتاب بين المتن والشرح، وصاغه بأسلوب عصري يسهل على القارئ فهم مسائله دون عناء."
+    "url": "https://www.youtube.com/watch?v=75bIjr2HOK8&list=PLVjPyMBH-qN5HDtLGoBCrwlb_m3nmBqP_&index=1",
+    "description": "الدرس رقم 1 من السلسلة.",
+    "textPdf": "/PDFs/1_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf",
+    "siraprof": "الشيخ مختار بن العربي مومن الجزائري الشنقيطي (مواليد 1964) عالم وفقيه وداعية جزائري بارز، يشغل منصب نائب رئيس رابطة علماء المغرب العربي ونائب رئيس المنظمة العالمية لنصرة النبي ﷺ. هو باحث شرعي وإمام، ومدير مدرسة الريان للسنة والقرآن بالجزائر، وله تجربة دعوية واسعة خاصة بدولة قطر. وُلد ببادية عين السخونة (ولاية سعيدة)، وتلقى تعليمه بالجزائر ثم ارتحل لطلب العلم بموريتانيا والمملكة العربية السعودية، وتتلمذ على عدد من كبار علماء شنقيط. عُرف بنهجه الفقهي المالكي واعتماده المنهج الشنقيطي في التحصيل العلمي، وله إسهامات دعوية وتأليفية منها شرح وأدلة فقه متن ابن عاشر."
   },
   {
-    "id": 58,
+    "id": 64,
     "title": "الدرس 2",
-    "description": {
-      "highlight": "احكام الصلاة",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
-    },
-    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
-    "url": "",
-    "fawaaidPdf": "/PDFs/hbibfiqh/salat.pdf"
+    "url": "https://www.youtube.com/watch?v=JR6kjxj4qhc&index=2",
+
+    "description": "الدرس رقم 2 من السلسلة.",
+    "textPdf": "/PDFs/2_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
   },
   {
-    "id": 59,
+    "id": 65,
     "title": "الدرس 3",
-    "description": {
-      "highlight": "احكام الزكاة",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
-    },
-    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
-    "url": "",
-    "fawaaidPdf": "/PDFs/hbibfiqh/zakat.pdf"
+    "url": "https://www.youtube.com/watch?v=k5pBwxLuV1s&index=3",
+
+    "description": "الدرس رقم 3 من السلسلة.",
+    "textPdf": "/PDFs/3_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
   },
   {
-    "id": 60,
+    "id": 66,
     "title": "الدرس 4",
-    "description": {
-      "highlight": "احكام الصوم",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
-    },
-    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
-    "url": "",
-    "fawaaidPdf": "/PDFs/hbibfiqh/sawm.pdf"
+    "url": "https://www.youtube.com/watch?v=Q23lSq9vbRA&index=4",
+
+    "description": "الدرس رقم 4 من السلسلة.",
+    "textPdf": "/PDFs/4_text.pdf",
+    "fawaaidPdf": "/PDFs/4_fawaaid.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg"
   },
   {
-    "id": 61,
+    "id": 67,
     "title": "الدرس 5",
-    "description": {
-      "highlight": "احكام الحج",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
-    },
-    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
-    "url": "",
-    "fawaaidPdf": "/PDFs/hbibfiqh/haj1.pdf"
+    "url": "https://www.youtube.com/watch?v=QGWwcqQQ5VA&index=5",
+
+    "description": "الدرس رقم 5 من السلسلة.",
+    "textPdf": "/PDFs/5_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
   },
   {
-    "id": 62,
+    "id": 68,
     "title": "الدرس 6",
+    "url": "https://www.youtube.com/watch?v=_bbqYZXtc7Y&index=6",
 
-    "description": {
-      "highlight": "احكام الاضحية",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
-    },
+    "description": "الدرس رقم 6 من السلسلة.",
+    "textPdf": "/PDFs/6_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
 
-    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
-    "url": "",
-    "fawaaidPdf": "/PDFs/hbibfiqh/haj1.pdf"
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 69,
+    "title": "الدرس 7",
+    "url": "https://www.youtube.com/watch?v=1rWLtNxSo10&index=7",
+
+    "description": "الدرس رقم 7 من السلسلة.",
+    "textPdf": "/PDFs/7_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 70,
+    "title": "الدرس 8",
+    "url": "https://www.youtube.com/watch?v=uMkzMRuTlos&index=8",
+
+    "description": "الدرس رقم 8 من السلسلة.",
+    "textPdf": "/PDFs/8_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 71,
+    "title": "الدرس 9",
+    "url": "https://www.youtube.com/watch?v=5k7N7Mp92Ns&index=9",
+
+    "description": "الدرس رقم 9 من السلسلة.",
+    "textPdf": "/PDFs/9_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 72,
+    "title": "الدرس 10",
+    "url": "https://www.youtube.com/watch?v=1w0JbJc1pNQ&index=10",
+
+    "description": "الدرس رقم 10 من السلسلة.",
+    "textPdf": "/PDFs/10_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 73,
+    "title": "الدرس 11",
+    "url": "https://www.youtube.com/watch?v=8un1tGSrNog&index=11",
+
+    "description": "الدرس رقم 11 من السلسلة.",
+    "textPdf": "/PDFs/11_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 74,
+    "title": "الدرس 12",
+    "url": "https://www.youtube.com/watch?v=CAZdPvtUGVE&index=12",
+
+    "description": "الدرس رقم 12 من السلسلة.",
+    "textPdf": "/PDFs/12_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 75,
+    "title": "الدرس 13",
+    "url": "https://www.youtube.com/watch?v=MTSBErbuuwA&index=13",
+
+    "description": "الدرس رقم 13 من السلسلة.",
+    "textPdf": "/PDFs/13_text.pdf",
+    "fawaaidPdf": "/PDFs/13_fawaaid.pdf"
+  },
+  {
+    "id": 76,
+    "title": "الدرس 14",
+    "url": "https://www.youtube.com/watch?v=8P6XXTmRnMk&index=14",
+
+    "description": "الدرس رقم 14 من السلسلة.",
+    "textPdf": "/PDFs/14_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 77,
+    "title": "الدرس 15",
+    "url": "https://www.youtube.com/watch?v=g4VQk8jsfFE&index=15",
+
+    "description": "الدرس رقم 15 من السلسلة.",
+    "textPdf": "/PDFs/15_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 78,
+    "title": "الدرس 16",
+    "url": "https://www.youtube.com/watch?v=Guyn51RLtQM&index=16",
+
+    "description": "الدرس رقم 16 من السلسلة.",
+    "textPdf": "/PDFs/16_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 79,
+    "title": "الدرس 17",
+    "url": "https://www.youtube.com/watch?v=5NTKlOnuMlw&index=17",
+
+    "description": "الدرس رقم 17 من السلسلة.",
+    "textPdf": "/PDFs/17_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 80,
+    "title": "الدرس 18",
+    "url": "https://www.youtube.com/watch?v=B4Xnox0-f9E&index=18",
+
+    "description": "الدرس رقم 18 من السلسلة.",
+    "textPdf": "/PDFs/18_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 81,
+    "title": "الدرس 19",
+    "url": "https://www.youtube.com/watch?v=WGbQUvNvpgs&index=19",
+
+    "description": "الدرس رقم 19 من السلسلة.",
+    "textPdf": "/PDFs/19_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 82,
+    "title": "الدرس 20",
+    "url": "https://www.youtube.com/watch?v=rrq8MAih4Rk&index=20",
+
+    "description": "الدرس رقم 20 من السلسلة.",
+    "textPdf": "/PDFs/20_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 83,
+    "title": "الدرس 21",
+    "url": "https://www.youtube.com/watch?v=tleRxARCkmE&index=21",
+
+    "description": "الدرس رقم 21 من السلسلة.",
+    "textPdf": "/PDFs/21_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 84,
+    "title": "الدرس 22",
+    "url": "https://www.youtube.com/watch?v=jz_i3UMElKg&index=22",
+
+    "description": "الدرس رقم 22 من السلسلة.",
+    "textPdf": "/PDFs/22_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 85,
+    "title": "الدرس 23",
+    "url": "https://www.youtube.com/watch?v=fqk30yBj4Dw&index=23",
+
+    "description": "الدرس رقم 23 من السلسلة.",
+    "textPdf": "/PDFs/23_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 86,
+    "title": "الدرس 24",
+    "url": "https://www.youtube.com/watch?v=MSuuV7D0Rmw&index=24",
+
+    "description": "الدرس رقم 24 من السلسلة.",
+    "textPdf": "/PDFs/24_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 87,
+    "title": "الدرس 25",
+    "url": "https://www.youtube.com/watch?v=-wY54UkciA8&index=25",
+
+    "description": "الدرس رقم 25 من السلسلة.",
+    "textPdf": "/PDFs/25_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 88,
+    "title": "الدرس 26",
+    "url": "https://www.youtube.com/watch?v=HVFxrFgEVHY&index=26",
+
+    "description": "الدرس رقم 26 من السلسلة.",
+    "textPdf": "/PDFs/26_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 89,
+    "title": "الدرس 27",
+    "url": "https://www.youtube.com/watch?v=olS9sXvtqwA&index=27",
+
+    "description": "الدرس رقم 27 من السلسلة.",
+    "textPdf": "/PDFs/27_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
+  },
+  {
+    "id": 90,
+    "title": "الدرس 28",
+    "url": "https://www.youtube.com/watch?v=YRphMIzx7nc&index=28",
+
+    "description": "الدرس رقم 28 من السلسلة.",
+    "textPdf": "/PDFs/28_text.pdf",
+    "thumbnail": "/PDFs/book/adelafiqh.jpg",
+
+    "fawaaidPdf": "/PDFs/book/adelafiqh.pdf"
   }
 ]

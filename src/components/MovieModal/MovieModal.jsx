@@ -148,6 +148,22 @@ export default function MovieModal() {
                     النص المستخرج من اللقاء
                   </button>
                 )}
+                {video.textPdf1 && (
+                  <button
+                    onClick={() => window.open(video.textPdf1, "_blank")}
+                    className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 font-bold"
+                  >
+                    الجزء الاول من الكتاب
+                  </button>
+                )}
+                {video.textPdf2 && (
+                  <button
+                    onClick={() => window.open(video.textPdf2, "_blank")}
+                    className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 font-bold"
+                  >
+                    الجزء الثاني من الكتاب
+                  </button>
+                )}
                 {video.fawaaidPdf && (
                   <button
                     onClick={() => window.open(video.fawaaidPdf, "_blank")}
