@@ -1,24 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const selectedGenresSlice = createSlice({
+const initialState = {
+  selectedGenre: null,
+};
+
+const selectedGenresSlice = createSlice({
   name: "selectedGenres",
-  initialState: {
-    genre: null, // un seul genre sélectionné : { id, title, videos }
-  },
+  initialState,
   reducers: {
-    setGenre: (state, action) => {
-      state.genre = action.payload; // sélectionner un genre
+    setSelectedGenre(state, action) {
+      state.selectedGenre = action.payload;
     },
-    clearGenre: (state) => {
-      state.genre = null; // réinitialiser
+    clearSelectedGenre(state) {
+      state.selectedGenre = null;
     },
   },
 });
 
-// Actions exportées
-export const { setGenre, clearGenre } = selectedGenresSlice.actions;
+export const { setSelectedGenre, clearSelectedGenre } =
+  selectedGenresSlice.actions;
 
-// Sélecteur officiel pour les composants
-export const selectSelectedGenre = (state) => state.selectedGenres.genre;
+/* ✅ SELECTOR الصحيح */
+export const selectSelectedGenre = (state) =>
+  state.selectedGenres.selectedGenre;
 
 export default selectedGenresSlice.reducer;

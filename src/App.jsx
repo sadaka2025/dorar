@@ -1,30 +1,34 @@
 import React, { useState, useMemo } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
 import NavBar from "./components/NavBar/NavBar";
 import SideBar from "./components/SideBar/SideBar";
 import MovieModal from "./components/MovieModal/MovieModal";
-import { useSelector } from "react-redux";
-import { selectMovieModal } from "./redux/reducers/movieModalSlice";
-import { selectSelectedGenre } from "./redux/reducers/selectedGenresSlice";
 import Movie from "./components/Movie/Movie";
+
+import { selectMovieModal } from "./redux/reducers/movieModalSlice";
+import {
+  selectSelectedGenre,
+  setSelectedGenre,
+} from "./redux/reducers/selectedGenresSlice";
+
 import Scene from "./Visitors/Scene";
-import { allVideos } from "./components/MovieModal/allVideos";
 import EffetcNewFix from "./Visitors/EffetcNewFix";
+import { allVideos } from "./components/MovieModal/allVideos";
 
 function App() {
+  const dispatch = useDispatch();
   const { enabled: movieModalEnabled } = useSelector(selectMovieModal);
   const selectedGenre = useSelector(selectSelectedGenre);
 
   const [selectedYear, setSelectedYear] = useState(null);
   const years = [1, 2, 3, 4, 5];
 
-  /**
-   * ✅ SOURCE UNIQUE DES VIDÉOS
-   * Toutes les vidéos viennent de allVideos
-   */
+  // ✅ FILTRE CENTRAL UNIQUE
   const filteredVideos = useMemo(() => {
     if (!selectedGenre) return [];
 
-    // MEETINGS (avec filtre par année)
+    // 📅 MEETINGS
     if (selectedGenre.id === "meeting") {
       return allVideos.filter(
         (v) =>
@@ -32,7 +36,14 @@ function App() {
       );
     }
 
-    // AUTRES GENRES (motoun, nour, dorar, bjomaa, ...)
+    // 📚 DORAR (par bouton)
+    if (selectedGenre.id === "dorar" && selectedGenre.source) {
+      return allVideos.filter(
+        (v) => v.dataset === "dorar" && v.source === selectedGenre.source,
+      );
+    }
+
+    // 📦 AUTRES
     return allVideos.filter((v) => v.dataset === selectedGenre.id);
   }, [selectedGenre, selectedYear]);
 
@@ -48,22 +59,19 @@ function App() {
             <div
               style={{
                 fontFamily: "'Arabic Typesetting', serif",
-                fontSize: "24px",
+                fontSize: "26px",
                 color: "yellow",
-                padding: "1rem",
               }}
             >
-              Choisissez une catégorie dans la barre latérale.
+              اختر قسمًا من القائمة الجانبية
             </div>
           )}
 
           {selectedGenre && (
             <>
-              {/* Texte animé */}
-              <div className="flex justify-center mb-2">
+              <div className="flex justify-center mb-3">
                 <Scene
                   text="صلوا على الحبيب محمد ﷺ ❤️"
-                  className="mb-4 font-bold"
                   style={{
                     fontFamily: "'Arabic Typesetting', serif",
                     fontSize: "44px",
@@ -72,22 +80,48 @@ function App() {
                 />
               </div>
 
-              <div className="text-center">
-                <span className="text-4xl">👇</span>
-
+              <div className="text-center mb-4">
                 <EffetcNewFix
                   text={`🌿 ${selectedGenre.title}`}
                   as="h2"
-                  className="mb-4 font-bold"
                   size="44px"
-                  color="#undefined" // tu peux remplacer par `undefined` pour garder la couleur par défaut
                   fontFamily="'Arabic Typesetting', serif"
                 />
-
-                <span className="text-4xl">👇</span>
               </div>
 
-              {/* Boutons des années (MEETING seulement) */}
+              {/* 📚 أزرار الدرر (أفقية مثل السنوات) */}
+              {selectedGenre.id === "dorar" && (
+                <div className="flex justify-center gap-3 mb-6 flex-wrap">
+                  {[
+                    { label: "البيان", source: "bayan" },
+                    { label: "الحكمة", source: "hikma" },
+                    { label: "درر من الكتب", source: "book" },
+                    { label: "النفحات والخواطر", source: "nafahat" },
+                  ].map((btn) => (
+                    <button
+                      key={btn.source}
+                      className={`px-5 py-2 rounded font-bold transition ${
+                        selectedGenre.source === btn.source
+                          ? "bg-cyan-600 text-white"
+                          : "bg-gray-700 text-yellow-400 hover:bg-cyan-700"
+                      }`}
+                      onClick={() =>
+                        dispatch(
+                          setSelectedGenre({
+                            id: "dorar",
+                            title: btn.label,
+                            source: btn.source,
+                          }),
+                        )
+                      }
+                    >
+                      {btn.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* 📅 Boutons années */}
               {selectedGenre.id === "meeting" && (
                 <div className="flex justify-center gap-2 mb-4">
                   {years.map((y) => (
@@ -106,8 +140,8 @@ function App() {
                 </div>
               )}
 
-              {/* Liste des vidéos */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+              {/* 🎬 VIDEOS */}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredVideos.map((video) => (
                   <Movie key={video.uid} video={video} />
                 ))}
@@ -117,7 +151,6 @@ function App() {
         </div>
       </div>
 
-      {/* ✅ MODAL UNIQUE (sans wrapper) */}
       {movieModalEnabled && <MovieModal />}
     </div>
   );

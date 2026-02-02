@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { hide, selectMovieModal } from "../../redux/reducers/movieModalSlice";
+import FiqhDetailsModal from "./FiqhDetailsModal";
+
 import {
   AiOutlinePlayCircle,
   AiFillStar,
@@ -154,6 +156,20 @@ export default function MovieModal() {
                     فوائد و عبر
                   </button>
                 )}
+                {video.siraprof && (
+                  <button
+                    onClick={() =>
+                      setChildModal({
+                        title: "السيرة العلمية لمقدم السلسلة",
+                        details: video.siraprof,
+                      })
+                    }
+                    className="px-4 py-2 bg-amber-600 rounded-lg hover:bg-amber-700 font-bold"
+                  >
+                    👤 سيرة مقدم هذه السلسلة
+                  </button>
+                )}
+
                 {video.motounPdf && (
                   <button
                     onClick={() => window.open(video.motounPdf, "_blank")}
@@ -270,6 +286,12 @@ export default function MovieModal() {
           onClose={() => setChildModal(null)}
           title={childModal.title}
           content={childModal.content}
+        />
+      )}
+      {childModal && (
+        <FiqhDetailsModal
+          data={childModal}
+          onClose={() => setChildModal(null)}
         />
       )}
     </>

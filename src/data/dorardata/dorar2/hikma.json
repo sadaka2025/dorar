@@ -1,0 +1,493 @@
+[
+  {
+    "id": 1,
+    "title": "الدرس 1",
+    "url": "https://www.youtube.com/watch?v=cyYUuSM31bA&index=1",
+    "thumbnail": "https://img.youtube.com/vi/cyYUuSM31bA/hqdefault.jpg",
+    "description": "الدرس رقم 1 من السلسلة.",
+    "textPdf": "/PDFs/1_text.pdf",
+    "fawaaidPdf": "/PDFs/1_fawaaid.pdf"
+  },
+  {
+    "id": 2,
+    "title": "الدرس 2",
+    "url": "https://www.youtube.com/watch?v=4fYa6GAkf2U&index=2",
+    "thumbnail": "https://img.youtube.com/vi/4fYa6GAkf2U/hqdefault.jpg",
+    "description": "الدرس رقم 2 من السلسلة.",
+    "textPdf": "/PDFs/2_text.pdf",
+    "fawaaidPdf": "/PDFs/2_fawaaid.pdf"
+  },
+  {
+    "id": 3,
+    "title": "الدرس 3",
+    "url": "https://www.youtube.com/watch?v=-yUBoNYva8A&index=3",
+    "thumbnail": "https://img.youtube.com/vi/-yUBoNYva8A/hqdefault.jpg",
+    "description": "الدرس رقم 3 من السلسلة.",
+    "textPdf": "/PDFs/3_text.pdf",
+    "fawaaidPdf": "/PDFs/3_fawaaid.pdf"
+  },
+  {
+    "id": 4,
+    "title": "الدرس 4",
+    "url": "https://www.youtube.com/watch?v=-6R0R5rw_U0&index=4",
+    "thumbnail": "https://img.youtube.com/vi/-6R0R5rw_U0/hqdefault.jpg",
+    "description": "الدرس رقم 4 من السلسلة.",
+    "textPdf": "/PDFs/4_text.pdf",
+    "fawaaidPdf": "/PDFs/4_fawaaid.pdf"
+  },
+  {
+    "id": 5,
+    "title": "الدرس 5",
+    "url": "https://www.youtube.com/watch?v=-0d33gK-1pU&index=5",
+    "thumbnail": "https://img.youtube.com/vi/-0d33gK-1pU/hqdefault.jpg",
+    "description": "الدرس رقم 5 من السلسلة.",
+    "textPdf": "/PDFs/5_text.pdf",
+    "fawaaidPdf": "/PDFs/5_fawaaid.pdf"
+  },
+
+  {
+    "id": 6,
+    "title": "الدرس 6",
+    "url": "https://www.youtube.com/watch?v=A4W9LtnTdIE&index=6",
+    "thumbnail": "https://img.youtube.com/vi/A4W9LtnTdIE/hqdefault.jpg",
+    "description": "الدرس رقم 6 من السلسلة.",
+    "textPdf": "/PDFs/6_text.pdf",
+    "fawaaidPdf": "/PDFs/6_fawaaid.pdf"
+  },
+  {
+    "id": 7,
+    "title": "الدرس 7",
+    "url": "https://www.youtube.com/watch?v=V_pqnWsxu8I&index=7",
+    "thumbnail": "https://img.youtube.com/vi/V_pqnWsxu8I/hqdefault.jpg",
+    "description": "الدرس رقم 7 من السلسلة.",
+    "textPdf": "/PDFs/7_text.pdf",
+    "fawaaidPdf": "/PDFs/7_fawaaid.pdf"
+  },
+  {
+    "id": 8,
+    "title": "الدرس 8",
+    "url": "https://www.youtube.com/watch?v=hfB6uaQHPSk&index=8",
+    "thumbnail": "https://img.youtube.com/vi/hfB6uaQHPSk/hqdefault.jpg",
+    "description": "الدرس رقم 8 من السلسلة.",
+    "textPdf": "/PDFs/8_text.pdf",
+    "fawaaidPdf": "/PDFs/8_fawaaid.pdf"
+  },
+  {
+    "id": 9,
+    "title": "الدرس 9",
+    "url": "https://www.youtube.com/watch?v=PLe4N_-gyLw&index=9",
+    "thumbnail": "https://img.youtube.com/vi/PLe4N_-gyLw/hqdefault.jpg",
+    "description": "الدرس رقم 9 من السلسلة.",
+    "textPdf": "/PDFs/9_text.pdf",
+    "fawaaidPdf": "/PDFs/9_fawaaid.pdf"
+  },
+  {
+    "id": 10,
+    "title": "الدرس 10",
+    "url": "https://www.youtube.com/watch?v=B0_eBE-qdz0&index=10",
+    "thumbnail": "https://img.youtube.com/vi/B0_eBE-qdz0/hqdefault.jpg",
+    "description": "الدرس رقم 10 من السلسلة.",
+    "textPdf": "/PDFs/10_text.pdf",
+    "fawaaidPdf": "/PDFs/10_fawaaid.pdf"
+  },
+  {
+    "id": 11,
+    "title": "الدرس 11",
+    "url": "https://www.youtube.com/watch?v=IYtOa_IN6eU&index=11",
+    "thumbnail": "https://img.youtube.com/vi/IYtOa_IN6eU/hqdefault.jpg",
+    "description": "الدرس رقم 11 من السلسلة.",
+    "textPdf": "/PDFs/11_text.pdf",
+    "fawaaidPdf": "/PDFs/11_fawaaid.pdf"
+  },
+  {
+    "id": 12,
+    "title": "الدرس 12",
+    "url": "https://www.youtube.com/watch?v=L6kFBYX0bvY&index=12",
+    "thumbnail": "https://img.youtube.com/vi/L6kFBYX0bvY/hqdefault.jpg",
+    "description": "الدرس رقم 12 من السلسلة.",
+    "textPdf": "/PDFs/12_text.pdf",
+    "fawaaidPdf": "/PDFs/12_fawaaid.pdf"
+  },
+  {
+    "id": 13,
+    "title": "الدرس 13",
+    "url": "https://www.youtube.com/watch?v=sY55xHnSJpY&index=13",
+    "thumbnail": "https://img.youtube.com/vi/sY55xHnSJpY/hqdefault.jpg",
+    "description": "الدرس رقم 13 من السلسلة.",
+    "textPdf": "/PDFs/13_text.pdf",
+    "fawaaidPdf": "/PDFs/13_fawaaid.pdf"
+  },
+  {
+    "id": 14,
+    "title": "الدرس 14",
+    "url": "https://www.youtube.com/watch?v=no_tXyGTCso&index=14",
+    "thumbnail": "https://img.youtube.com/vi/no_tXyGTCso/hqdefault.jpg",
+    "description": "الدرس رقم 14 من السلسلة.",
+    "textPdf": "/PDFs/14_text.pdf",
+    "fawaaidPdf": "/PDFs/14_fawaaid.pdf"
+  },
+  {
+    "id": 15,
+    "title": "الدرس 15",
+    "url": "https://www.youtube.com/watch?v=352DdAlyxg4&index=15",
+    "thumbnail": "https://img.youtube.com/vi/352DdAlyxg4/hqdefault.jpg",
+    "description": "الدرس رقم 15 من السلسلة.",
+    "textPdf": "/PDFs/15_text.pdf",
+    "fawaaidPdf": "/PDFs/15_fawaaid.pdf"
+  },
+  {
+    "id": 16,
+    "title": "الدرس 16",
+    "url": "https://www.youtube.com/watch?v=Km8uKzq-NnA&index=16",
+    "thumbnail": "https://img.youtube.com/vi/Km8uKzq-NnA/hqdefault.jpg",
+    "description": "الدرس رقم 16 من السلسلة.",
+    "textPdf": "/PDFs/16_text.pdf",
+    "fawaaidPdf": "/PDFs/16_fawaaid.pdf"
+  },
+  {
+    "id": 17,
+    "title": "الدرس 17",
+    "url": "https://www.youtube.com/watch?v=gz0M0vFk0SI&index=17",
+    "thumbnail": "https://img.youtube.com/vi/gz0M0vFk0SI/hqdefault.jpg",
+    "description": "الدرس رقم 17 من السلسلة.",
+    "textPdf": "/PDFs/17_text.pdf",
+    "fawaaidPdf": "/PDFs/17_fawaaid.pdf"
+  },
+  {
+    "id": 18,
+    "title": "الدرس 18",
+    "url": "https://www.youtube.com/watch?v=HJ3s6ed_YaQ&index=18",
+    "thumbnail": "https://img.youtube.com/vi/HJ3s6ed_YaQ/hqdefault.jpg",
+    "description": "الدرس رقم 18 من السلسلة.",
+    "textPdf": "/PDFs/18_text.pdf",
+    "fawaaidPdf": "/PDFs/18_fawaaid.pdf"
+  },
+  {
+    "id": 19,
+    "title": "الدرس 19",
+    "url": "https://www.youtube.com/watch?v=7V1KMR8buA8&index=19",
+    "thumbnail": "https://img.youtube.com/vi/7V1KMR8buA8/hqdefault.jpg",
+    "description": "الدرس رقم 19 من السلسلة.",
+    "textPdf": "/PDFs/19_text.pdf",
+    "fawaaidPdf": "/PDFs/19_fawaaid.pdf"
+  },
+  {
+    "id": 20,
+    "title": "الدرس 20",
+    "url": "https://www.youtube.com/watch?v=rNC40FGkpIg&index=20",
+    "thumbnail": "https://img.youtube.com/vi/rNC40FGkpIg/hqdefault.jpg",
+    "description": "الدرس رقم 20 من السلسلة.",
+    "textPdf": "/PDFs/20_text.pdf",
+    "fawaaidPdf": "/PDFs/20_fawaaid.pdf"
+  },
+
+  {
+    "id": 21,
+    "title": "الدرس 21",
+    "url": "https://www.youtube.com/watch?v=dCmD5C6cpE4&index=21",
+    "thumbnail": "https://img.youtube.com/vi/dCmD5C6cpE4/hqdefault.jpg",
+    "description": "الدرس رقم 21 من السلسلة.",
+    "textPdf": "/PDFs/21_text.pdf",
+    "fawaaidPdf": "/PDFs/21_fawaaid.pdf"
+  },
+  {
+    "id": 22,
+    "title": "الدرس 22",
+    "url": "https://www.youtube.com/watch?v=QImrd5vPvlI&index=22",
+    "thumbnail": "https://img.youtube.com/vi/QImrd5vPvlI/hqdefault.jpg",
+    "description": "الدرس رقم 22 من السلسلة.",
+    "textPdf": "/PDFs/22_text.pdf",
+    "fawaaidPdf": "/PDFs/22_fawaaid.pdf"
+  },
+  {
+    "id": 23,
+    "title": "الدرس 23",
+    "url": "https://www.youtube.com/watch?v=twgVSdE6AuU&index=23",
+    "thumbnail": "https://img.youtube.com/vi/twgVSdE6AuU/hqdefault.jpg",
+    "description": "الدرس رقم 23 من السلسلة.",
+    "textPdf": "/PDFs/23_text.pdf",
+    "fawaaidPdf": "/PDFs/23_fawaaid.pdf"
+  },
+  {
+    "id": 24,
+    "title": "الدرس 24",
+    "url": "https://www.youtube.com/watch?v=TrZnmW5N5Ho&index=24",
+    "thumbnail": "https://img.youtube.com/vi/TrZnmW5N5Ho/hqdefault.jpg",
+    "description": "الدرس رقم 24 من السلسلة.",
+    "textPdf": "/PDFs/24_text.pdf",
+    "fawaaidPdf": "/PDFs/24_fawaaid.pdf"
+  },
+  {
+    "id": 25,
+    "title": "الدرس 25",
+    "url": "https://www.youtube.com/watch?v=7315X_D_bJo&index=25",
+    "thumbnail": "https://img.youtube.com/vi/7315X_D_bJo/hqdefault.jpg",
+    "description": "الدرس رقم 25 من السلسلة.",
+    "textPdf": "/PDFs/25_text.pdf",
+    "fawaaidPdf": "/PDFs/25_fawaaid.pdf"
+  },
+  {
+    "id": 26,
+    "title": "الدرس 26",
+    "url": "https://www.youtube.com/watch?v=VSvFHf2f4fg&index=26",
+    "thumbnail": "https://img.youtube.com/vi/VSvFHf2f4fg/hqdefault.jpg",
+    "description": "الدرس رقم 26 من السلسلة.",
+    "textPdf": "/PDFs/26_text.pdf",
+    "fawaaidPdf": "/PDFs/26_fawaaid.pdf"
+  },
+  {
+    "id": 27,
+    "title": "الدرس 27",
+    "url": "https://www.youtube.com/watch?v=fI_hRwB-1C4&index=27",
+    "thumbnail": "https://img.youtube.com/vi/fI_hRwB-1C4/hqdefault.jpg",
+    "description": "الدرس رقم 27 من السلسلة.",
+    "textPdf": "/PDFs/27_text.pdf",
+    "fawaaidPdf": "/PDFs/27_fawaaid.pdf"
+  },
+  {
+    "id": 28,
+    "title": "الدرس 28",
+    "url": "https://www.youtube.com/watch?v=bVkZ2NkQ5Zc&index=28",
+    "thumbnail": "https://img.youtube.com/vi/bVkZ2NkQ5Zc/hqdefault.jpg",
+    "description": "الدرس رقم 28 من السلسلة.",
+    "textPdf": "/PDFs/28_text.pdf",
+    "fawaaidPdf": "/PDFs/28_fawaaid.pdf"
+  },
+  {
+    "id": 29,
+    "title": "الدرس 29",
+    "url": "https://www.youtube.com/watch?v=6YahrW671kA&index=29",
+    "thumbnail": "https://img.youtube.com/vi/6YahrW671kA/hqdefault.jpg",
+    "description": "الدرس رقم 29 من السلسلة.",
+    "textPdf": "/PDFs/29_text.pdf",
+    "fawaaidPdf": "/PDFs/29_fawaaid.pdf"
+  },
+  {
+    "id": 30,
+    "title": "الدرس 30",
+    "url": "https://www.youtube.com/watch?v=kq8DjmF_d5c&index=30",
+    "thumbnail": "https://img.youtube.com/vi/kq8DjmF_d5c/hqdefault.jpg",
+    "description": "الدرس رقم 30 من السلسلة.",
+    "textPdf": "/PDFs/30_text.pdf",
+    "fawaaidPdf": "/PDFs/30_fawaaid.pdf"
+  },
+
+  {
+    "id": 31,
+    "title": "الدرس 31",
+    "url": "https://www.youtube.com/watch?v=uYcAkTH6-0w&index=31",
+    "thumbnail": "https://img.youtube.com/vi/uYcAkTH6-0w/hqdefault.jpg",
+    "description": "الدرس رقم 31 من السلسلة.",
+    "textPdf": "/PDFs/31_text.pdf",
+    "fawaaidPdf": "/PDFs/31_fawaaid.pdf"
+  },
+  {
+    "id": 32,
+    "title": "الدرس 32",
+    "url": "https://www.youtube.com/watch?v=sn3wmcpuuQE&index=32",
+    "thumbnail": "https://img.youtube.com/vi/sn3wmcpuuQE/hqdefault.jpg",
+    "description": "الدرس رقم 32 من السلسلة.",
+    "textPdf": "/PDFs/32_text.pdf",
+    "fawaaidPdf": "/PDFs/32_fawaaid.pdf"
+  },
+  {
+    "id": 33,
+    "title": "الدرس 33",
+    "url": "https://www.youtube.com/watch?v=rvtplg7mT_Y&index=33",
+    "thumbnail": "https://img.youtube.com/vi/rvtplg7mT_Y/hqdefault.jpg",
+    "description": "الدرس رقم 33 من السلسلة.",
+    "textPdf": "/PDFs/33_text.pdf",
+    "fawaaidPdf": "/PDFs/33_fawaaid.pdf"
+  },
+  {
+    "id": 34,
+    "title": "الدرس 34",
+    "url": "https://www.youtube.com/watch?v=MxdQsuSkp5M&index=34",
+    "thumbnail": "https://img.youtube.com/vi/MxdQsuSkp5M/hqdefault.jpg",
+    "description": "الدرس رقم 34 من السلسلة.",
+    "textPdf": "/PDFs/34_text.pdf",
+    "fawaaidPdf": "/PDFs/34_fawaaid.pdf"
+  },
+  {
+    "id": 35,
+    "title": "الدرس 35",
+    "url": "https://www.youtube.com/watch?v=iy_GEvEqF_Y&index=35",
+    "thumbnail": "https://img.youtube.com/vi/iy_GEvEqF_Y/hqdefault.jpg",
+    "description": "الدرس رقم 35 من السلسلة.",
+    "textPdf": "/PDFs/35_text.pdf",
+    "fawaaidPdf": "/PDFs/35_fawaaid.pdf"
+  },
+  {
+    "id": 36,
+    "title": "الدرس 36",
+    "url": "https://www.youtube.com/watch?v=XLcl7jILI9g&index=36",
+    "thumbnail": "https://img.youtube.com/vi/XLcl7jILI9g/hqdefault.jpg",
+    "description": "الدرس رقم 36 من السلسلة.",
+    "textPdf": "/PDFs/36_text.pdf",
+    "fawaaidPdf": "/PDFs/36_fawaaid.pdf"
+  },
+  {
+    "id": 37,
+    "title": "الدرس 37",
+    "url": "https://www.youtube.com/watch?v=cmHSsPC3RDA&index=37",
+    "thumbnail": "https://img.youtube.com/vi/cmHSsPC3RDA/hqdefault.jpg",
+    "description": "الدرس رقم 37 من السلسلة.",
+    "textPdf": "/PDFs/37_text.pdf",
+    "fawaaidPdf": "/PDFs/37_fawaaid.pdf"
+  },
+  {
+    "id": 38,
+    "title": "الدرس 38",
+    "url": "https://www.youtube.com/watch?v=rrRMc2jHG7g&index=38",
+    "thumbnail": "https://img.youtube.com/vi/rrRMc2jHG7g/hqdefault.jpg",
+    "description": "الدرس رقم 38 من السلسلة.",
+    "textPdf": "/PDFs/38_text.pdf",
+    "fawaaidPdf": "/PDFs/38_fawaaid.pdf"
+  },
+  {
+    "id": 39,
+    "title": "الدرس 39",
+    "url": "https://www.youtube.com/watch?v=lEGr3d0phn8&index=39",
+    "thumbnail": "https://img.youtube.com/vi/lEGr3d0phn8/hqdefault.jpg",
+    "description": "الدرس رقم 39 من السلسلة.",
+    "textPdf": "/PDFs/39_text.pdf",
+    "fawaaidPdf": "/PDFs/39_fawaaid.pdf"
+  },
+  {
+    "id": 40,
+    "title": "الدرس 40",
+    "url": "https://www.youtube.com/watch?v=rRFxqxQEd_U&index=40",
+    "thumbnail": "https://img.youtube.com/vi/rRFxqxQEd_U/hqdefault.jpg",
+    "description": "الدرس رقم 40 من السلسلة.",
+    "textPdf": "/PDFs/40_text.pdf",
+    "fawaaidPdf": "/PDFs/40_fawaaid.pdf"
+  },
+
+  {
+    "id": 41,
+    "title": "الدرس 41",
+    "url": "https://www.youtube.com/watch?v=E6JwDJhXPCY&index=41",
+    "thumbnail": "https://img.youtube.com/vi/E6JwDJhXPCY/hqdefault.jpg",
+    "description": "الدرس رقم 41 من السلسلة.",
+    "textPdf": "/PDFs/41_text.pdf",
+    "fawaaidPdf": "/PDFs/41_fawaaid.pdf"
+  },
+  {
+    "id": 42,
+    "title": "الدرس 42",
+    "url": "https://www.youtube.com/watch?v=Gy46dSpS0qs&index=42",
+    "thumbnail": "https://img.youtube.com/vi/Gy46dSpS0qs/hqdefault.jpg",
+    "description": "الدرس رقم 42 من السلسلة.",
+    "textPdf": "/PDFs/42_text.pdf",
+    "fawaaidPdf": "/PDFs/42_fawaaid.pdf"
+  },
+  {
+    "id": 43,
+    "title": "الدرس 43",
+    "url": "https://www.youtube.com/watch?v=6gPxJQUa5c4&index=43",
+    "thumbnail": "https://img.youtube.com/vi/6gPxJQUa5c4/hqdefault.jpg",
+    "description": "الدرس رقم 43 من السلسلة.",
+    "textPdf": "/PDFs/43_text.pdf",
+    "fawaaidPdf": "/PDFs/43_fawaaid.pdf"
+  },
+  {
+    "id": 44,
+    "title": "الدرس 44",
+    "url": "https://www.youtube.com/watch?v=b_WhlhtogCk&index=44",
+    "thumbnail": "https://img.youtube.com/vi/b_WhlhtogCk/hqdefault.jpg",
+    "description": "الدرس رقم 44 من السلسلة.",
+    "textPdf": "/PDFs/44_text.pdf",
+    "fawaaidPdf": "/PDFs/44_fawaaid.pdf"
+  },
+  {
+    "id": 45,
+    "title": "الدرس 45",
+    "url": "https://www.youtube.com/watch?v=Z4e6K-2cOik&index=45",
+    "thumbnail": "https://img.youtube.com/vi/Z4e6K-2cOik/hqdefault.jpg",
+    "description": "الدرس رقم 45 من السلسلة.",
+    "textPdf": "/PDFs/45_text.pdf",
+    "fawaaidPdf": "/PDFs/45_fawaaid.pdf"
+  },
+  {
+    "id": 46,
+    "title": "الدرس 46",
+    "url": "https://www.youtube.com/watch?v=MlgsZ_Kvt7o&index=46",
+    "thumbnail": "https://img.youtube.com/vi/MlgsZ_Kvt7o/hqdefault.jpg",
+    "description": "الدرس رقم 46 من السلسلة.",
+    "textPdf": "/PDFs/46_text.pdf",
+    "fawaaidPdf": "/PDFs/46_fawaaid.pdf"
+  },
+  {
+    "id": 47,
+    "title": "الدرس 47",
+    "url": "https://www.youtube.com/watch?v=kBHfgwHpD3s&index=47",
+    "thumbnail": "https://img.youtube.com/vi/kBHfgwHpD3s/hqdefault.jpg",
+    "description": "الدرس رقم 47 من السلسلة.",
+    "textPdf": "/PDFs/47_text.pdf",
+    "fawaaidPdf": "/PDFs/47_fawaaid.pdf"
+  },
+  {
+    "id": 48,
+    "title": "الدرس 48",
+    "url": "https://www.youtube.com/watch?v=AYEQieTKLCY&index=48",
+    "thumbnail": "https://img.youtube.com/vi/AYEQieTKLCY/hqdefault.jpg",
+    "description": "الدرس رقم 48 من السلسلة.",
+    "textPdf": "/PDFs/48_text.pdf",
+    "fawaaidPdf": "/PDFs/48_fawaaid.pdf"
+  },
+  {
+    "id": 49,
+    "title": "الدرس 49",
+    "url": "https://www.youtube.com/watch?v=qB-oE7MHXBk&index=49",
+    "thumbnail": "https://img.youtube.com/vi/qB-oE7MHXBk/hqdefault.jpg",
+    "description": "الدرس رقم 49 من السلسلة.",
+    "textPdf": "/PDFs/49_text.pdf",
+    "fawaaidPdf": "/PDFs/49_fawaaid.pdf"
+  },
+  {
+    "id": 50,
+    "title": "الدرس 50",
+    "url": "https://www.youtube.com/watch?v=QN0BGw-NtmE&index=50",
+    "thumbnail": "https://img.youtube.com/vi/QN0BGw-NtmE/hqdefault.jpg",
+    "description": "الدرس رقم 50 من السلسلة.",
+    "textPdf": "/PDFs/50_text.pdf",
+    "fawaaidPdf": "/PDFs/50_fawaaid.pdf"
+  },
+
+  {
+    "id": 51,
+    "title": "الدرس 51",
+    "url": "https://www.youtube.com/watch?v=luAX303dIU8&index=51",
+    "thumbnail": "https://img.youtube.com/vi/luAX303dIU8/hqdefault.jpg",
+    "description": "الدرس رقم 51 من السلسلة.",
+    "textPdf": "/PDFs/51_text.pdf",
+    "fawaaidPdf": "/PDFs/51_fawaaid.pdf"
+  },
+  {
+    "id": 52,
+    "title": "الدرس 52",
+    "url": "https://www.youtube.com/watch?v=jmJREEJmFOY&index=52",
+    "thumbnail": "https://img.youtube.com/vi/jmJREEJmFOY/hqdefault.jpg",
+    "description": "الدرس رقم 52 من السلسلة.",
+    "textPdf": "/PDFs/52_text.pdf",
+    "fawaaidPdf": "/PDFs/52_fawaaid.pdf"
+  },
+  {
+    "id": 53,
+    "title": "الدرس 53",
+    "url": "https://www.youtube.com/watch?v=FlaikydKVFc&index=53",
+    "thumbnail": "https://img.youtube.com/vi/FlaikydKVFc/hqdefault.jpg",
+    "description": "الدرس رقم 53 من السلسلة.",
+    "textPdf": "/PDFs/53_text.pdf",
+    "fawaaidPdf": "/PDFs/53_fawaaid.pdf"
+  },
+  {
+    "id": 54,
+    "title": "الدرس 54",
+    "url": "https://www.youtube.com/watch?v=0nciZbZUeX4&index=54",
+    "thumbnail": "https://img.youtube.com/vi/0nciZbZUeX4/hqdefault.jpg",
+    "description": "الدرس رقم 54 من السلسلة.",
+    "textPdf": "/PDFs/54_text.pdf",
+    "fawaaidPdf": "/PDFs/54_fawaaid.pdf"
+  }
+]

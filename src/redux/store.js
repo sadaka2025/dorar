@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import selectedGenresReducer from "./reducers/selectedGenresSlice";
 import movieModalReducer from "./reducers/movieModalSlice";
-import selectedGenresSlice from "./reducers/selectedGenresSlice";
 
 export const store = configureStore({
   reducer: {
+    selectedGenres: selectedGenresReducer, // ⬅️ مهم جدًا
     movieModal: movieModalReducer,
-    selectedGenres: selectedGenresSlice,
   },
 });
