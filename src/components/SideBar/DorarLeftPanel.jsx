@@ -25,7 +25,10 @@ export default function DorarLeftPanel() {
 
   return (
     <div className="flex flex-col gap-3 p-3">
-      <button className={btn} onClick={() => load("البيان", bayan)}>
+      <button
+        className={btn}
+        onClick={() => load("شرح الرسالة لابن أبي زيد القيرواني", bayan)}
+      >
         البيان
       </button>
       <button className={btn} onClick={() => load("الحكمة", hikma)}>

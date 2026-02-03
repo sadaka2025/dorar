@@ -94,10 +94,19 @@ function App() {
               {selectedGenre.id === "dorar" && (
                 <div className="flex justify-center gap-3 mb-6 flex-wrap">
                   {[
-                    { label: "البيان", source: "bayan" },
-                    { label: "الحكمة", source: "hikma" },
-                    { label: "درر من الكتب", source: "book" },
-                    { label: "النفحات والخواطر", source: "nafahat" },
+                    {
+                      label: "إيضاح المعاني على رسالة القيراوني",
+                      source: "bayan",
+                    },
+                    {
+                      label: " قواعد الفقه المالكي على قضايا معاصرة",
+                      source: "hikma",
+                    },
+                    { label: "أدلة فقه متن ابن عاشر", source: "book" },
+                    {
+                      label: " توضيح قواعد النحو العربي بالآيات القرآنية",
+                      source: "nafahat",
+                    },
                   ].map((btn) => (
                     <button
                       key={btn.source}

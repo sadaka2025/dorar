@@ -185,7 +185,19 @@ export default function MovieModal() {
                     👤 سيرة مقدم هذه السلسلة
                   </button>
                 )}
-
+                {video.sirabook && (
+                  <button
+                    onClick={() =>
+                      setChildModal({
+                        title: "مميزات الكتاب",
+                        details: video.sirabook,
+                      })
+                    }
+                    className="px-4 py-2 bg-amber-600 rounded-lg hover:bg-amber-700 font-bold"
+                  >
+                    مميزات الكتاب
+                  </button>
+                )}
                 {video.motounPdf && (
                   <button
                     onClick={() => window.open(video.motounPdf, "_blank")}

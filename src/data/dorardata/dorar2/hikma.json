@@ -26,16 +26,38 @@
     "id": 59,
     "title": "الدرس 3",
     "description": {
-      "highlight": "احكام الزكاة",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
+      "highlight": "أحكام الزكاة",
+      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة - الشيخ الحبيب بن طاهر"
     },
     "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
-    "url": "",
+    "url": "https://www.youtube.com/watch?v=PlnIQFLj8FY&list=PL32DC49BA0F93A008&index=1&pp=iAQB",
     "fawaaidPdf": "/PDFs/hbibfiqh/zakat.pdf"
   },
   {
     "id": 60,
-    "title": "الدرس 4",
+    "title": "4 الدرس",
+    "description": {
+      "highlight": "أحكام الزكاة",
+      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة - الشيخ الحبيب بن طاهر"
+    },
+    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
+    "url": "https://www.youtube.com/watch?v=1K23Nzk_qOM&list=PL32DC49BA0F93A008&index=2&pp=iAQB",
+    "fawaaidPdf": "/PDFs/hbibfiqh/zakat.pdf"
+  },
+  {
+    "id": 61,
+    "title": "الدرس 5",
+    "description": {
+      "highlight": "أحكام الزكاة",
+      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة - الشيخ الحبيب بن طاهر"
+    },
+    "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
+    "url": "https://www.youtube.com/watch?v=Hck-x-nM3CE&list=PL32DC49BA0F93A008&index=3&pp=iAQB",
+    "fawaaidPdf": "/PDFs/hbibfiqh/zakat.pdf"
+  },
+  {
+    "id": 62,
+    "title": "الدرس 6",
     "description": {
       "highlight": "احكام الصوم",
       "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
@@ -45,8 +67,8 @@
     "fawaaidPdf": "/PDFs/hbibfiqh/sawm.pdf"
   },
   {
-    "id": 61,
-    "title": "الدرس 5",
+    "id": 63,
+    "title": "الدرس 7",
     "description": {
       "highlight": "احكام الحج",
       "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة  الشيخ الحبيب بن طاهر"
@@ -56,8 +78,8 @@
     "fawaaidPdf": "/PDFs/hbibfiqh/haj1.pdf"
   },
   {
-    "id": 62,
-    "title": "الدرس 6",
+    "id": 64,
+    "title": "الدرس 8",
 
     "description": {
       "highlight": "احكام الاضحية",
