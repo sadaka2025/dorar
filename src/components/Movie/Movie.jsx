@@ -39,10 +39,11 @@ export default function Movie({ video }) {
           style={{
             fontFamily: "'Arabic Typesetting', serif",
             textAlign: "center",
-            fontSize: "18px",
-            padding: "0.75rem",
+            fontSize: "24px",
+            padding: "1rem",
             color: "yellow",
             transition: "color 0.3s",
+            lineHeight: "0.7", // ← interligne ajouté
           }}
         >
           {typeof video.description === "object" ? (

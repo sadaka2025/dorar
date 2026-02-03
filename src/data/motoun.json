@@ -52,9 +52,17 @@
   {
     "id": 7,
     "title": "متون  البيقونية في علم مصطلح الحديث",
-    "description": "متن الامام عمر بن محمد بن فتوح البيقوني د",
+    "description": "متن الامام عمر بن محمد بن فتوح البيقوني ",
     "thumbnail": "/images/hadith.jpg",
     "url": "https://youtu.be/qEZNw7wATQ4?si=MDJSuFuF4Uq1E50S",
     "motounPdf": "https://drive.google.com/file/d/1qKYhJcMrNtDaz-1wcxB-0BQNlENgJnng/view?usp=sharing"
+  },
+  {
+    "id": 8,
+    "title": "متون  البيقونية في علم مصطلح الحديث",
+    "description": "قصيدة صوتية_ في فضل العلم والحث عليه لابن أبي زيد القيرواني",
+    "thumbnail": "/images/science.jpg",
+    "url": "https://drive.google.com/file/d/1dJkJqmfJE7KFIgmJK8YgbX8gWf95lA80/preview",
+    "motounPdf": "/PDFs/book/text.jpg"
   }
 ]

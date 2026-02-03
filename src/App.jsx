@@ -113,6 +113,15 @@ function App() {
                     },
                   ].map((btn) => (
                     <button
+                      style={{
+                        fontFamily: "'Arabic Typesetting', serif",
+                        textAlign: "center",
+                        fontSize: "24px",
+                        padding: "1rem",
+                        color: "yellow",
+                        transition: "color 0.3s",
+                        lineHeight: "0.7", // ← interligne ajouté
+                      }}
                       key={btn.source}
                       className={`px-5 py-2 rounded font-bold transition ${
                         selectedGenre.source === btn.source
@@ -148,7 +157,7 @@ function App() {
                       }`}
                       onClick={() => setSelectedYear(y)}
                     >
-                      Année {y}
+                      السنة {y}
                     </button>
                   ))}
                 </div>

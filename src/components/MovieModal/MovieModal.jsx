@@ -176,7 +176,10 @@ export default function MovieModal() {
             <div className="md:w-1/2 p-5 space-y-4">
               <h1
                 className="font-arabic text-yellow-400"
-                style={{ fontFamily: "'Arabic Typesetting'", fontSize: "40px" }}
+                style={{
+                  fontFamily: "'Arabic Typesetting' , serif",
+                  fontSize: "40px",
+                }}
               >
                 {video.title}
               </h1>
