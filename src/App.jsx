@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import SideBar from "./components/SideBar/SideBar";
 import MovieModal from "./components/MovieModal/MovieModal";
 import Movie from "./components/Movie/Movie";
+import MusicPlayer from "./components/MusicPlayer";
 
 import { selectMovieModal } from "./redux/reducers/movieModalSlice";
 import {
@@ -152,6 +153,7 @@ function App() {
       </div>
 
       {movieModalEnabled && <MovieModal />}
+      <MusicPlayer />
     </div>
   );
 }
