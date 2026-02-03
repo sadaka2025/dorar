@@ -3,27 +3,59 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { hide, selectMovieModal } from "../../redux/reducers/movieModalSlice";
 import FiqhDetailsModal from "./FiqhDetailsModal";
-
+import VideoInfoModal from "./VideoInfoModal";
 import {
   AiOutlinePlayCircle,
   AiFillStar,
   AiOutlineClose,
 } from "react-icons/ai";
 import { allVideos } from "./allVideos";
-import VideoInfoModal from "./VideoInfoModal";
 import "./VideoInfoModal.css";
 
 export default function MovieModal() {
+  const dispatch = useDispatch();
+  const { movieId, dataset, enabled } = useSelector(selectMovieModal);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [childModal, setChildModal] = useState(null);
+
+  const video = allVideos.find(
+    (v) => v.id === movieId && v.dataset === dataset,
+  );
+  if (!enabled || !video) return null;
+
+  // ======= Détection du type d'URL =======
+  const isEmbedVideo =
+    typeof video.url === "string" &&
+    (video.url.includes("youtu") || video.url.includes("drive.google"));
+  const isLocalVideo =
+    typeof video.url === "string" && video.url.endsWith(".mp4");
+  const isWebSite =
+    typeof video.url === "string" &&
+    video.url.startsWith("http") &&
+    !isEmbedVideo &&
+    !isLocalVideo;
+
+  // ======= Générer URL pour iframe =======
+  const getEmbedUrl = (url) => {
+    if (!url) return "";
+    if (url.includes("youtube.com/watch")) {
+      const id = new URL(url).searchParams.get("v");
+      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+    }
+    if (url.includes("youtu.be/")) {
+      const id = url.split("youtu.be/")[1];
+      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+    }
+    if (url.includes("drive.google.com"))
+      return url.replace("/view", "/preview");
+    return url;
+  };
+
+  // ======= Description (texte ou objet) =======
   const renderDescription = (description) => {
     if (!description) return null;
-
-    // Ancien format (string)
-    if (typeof description === "string") {
-      return description;
-    }
-
-    // Nouveau format (objet)
-    if (typeof description === "object") {
+    if (typeof description === "string") return description;
+    if (typeof description === "object")
       return (
         <>
           <span className="text-green-600 font-semibold">
@@ -32,46 +64,66 @@ export default function MovieModal() {
           {description.text}
         </>
       );
-    }
-
     return null;
   };
 
-  const dispatch = useDispatch();
-  const { movieId, dataset, enabled } = useSelector(selectMovieModal);
+  // ======= Boutons PDF dynamiques =======
+  const pdfButtons = [
+    {
+      key: "textPdf",
+      label: "النص المستخرج من اللقاء",
+      css: "bg-blue-600 hover:bg-blue-700",
+    },
+    {
+      key: "textPdf1",
+      label: "الجزء الاول من الكتاب",
+      css: "bg-blue-600 hover:bg-blue-700",
+    },
+    {
+      key: "textPdf2",
+      label: "الجزء الثاني من الكتاب",
+      css: "bg-blue-600 hover:bg-blue-700",
+    },
+    {
+      key: "fawaaidPdf",
+      label: "فوائد و عبر",
+      css: "bg-purple-600 hover:bg-purple-700",
+    },
+    {
+      key: "motounPdf",
+      label: "أبيات المتون",
+      css: "bg-purple-600 hover:bg-purple-700",
+    },
+    {
+      key: "resumesemester",
+      label: "نموذج 1 ملخص السداسي الاول",
+      css: "bg-purple-600 hover:bg-purple-700",
+    },
+    {
+      key: "resumesemester1",
+      label: "نموذج 2 ملخص السداسي الاول",
+      css: "bg-purple-600 hover:bg-purple-700",
+    },
+    {
+      key: "resumesemester2",
+      label: "نموذج 3 ملخص السداسي الاول",
+      css: "bg-purple-600 hover:bg-purple-700",
+    },
+  ];
 
-  const video = allVideos.find(
-    (v) => v.id === movieId && v.dataset === dataset,
-  );
-
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const [childModal, setChildModal] = useState(null);
-
-  if (!enabled || !video) return null;
-
-  const isExternalLink =
-    typeof video.url === "string" &&
-    (video.url.includes("youtu") || video.url.includes("drive.google"));
-
-  const getEmbedUrl = (url) => {
-    if (!url) return "";
-
-    if (url.includes("youtube.com/watch")) {
-      const id = new URL(url).searchParams.get("v");
-      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
-    }
-
-    if (url.includes("youtu.be/")) {
-      const id = url.split("youtu.be/")[1];
-      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
-    }
-
-    if (url.includes("drive.google.com")) {
-      return url.replace("/view", "/preview");
-    }
-
-    return url;
-  };
+  // ======= Boutons modals dynamiques =======
+  const modalButtons = [
+    {
+      key: "siraprof",
+      label: "👤 سيرة مقدم هذه السلسلة",
+      css: "bg-amber-600 hover:bg-amber-700",
+    },
+    {
+      key: "sirabook",
+      label: "مميزات الكتاب",
+      css: "bg-amber-600 hover:bg-amber-700",
+    },
+  ];
 
   return (
     <>
@@ -100,7 +152,13 @@ export default function MovieModal() {
             {/* MINIATURE */}
             <div className="md:w-1/2 p-4">
               <div
-                onClick={() => setIsVideoOpen(true)}
+                onClick={() => {
+                  if (isWebSite) {
+                    window.open(video.url, "_blank");
+                  } else {
+                    setIsVideoOpen(true);
+                  }
+                }}
                 className="relative cursor-pointer rounded-lg overflow-hidden"
               >
                 <img
@@ -132,7 +190,11 @@ export default function MovieModal() {
 
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <AiFillStar className="text-yellow-500" />
-                {isExternalLink ? "Vidéo externe" : "Vidéo locale"}
+                {isWebSite
+                  ? "🌐 Site externe"
+                  : isEmbedVideo
+                    ? "🎬 Vidéo externe"
+                    : "🎥 Vidéo locale"}
               </div>
 
               <p className="text-gray-300 text-sm leading-relaxed font-arabic">
@@ -140,96 +202,38 @@ export default function MovieModal() {
               </p>
 
               <div className="flex flex-col gap-3 pt-4">
-                {video.textPdf && (
-                  <button
-                    onClick={() => window.open(video.textPdf, "_blank")}
-                    className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 font-bold"
-                  >
-                    النص المستخرج من اللقاء
-                  </button>
+                {/* PDF Buttons */}
+                {pdfButtons.map((btn) =>
+                  video[btn.key] ? (
+                    <button
+                      key={btn.key}
+                      onClick={() => window.open(video[btn.key], "_blank")}
+                      className={`px-4 py-2 ${btn.css} rounded-lg font-bold`}
+                    >
+                      {btn.label}
+                    </button>
+                  ) : null,
                 )}
-                {video.textPdf1 && (
-                  <button
-                    onClick={() => window.open(video.textPdf1, "_blank")}
-                    className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 font-bold"
-                  >
-                    الجزء الاول من الكتاب
-                  </button>
+
+                {/* Modal Buttons */}
+                {modalButtons.map((btn) =>
+                  video[btn.key] ? (
+                    <button
+                      key={btn.key}
+                      onClick={() =>
+                        setChildModal({
+                          title: btn.label,
+                          details: video[btn.key],
+                        })
+                      }
+                      className={`px-4 py-2 ${btn.css} rounded-lg font-bold`}
+                    >
+                      {btn.label}
+                    </button>
+                  ) : null,
                 )}
-                {video.textPdf2 && (
-                  <button
-                    onClick={() => window.open(video.textPdf2, "_blank")}
-                    className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 font-bold"
-                  >
-                    الجزء الثاني من الكتاب
-                  </button>
-                )}
-                {video.fawaaidPdf && (
-                  <button
-                    onClick={() => window.open(video.fawaaidPdf, "_blank")}
-                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
-                  >
-                    فوائد و عبر
-                  </button>
-                )}
-                {video.siraprof && (
-                  <button
-                    onClick={() =>
-                      setChildModal({
-                        title: "السيرة العلمية لمقدم السلسلة",
-                        details: video.siraprof,
-                      })
-                    }
-                    className="px-4 py-2 bg-amber-600 rounded-lg hover:bg-amber-700 font-bold"
-                  >
-                    👤 سيرة مقدم هذه السلسلة
-                  </button>
-                )}
-                {video.sirabook && (
-                  <button
-                    onClick={() =>
-                      setChildModal({
-                        title: "مميزات الكتاب",
-                        details: video.sirabook,
-                      })
-                    }
-                    className="px-4 py-2 bg-amber-600 rounded-lg hover:bg-amber-700 font-bold"
-                  >
-                    مميزات الكتاب
-                  </button>
-                )}
-                {video.motounPdf && (
-                  <button
-                    onClick={() => window.open(video.motounPdf, "_blank")}
-                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
-                  >
-                    أبيات المتون
-                  </button>
-                )}
-                {video.resumesemester && (
-                  <button
-                    onClick={() => window.open(video.resumesemester, "_blank")}
-                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
-                  >
-                    نموذج 1 ملخص السداسي الاول
-                  </button>
-                )}
-                {video.resumesemester1 && (
-                  <button
-                    onClick={() => window.open(video.resumesemester1, "_blank")}
-                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
-                  >
-                    نموذج 2 ملخص السداسي الاول
-                  </button>
-                )}
-                {video.resumesemester2 && (
-                  <button
-                    onClick={() => window.open(video.resumesemester2, "_blank")}
-                    className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 font-bold"
-                  >
-                    نموذج 3 ملخص السداسي الاول
-                  </button>
-                )}
+
+                {/* Matns */}
                 {video.matns?.map((matn) => (
                   <a
                     key={matn.key}
@@ -247,9 +251,9 @@ export default function MovieModal() {
         </motion.div>
       </motion.div>
 
-      {/* ================= MODAL VIDEO AVEC CADRE ================= */}
+      {/* ================= MODAL VIDEO ================= */}
       <AnimatePresence>
-        {isVideoOpen && (
+        {isVideoOpen && !isWebSite && (
           <motion.div
             className="fixed inset-0 z-50"
             initial={{ opacity: 0 }}
@@ -267,8 +271,8 @@ export default function MovieModal() {
               }}
             />
 
-            {/* ================= VIDEO ================= */}
-            {isExternalLink ? (
+            {/* ================= VIDEO / IFRAME ================= */}
+            {isEmbedVideo ? (
               <iframe
                 src={getEmbedUrl(video.url)}
                 className="absolute inset-0 w-full h-full z-10"
@@ -286,7 +290,6 @@ export default function MovieModal() {
             )}
 
             {/* ========== OVERLAY (OPTIONNEL) ========== */}
-            {/* 👉 Assombrit SANS rendre la vidéo fade */}
             <div className="absolute inset-0 z-15 bg-black/20 pointer-events-none" />
 
             {/* ================= CADRE PNG ================= */}
@@ -307,13 +310,13 @@ export default function MovieModal() {
         )}
       </AnimatePresence>
 
-      {/* ================= SOUS MODAL ================= */}
+      {/* ================= SOUS MODALS ================= */}
       {childModal && (
         <VideoInfoModal
           open={!!childModal}
           onClose={() => setChildModal(null)}
           title={childModal.title}
-          content={childModal.content}
+          content={childModal.details}
         />
       )}
       {childModal && (

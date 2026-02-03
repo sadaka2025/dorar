@@ -37,7 +37,16 @@ export default function DorarLeftPanel() {
       <button className={btn} onClick={() => load("درر من الكتب", book)}>
         درر من الكتب
       </button>
-      <button className={btn} onClick={() => load("النفحات والخواطر", nafahat)}>
+      <button
+        className={btn}
+        onClick={() => load("النفحات والخواطر", nafahat1)}
+      >
+        النفحات والخواطر
+      </button>
+      <button
+        className={btn}
+        onClick={() => load("النفحات والخواطر", nafahat2)}
+      >
         النفحات والخواطر
       </button>
     </div>

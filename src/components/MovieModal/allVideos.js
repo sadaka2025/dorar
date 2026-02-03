@@ -1,3 +1,5 @@
+// allVideos.js
+
 import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
 import fiqhData from "../../data/fiqh.json";
@@ -17,21 +19,86 @@ import nafahat2Data from "../../data/dorardata/dorar5/nafahat2.json";
 import bjomaaData from "../../data/bjomaaData.json";
 
 export const allVideos = [
-  ...motounData.map((v) => ({ ...v, dataset: "motoun" })),
-  ...nourData.map((v) => ({ ...v, dataset: "nour" })),
+  /* ================= MOTOUN ================= */
+  ...motounData.map((v) => ({
+    ...v,
+    dataset: "motoun",
+  })),
 
-  ...year1Meetings.map((v) => ({ ...v, dataset: "meeting", year: 1 })),
-  ...year2Meetings.map((v) => ({ ...v, dataset: "meeting", year: 2 })),
-  ...year3Meetings.map((v) => ({ ...v, dataset: "meeting", year: 3 })),
-  ...year4Meetings.map((v) => ({ ...v, dataset: "meeting", year: 4 })),
-  ...year5Meetings.map((v) => ({ ...v, dataset: "meeting", year: 5 })),
+  /* ================= NOUR AL YAKINE ================= */
+  ...nourData.map((v) => ({
+    ...v,
+    dataset: "nour",
+  })),
 
-  ...bayanData.map((v) => ({ ...v, dataset: "dorar", source: "bayan" })),
-  ...hikmaData.map((v) => ({ ...v, dataset: "dorar", source: "hikma" })),
-  ...bookDorarData.map((v) => ({ ...v, dataset: "dorar", source: "book" })),
-  ...nafahat1Data.map((v) => ({ ...v, dataset: "dorar", source: "nafahat" })),
-  ...nafahat2Data.map((v) => ({ ...v, dataset: "dorar", source: "nafahat" })),
+  /* ================= MEETINGS ================= */
+  ...year1Meetings.map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 1,
+  })),
+  ...year2Meetings.map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 2,
+  })),
+  ...year3Meetings.map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 3,
+  })),
+  ...year4Meetings.map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 4,
+  })),
+  ...year5Meetings.map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 5,
+  })),
 
-  ...bjomaaData.map((v) => ({ ...v, dataset: "bjomaa" })),
-  ...fiqhData.map((v) => ({ ...v, dataset: "fiqh" })),
+  /* ================= DORAR ================= */
+  ...bayanData.map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "bayan",
+  })),
+
+  ...hikmaData.map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "hikma",
+  })),
+
+  ...bookDorarData.map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "book",
+  })),
+
+  // ✅ FIX ICI : séparation claire
+  ...nafahat1Data.map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "nafahat1",
+  })),
+
+  ...nafahat2Data.map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "nafahat2",
+  })),
+
+  /* ================= BJOMAA ================= */
+  ...bjomaaData.map((v) => ({
+    ...v,
+    dataset: "bjomaa",
+  })),
+
+  /* ================= FIQH ================= */
+  ...fiqhData.map((v) => ({
+    ...v,
+    dataset: "fiqh",
+  })),
 ];

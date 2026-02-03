@@ -25,7 +25,7 @@ function App() {
   const [selectedYear, setSelectedYear] = useState(null);
   const years = [1, 2, 3, 4, 5];
 
-  // ✅ FILTRE CENTRAL UNIQUE
+  /* ================= FILTRAGE CENTRAL ================= */
   const filteredVideos = useMemo(() => {
     if (!selectedGenre) return [];
 
@@ -37,14 +37,14 @@ function App() {
       );
     }
 
-    // 📚 DORAR (par bouton)
+    // 📚 DORAR (par source)
     if (selectedGenre.id === "dorar" && selectedGenre.source) {
       return allVideos.filter(
         (v) => v.dataset === "dorar" && v.source === selectedGenre.source,
       );
     }
 
-    // 📦 AUTRES
+    // 📦 AUTRES DATASETS
     return allVideos.filter((v) => v.dataset === selectedGenre.id);
   }, [selectedGenre, selectedYear]);
 
@@ -90,7 +90,7 @@ function App() {
                 />
               </div>
 
-              {/* 📚 أزرار الدرر (أفقية مثل السنوات) */}
+              {/* ================= DORAR BUTTONS ================= */}
               {selectedGenre.id === "dorar" && (
                 <div className="flex justify-center gap-3 mb-6 flex-wrap">
                   {[
@@ -105,7 +105,11 @@ function App() {
                     { label: "أدلة فقه متن ابن عاشر", source: "book" },
                     {
                       label: " توضيح قواعد النحو العربي بالآيات القرآنية",
-                      source: "nafahat",
+                      source: "nafahat1",
+                    },
+                    {
+                      label: "روائع البيان القراني",
+                      source: "nafahat2",
                     },
                   ].map((btn) => (
                     <button
@@ -131,7 +135,7 @@ function App() {
                 </div>
               )}
 
-              {/* 📅 Boutons années */}
+              {/* ================= YEARS ================= */}
               {selectedGenre.id === "meeting" && (
                 <div className="flex justify-center gap-2 mb-4">
                   {years.map((y) => (
@@ -150,10 +154,10 @@ function App() {
                 </div>
               )}
 
-              {/* 🎬 VIDEOS */}
+              {/* ================= VIDEOS ================= */}
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredVideos.map((video) => (
-                  <Movie key={video.uid} video={video} />
+                  <Movie key={`${video.dataset}-${video.id}`} video={video} />
                 ))}
               </div>
             </>
