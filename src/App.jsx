@@ -104,12 +104,16 @@ function App() {
                     },
                     { label: "أدلة فقه متن ابن عاشر", source: "book" },
                     {
-                      label: " توضيح قواعد النحو العربي بالآيات القرآنية",
+                      label: "مراجع كتب ابداع الدكتور فاضل السامرائي",
                       source: "nafahat1",
                     },
                     {
                       label: "روائع البيان القراني",
                       source: "nafahat2",
+                    },
+                    {
+                      label: "ابداع الدكتور فاضل السامرائ نوادر",
+                      source: "nafahat3",
                     },
                   ].map((btn) => (
                     <button

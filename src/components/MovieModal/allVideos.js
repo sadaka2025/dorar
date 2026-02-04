@@ -1,5 +1,6 @@
 // allVideos.js
 
+/* ===================== IMPORTS ===================== */
 import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
 import fiqhData from "../../data/fiqh.json";
@@ -15,89 +16,117 @@ import hikmaData from "../../data/dorardata/dorar2/hikma.json";
 import bookDorarData from "../../data/dorardata/dorar3/bookdorar.json";
 import nafahat1Data from "../../data/dorardata/dorar4/nafahat1.json";
 import nafahat2Data from "../../data/dorardata/dorar5/nafahat2.json";
+import nafahat3Data from "../../data/dorardata/dorar6/nafahat3.json";
 
 import bjomaaData from "../../data/bjomaaData.json";
 
+/* ===================== ADAPTER ===================== */
+/**
+ * Normalize any JSON format to Array
+ * - old JSON: []
+ * - yt-dlp JSON: { entries: [] }
+ */
+const normalizeData = (data) => {
+  if (Array.isArray(data)) return data;
+
+  if (data && Array.isArray(data.entries)) {
+    return data.entries.map((v) => ({
+      ...v,
+      // sécurité si url absente
+      url: v.url || (v.id ? `https://www.youtube.com/watch?v=${v.id}` : ""),
+    }));
+  }
+
+  return [];
+};
+
+/* ===================== ALL VIDEOS ===================== */
 export const allVideos = [
   /* ================= MOTOUN ================= */
-  ...motounData.map((v) => ({
+  ...normalizeData(motounData).map((v) => ({
     ...v,
     dataset: "motoun",
   })),
 
   /* ================= NOUR AL YAKINE ================= */
-  ...nourData.map((v) => ({
+  ...normalizeData(nourData).map((v) => ({
     ...v,
     dataset: "nour",
   })),
 
   /* ================= MEETINGS ================= */
-  ...year1Meetings.map((v) => ({
+  ...normalizeData(year1Meetings).map((v) => ({
     ...v,
     dataset: "meeting",
     year: 1,
   })),
-  ...year2Meetings.map((v) => ({
+  ...normalizeData(year2Meetings).map((v) => ({
     ...v,
     dataset: "meeting",
     year: 2,
   })),
-  ...year3Meetings.map((v) => ({
+  ...normalizeData(year3Meetings).map((v) => ({
     ...v,
     dataset: "meeting",
     year: 3,
   })),
-  ...year4Meetings.map((v) => ({
+  ...normalizeData(year4Meetings).map((v) => ({
     ...v,
     dataset: "meeting",
     year: 4,
   })),
-  ...year5Meetings.map((v) => ({
+  ...normalizeData(year5Meetings).map((v) => ({
     ...v,
     dataset: "meeting",
     year: 5,
   })),
 
   /* ================= DORAR ================= */
-  ...bayanData.map((v) => ({
+  ...normalizeData(bayanData).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "bayan",
   })),
 
-  ...hikmaData.map((v) => ({
+  ...normalizeData(hikmaData).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "hikma",
   })),
 
-  ...bookDorarData.map((v) => ({
+  ...normalizeData(bookDorarData).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "book",
   })),
 
-  // ✅ FIX ICI : séparation claire
-  ...nafahat1Data.map((v) => ({
+  ...normalizeData(nafahat1Data).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "nafahat1",
   })),
 
-  ...nafahat2Data.map((v) => ({
+  ...normalizeData(nafahat2Data).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "nafahat2",
   })),
 
+  // ✅ NOUVEAU JSON yt-dlp (sans casser l’existant)
+  ...normalizeData(nafahat3Data).map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "nafahat3",
+  })),
+
   /* ================= BJOMAA ================= */
-  ...bjomaaData.map((v) => ({
+  ...normalizeData(bjomaaData).map((v) => ({
     ...v,
     dataset: "bjomaa",
   })),
 
   /* ================= FIQH ================= */
-  ...fiqhData.map((v) => ({
+  ...normalizeData(fiqhData).map((v) => ({
     ...v,
     dataset: "fiqh",
   })),
