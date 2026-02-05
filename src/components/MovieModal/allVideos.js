@@ -18,21 +18,19 @@ import nafahat1Data from "../../data/dorardata/dorar4/nafahat1.json";
 import nafahat2Data from "../../data/dorardata/dorar5/nafahat2.json";
 import nafahat3Data from "../../data/dorardata/dorar6/nafahat3.json";
 
+// ✅ NOUVEAUX JSON YT-DLP
+import ethraData from "../../data/dorardata/dorar6/dataDrV.json";
+import drFadelData from "../../data/dorardata/dorar6/datatharaV.json";
+
 import bjomaaData from "../../data/bjomaaData.json";
 
 /* ===================== ADAPTER ===================== */
-/**
- * Normalize any JSON format to Array
- * - old JSON: []
- * - yt-dlp JSON: { entries: [] }
- */
 const normalizeData = (data) => {
   if (Array.isArray(data)) return data;
 
   if (data && Array.isArray(data.entries)) {
     return data.entries.map((v) => ({
       ...v,
-      // sécurité si url absente
       url: v.url || (v.id ? `https://www.youtube.com/watch?v=${v.id}` : ""),
     }));
   }
@@ -40,19 +38,23 @@ const normalizeData = (data) => {
   return [];
 };
 
+/* ===================== FUSION NAFahat3 ===================== */
+const fusedNafahat3Data = [
+  ...normalizeData(nafahat3Data), // contenu original
+  ...normalizeData(ethraData).map((v) => ({ ...v, sourceChannel: "ethra.a" })),
+  ...normalizeData(drFadelData).map((v) => ({
+    ...v,
+    sourceChannel: "dr.fadelcast",
+  })),
+];
+
 /* ===================== ALL VIDEOS ===================== */
 export const allVideos = [
   /* ================= MOTOUN ================= */
-  ...normalizeData(motounData).map((v) => ({
-    ...v,
-    dataset: "motoun",
-  })),
+  ...normalizeData(motounData).map((v) => ({ ...v, dataset: "motoun" })),
 
   /* ================= NOUR AL YAKINE ================= */
-  ...normalizeData(nourData).map((v) => ({
-    ...v,
-    dataset: "nour",
-  })),
+  ...normalizeData(nourData).map((v) => ({ ...v, dataset: "nour" })),
 
   /* ================= MEETINGS ================= */
   ...normalizeData(year1Meetings).map((v) => ({
@@ -87,47 +89,37 @@ export const allVideos = [
     dataset: "dorar",
     source: "bayan",
   })),
-
   ...normalizeData(hikmaData).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "hikma",
   })),
-
   ...normalizeData(bookDorarData).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "book",
   })),
-
   ...normalizeData(nafahat1Data).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "nafahat1",
   })),
-
   ...normalizeData(nafahat2Data).map((v) => ({
     ...v,
     dataset: "dorar",
     source: "nafahat2",
   })),
 
-  // ✅ NOUVEAU JSON yt-dlp (sans casser l’existant)
-  ...normalizeData(nafahat3Data).map((v) => ({
+  /* ================= FUSION NAFahat3 ================= */
+  ...fusedNafahat3Data.map((v) => ({
     ...v,
     dataset: "dorar",
     source: "nafahat3",
   })),
 
   /* ================= BJOMAA ================= */
-  ...normalizeData(bjomaaData).map((v) => ({
-    ...v,
-    dataset: "bjomaa",
-  })),
+  ...normalizeData(bjomaaData).map((v) => ({ ...v, dataset: "bjomaa" })),
 
   /* ================= FIQH ================= */
-  ...normalizeData(fiqhData).map((v) => ({
-    ...v,
-    dataset: "fiqh",
-  })),
+  ...normalizeData(fiqhData).map((v) => ({ ...v, dataset: "fiqh" })),
 ];

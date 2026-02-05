@@ -161,8 +161,13 @@ export default function MovieModal() {
                 }}
                 className="relative cursor-pointer rounded-lg overflow-hidden"
               >
+                // MINIATURE
                 <img
-                  src={video.thumbnail}
+                  src={
+                    video.thumbnail ||
+                    (video.thumbnails && video.thumbnails[0]?.url) || // fallback yt-dlp
+                    "/images/default-thumbnail.png" // fallback global
+                  }
                   alt={video.title}
                   className="w-full h-full object-cover"
                 />
