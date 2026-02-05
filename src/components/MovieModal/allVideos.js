@@ -21,6 +21,7 @@ import nafahat3Data from "../../data/dorardata/dorar6/nafahat3.json";
 // ✅ NOUVEAUX JSON YT-DLP
 import ethraData from "../../data/dorardata/dorar6/dataDrV.json";
 import drFadelData from "../../data/dorardata/dorar6/datatharaV.json";
+import shortData from "../../data/dorardata/dorar6/datash.json";
 
 import bjomaaData from "../../data/bjomaaData.json";
 
@@ -45,6 +46,10 @@ const fusedNafahat3Data = [
   ...normalizeData(drFadelData).map((v) => ({
     ...v,
     sourceChannel: "dr.fadelcast",
+  })),
+  ...normalizeData(shortData).map((v) => ({
+    ...v,
+    sourceChannel: "ethra.a",
   })),
 ];
 
