@@ -3,12 +3,22 @@ import { useDispatch } from "react-redux";
 import { showMovie } from "../../redux/reducers/movieModalSlice";
 import { setSelectedGenre } from "../../redux/reducers/selectedGenresSlice";
 import data from "../../data/dorardata/dorar6/dataDrV.json";
+import FiqhDetailsModal from "../MovieModal/FiqhDetailsModal"; // ✅ modal
 
 export default function TitleLibrary() {
   const dispatch = useDispatch();
   const [search, setSearch] = useState("");
   const [dark, setDark] = useState(false);
   const [activeTheme, setActiveTheme] = useState("all");
+  const [showSira, setShowSira] = useState(false); // état modal sira
+
+  // 🔹 Contenu sira
+  const siraprof = `من هو الدكتور فاضل السامرائي؟
+========================
+هو/ أبو محمد فاضل بن صالح بن مهدي بن خليل البدري من عشيرة 'البدري' إحدى عشائر سامراء ولد في سامراء عام 1933م في عائلة متوسطة الحالة الاقتصادية، كبيرة في الحالة الاجتماعية والدينية. أخذه والده منذ نعومة أظفاره إلى مسجد حسن باشا أحد مساجد سامراء لتعلم القرآن الكريم وكشف ذلك عن حدة ذكاءه حيث تعلم القرآن الكريم في مدة وجيزة.
+
+رحلته في طلب العلم:
+أكمل الدراسة الابتدائية والمتوسطة والثانوية في سامراء ثم انتقل إلى بغداد في مدينة الأعظمية ليدخل دورة تربوية لإعداد المعلمين وتخرج فيها عام 1953م، وكان متفوقًا في المراحل الدراسية كافة...`;
 
   // 🔎 Extraction propre des vidéos
   const videos = (data.entries || data.videos || []).filter(
@@ -49,23 +59,23 @@ export default function TitleLibrary() {
   return (
     <div className={dark ? "bg-gray-900 text-white" : "bg-white text-black"}>
       <div className="p-4 max-w-5xl mx-auto">
-        {/* 🌙 Dark mode + Retour */}
-        <div className="flex justify-between items-center mb-4 gap-2">
+        {/* 🌙 Dark mode + Retour + سيرته */}
+        <div className="flex justify-between items-center mb-4 gap-2 flex-wrap">
           <h2
             className="text-xl font-bold"
             style={{
               fontFamily: "'Arabic Typesetting', serif",
               fontSize: "26px",
               padding: "0.75rem",
-              color: "red", // couleur par défaut
-              transition: "color 0.3s", // animation douce au survol
+              color: "red",
+              transition: "color 0.3s",
             }}
           >
             📚 ابداعات الدكتور فاضل السامرائي انقر عنوان للمشاهدة (
             {videos.length})
           </h2>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {/* Bouton Dark/Light */}
             <button
               onClick={() => setDark(!dark)}
@@ -74,23 +84,39 @@ export default function TitleLibrary() {
               {dark ? "☀️ Light" : "🌙 Dark"}
             </button>
 
-            {/* Bouton Retour au bouton parent */}
+            {/* Bouton Retour */}
             <button
               onClick={() =>
                 dispatch(
                   setSelectedGenre({
                     id: "dorar",
                     title: "إيضاح المعاني على رسالة القيراوني",
-                    source: "bayan", // ← parent spécifique
+                    source: "bayan",
                   }),
                 )
               }
-              className="px-3 py-1 rounded-xl shadow-lg font-semibold transition-transform hover:scale-105 bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black mb-4"
+              className="px-3 py-1 rounded-xl shadow-lg font-semibold transition-transform hover:scale-105 bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black"
             >
               ← Retour
             </button>
+
+            {/* Bouton سيرته */}
+            <button
+              onClick={() => setShowSira(true)}
+              className="px-3 py-1 rounded-xl shadow-lg font-semibold transition-transform hover:scale-105 bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black"
+            >
+              سيرته
+            </button>
           </div>
         </div>
+
+        {/* 🔹 Modal سيرة الدكتور avec FiqhDetailsModal */}
+        {showSira && (
+          <FiqhDetailsModal
+            data={{ title: "سيرة الدكتور فاضل السامرائي", details: siraprof }}
+            onClose={() => setShowSira(false)}
+          />
+        )}
 
         {/* 🔍 Recherche */}
         <input
@@ -103,8 +129,8 @@ export default function TitleLibrary() {
             fontFamily: "'Arabic Typesetting', serif",
             fontSize: "26px",
             padding: "0.75rem",
-            color: "red", // couleur par défaut
-            transition: "color 0.3s", // animation douce au survol
+            color: "red",
+            transition: "color 0.3s",
           }}
         />
 
@@ -135,8 +161,8 @@ export default function TitleLibrary() {
                   fontFamily: "'Arabic Typesetting', serif",
                   fontSize: "30px",
                   padding: "0.75rem",
-                  // color: "white", // couleur par défaut
-                  transition: "color 0.3s", // animation douce au survol
+                  transition: "color 0.3s",
+                  textAlign: "right", // droite à gauche
                 }}
                 onClick={() =>
                   dispatch(showMovie({ ...video, dataset: "dorar" }))
@@ -144,7 +170,7 @@ export default function TitleLibrary() {
               >
                 {video.title}
               </span>
-              <div className="text-xs opacity-70 mt-1">
+              <div className="text-xs opacity-70 mt-1 text-right">
                 🎧 استماع | 📂 {video.theme}
               </div>
             </li>

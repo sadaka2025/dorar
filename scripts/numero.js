@@ -11,15 +11,15 @@ const filePath = path.join(
   "src",
   "data",
   "dorardata",
-  "dorar2",
-  "hikma.json",
+  "dorar5",
+  "nafahat2.json",
 );
 
 // lire le fichier
 const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
 // id de départ
-const startId = 55;
+const startId = 95;
 
 // renumérotation
 const newData = data.map((item, index) => ({
