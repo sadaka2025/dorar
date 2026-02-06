@@ -40,16 +40,28 @@ const normalizeData = (data) => {
 };
 
 /* ===================== FUSION NAFahat3 ===================== */
+/* ===================== FUSION NAFahat3 ===================== */
 const fusedNafahat3Data = [
-  ...normalizeData(nafahat3Data), // contenu original
-  ...normalizeData(ethraData).map((v) => ({ ...v, sourceChannel: "ethra.a" })),
+  ...normalizeData(nafahat3Data),
+
+  ...normalizeData(ethraData).map((v) => ({
+    ...v,
+    sourceChannel: "ethra.a",
+  })),
+
   ...normalizeData(drFadelData).map((v) => ({
     ...v,
     sourceChannel: "dr.fadelcast",
   })),
+
   ...normalizeData(shortData).map((v) => ({
     ...v,
     sourceChannel: "ethra.a",
+  })),
+
+  ...normalizeData(shortData).map((v) => ({
+    ...v,
+    sourceChannel: "dr.fadelcast",
   })),
 ];
 
