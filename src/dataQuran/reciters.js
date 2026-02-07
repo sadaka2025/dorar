@@ -3,7 +3,7 @@ export const reciters = [
     id: 'abdulbasit-mujawwad',
     name: 'Abdul Basit (Mujawwad)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abdul_Basit_Mujawwad_128kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abdul_Basit_Mujawwad_128kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -15,7 +15,7 @@ export const reciters = [
     id: 'abdulbasit-murattal',
     name: 'Abdul Basit (Murattal)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abdul_Basit_Murattal_64kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abdul_Basit_Murattal_64kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -27,7 +27,7 @@ export const reciters = [
     id: 'abdurrahman-sudais',
     name: 'Abdurrahmaan As-Sudais',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abdurrahmaan_As-Sudais_192kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abdurrahmaan_As-Sudais_192kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -39,7 +39,7 @@ export const reciters = [
     id: 'abu-bakr-ash-shaatree',
     name: 'Abu Bakr Ash-Shaatree',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abu_Bakr_Ash-Shaatree_128kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Abu_Bakr_Ash-Shaatree_128kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -51,7 +51,7 @@ export const reciters = [
     id: 'alafasy',
     name: 'Mishary Rashid Alafasy',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Alafasy_128kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Alafasy_128kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -63,7 +63,7 @@ export const reciters = [
     id: 'husary',
     name: 'Al-Husary',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Husary_64kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Husary_64kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server: 'https://download.quranicaudio.com/qdc/husary/murattal/001.mp3',
@@ -74,7 +74,7 @@ export const reciters = [
     id: 'hani-rifai',
     name: 'Hani Rifai',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Hani_Rifai_192kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Hani_Rifai_192kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -86,7 +86,7 @@ export const reciters = [
     id: 'husary-muallim',
     name: 'Husary (Muallim)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Husary_Muallim_128kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Husary_Muallim_128kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server: 'https://download.quranicaudio.com/qdc/husary/muallim/001.mp3',
@@ -97,7 +97,7 @@ export const reciters = [
     id: 'minshawy-mujawwad',
     name: 'Minshawy (Mujawwad)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Minshawy_Mujawwad_192kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Minshawy_Mujawwad_192kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -109,7 +109,7 @@ export const reciters = [
     id: 'minshawy-murattal',
     name: 'Minshawy (Murattal)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Minshawy_Murattal_128kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Minshawy_Murattal_128kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -121,7 +121,7 @@ export const reciters = [
     id: 'mohammad-tablaway',
     name: 'Mohammad al-Tablaway',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Mohammad_al_Tablaway_128kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Mohammad_al_Tablaway_128kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -133,7 +133,7 @@ export const reciters = [
     id: 'saood-shuraym',
     name: 'Saood ash-Shuraym',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Saood_ash-Shuraym_128kbps_allSurahs_segments_with_text.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/Saood_ash-Shuraym_128kbps_allSurahs_segments_with_text.json',
     moshaf: [
       {
         server:
@@ -145,6 +145,6 @@ export const reciters = [
     id: 'maher-al-muaiqly',
     name: 'Maher Al-Muaiqly',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonreciters/maher-al-muaiqly.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/maher-al-muaiqly.json',
   },
 ];

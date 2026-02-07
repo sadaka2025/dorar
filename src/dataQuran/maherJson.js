@@ -2,7 +2,7 @@
 
 // Base URL de Supabase pour les fichiers audio Maher
 const bucketUrl =
-  'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/audio/maher/';
+  'https://mpfrjpziitvvkkexvvix.supabase.co/storage/v1/object/public/audio/maher/';
 
 // Nombre d'ayahs par sourate (utile si tu veux garder l'info)
 const ayahsPerSurah = [

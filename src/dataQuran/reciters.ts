@@ -11,7 +11,7 @@ export const reciters: Reciter[] = [
     id: 'abdulbasit-murattal',
     name: 'Abdul Basit (Murattal)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/abdulbasit-murattal.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/abdulbasit-murattal.json',
     moshaf: [
       {
         server:
@@ -23,7 +23,7 @@ export const reciters: Reciter[] = [
     id: 'abdulbasit-mujawwad',
     name: 'Abdul Basit (Mujawwad)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/abdulbasit-mujawwad.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/abdulbasit-mujawwad.json',
     moshaf: [
       {
         server:
@@ -35,7 +35,7 @@ export const reciters: Reciter[] = [
     id: 'abdurrahman-sudais',
     name: 'Abdurrahmaan As-Sudais',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/abdurrahman-sudais.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/abdurrahman-sudais.json',
     moshaf: [
       {
         server:
@@ -47,7 +47,7 @@ export const reciters: Reciter[] = [
     id: 'abu-bakr-ash-shaatree',
     name: 'Abu Bakr Ash-Shaatree',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/abu-bakr-ash-shaatree.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/abu-bakr-ash-shaatree.json',
     moshaf: [
       {
         server:
@@ -59,7 +59,7 @@ export const reciters: Reciter[] = [
     id: 'alafasy',
     name: 'Mishary Rashid Alafasy',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/alafasy.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/alafasy.json',
     moshaf: [
       {
         server:
@@ -72,7 +72,7 @@ export const reciters: Reciter[] = [
     id: 'hani-rifai',
     name: 'Hani Rifai',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/hani-rifai.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/hani-rifai.json',
     moshaf: [
       {
         server:
@@ -84,7 +84,7 @@ export const reciters: Reciter[] = [
     id: 'husary-muallim',
     name: 'Husary (Muallim)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/husary-muallim.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/husary-muallim.json',
     moshaf: [
       {
         server: 'https://download.quranicaudio.com/qdc/husary/muallim/001.mp3',
@@ -95,7 +95,7 @@ export const reciters: Reciter[] = [
     id: 'husary',
     name: 'Al-Husary',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/husary.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/husary.json',
     moshaf: [
       {
         server: 'https://download.quranicaudio.com/qdc/husary/murattal/001.mp3',
@@ -106,7 +106,7 @@ export const reciters: Reciter[] = [
     id: 'minshawy-mujawwad',
     name: 'Minshawy (Mujawwad)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/minshawy-mujawwad.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/minshawy-mujawwad.json',
     moshaf: [
       {
         server:
@@ -118,7 +118,7 @@ export const reciters: Reciter[] = [
     id: 'minshawy-murattal',
     name: 'Minshawy (Murattal)',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/minshawy-murattal.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/minshawy-murattal.json',
     moshaf: [
       {
         server:
@@ -130,7 +130,7 @@ export const reciters: Reciter[] = [
     id: 'mohammad-tablaway',
     name: 'Mohammad al-Tablaway',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/mohammad-tablaway.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/mohammad-tablaway.json',
     moshaf: [
       {
         server:
@@ -142,7 +142,7 @@ export const reciters: Reciter[] = [
     id: 'saood-shuraym',
     name: 'Saood ash-Shuraym',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/saood-shuraym.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/saood-shuraym.json',
     moshaf: [
       {
         server:
@@ -154,6 +154,6 @@ export const reciters: Reciter[] = [
     id: 'maher-al-muaiqly',
     name: 'Maher Al-Muaiqly',
     jsonUrl:
-      'https://wjhwgybzljgwfxmzbgaf.supabase.co/storage/v1/object/public/tajweed/jsonreciters/maher-al-muaiqly.json',
+      'https://ejokvgavnyhaoyjhwztt.supabase.co/storage/v1/object/public/tajweed/jsonquranPro/maher-al-muaiqly.json',
   },
 ];

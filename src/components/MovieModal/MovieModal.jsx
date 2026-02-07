@@ -291,7 +291,7 @@ export default function MovieModal() {
               <video
                 autoPlay
                 controls
-                className="absolute inset-0 w-full h-full object-contain z-10"
+                className="fixed inset-0 w-full h-full object-cover z-10"
               >
                 <source src={video.url} type="video/mp4" />
               </video>
