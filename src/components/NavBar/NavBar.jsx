@@ -1,7 +1,7 @@
 import React from "react";
 import SearchResults from "../SearchResults/SearchResults";
 import { useDetectClickOutside } from "react-detect-click-outside";
-import Logo from "./Logo"; // ⬅️ importer le logo
+import Logo from "./Logo";
 import { useDispatch } from "react-redux";
 import { showMovie } from "../../redux/reducers/movieModalSlice";
 
@@ -10,6 +10,7 @@ export default function NavBar() {
   const [showSearch, setShowSearch] = React.useState(false);
   const dispatch = useDispatch();
 
+  // Fermer le dropdown quand on clique à l'extérieur
   const ref = useDetectClickOutside({ onTriggered: toggleSearchOff });
 
   function handleSetSearch(event) {
@@ -27,10 +28,17 @@ export default function NavBar() {
 
   // Fonction pour gérer la sélection d'un film
   function handleSelectMovie(movie) {
-    dispatch(showMovie({ uid: movie.uid })); // uid = `${dataset}-${v.id ?? i}`
+    // Dispatch avec id + dataset (compatible slice actuel)
+    dispatch(
+      showMovie({
+        id: movie.id,
+        dataset: movie.dataset,
+      }),
+    );
 
-    setShowSearch(false); // fermer le dropdown
-    setSearch(""); // vider le champ de recherche si tu veux
+    // Fermer le dropdown et vider le champ
+    setShowSearch(false);
+    setSearch("");
   }
 
   return (
@@ -52,7 +60,7 @@ export default function NavBar() {
         <input
           type="text"
           id="simple-search"
-          className=" hover:bg-cyan-600 border border-neutral-700 text-neutral-100 text-sm rounded-lg p-2 w-full"
+          className="hover:bg-cyan-600 border border-neutral-700 text-neutral-100 text-sm rounded-lg p-2 w-full"
           placeholder="Search..."
           value={search}
           onChange={handleSetSearch}
@@ -61,10 +69,11 @@ export default function NavBar() {
             fontFamily: "'Arabic Typesetting', serif",
             fontSize: "25px",
             padding: "0.75rem",
-            color: "yellow", // couleur par défaut
-            transition: "color 0.3s", // animation douce au survol
+            color: "yellow",
+            transition: "color 0.3s",
           }}
         />
+
         {showSearch && (
           <SearchResults search={search} onSelect={handleSelectMovie} />
         )}

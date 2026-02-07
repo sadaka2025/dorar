@@ -26,12 +26,28 @@ import shortData from "../../data/dorardata/dorar6/datash.json";
 import bjomaaData from "../../data/bjomaaData.json";
 
 /* ===================== ADAPTER ===================== */
+const normalizeTextField = (value) => {
+  if (typeof value === "string") return value;
+  if (value && typeof value === "object" && "text" in value) {
+    return value.text;
+  }
+  return "";
+};
+
 const normalizeData = (data) => {
-  if (Array.isArray(data)) return data;
+  if (Array.isArray(data)) {
+    return data.map((v) => ({
+      ...v,
+      title: normalizeTextField(v.title),
+      description: normalizeTextField(v.description),
+    }));
+  }
 
   if (data && Array.isArray(data.entries)) {
     return data.entries.map((v) => ({
       ...v,
+      title: normalizeTextField(v.title),
+      description: normalizeTextField(v.description),
       url: v.url || (v.id ? `https://www.youtube.com/watch?v=${v.id}` : ""),
     }));
   }

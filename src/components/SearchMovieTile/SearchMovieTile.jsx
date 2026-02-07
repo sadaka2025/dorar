@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { highlightTextAdvanced } from "../../utils/highlightTextAdvanced";
 
-export default function SearchMovieTile({ movie, onClick }) {
+export default function SearchMovieTile({ movie, onClick, search }) {
   const title = movie?.title ?? "Untitled";
   const description = movie?.description ?? "No description available";
   const thumbnail =
@@ -10,7 +11,7 @@ export default function SearchMovieTile({ movie, onClick }) {
   return (
     <motion.div
       className="flex items-start gap-3 bg-neutral-900 p-3 rounded-lg cursor-pointer"
-      onClick={onClick} // ✅ utilise le callback onClick du parent
+      onClick={onClick}
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.97 }}
     >
@@ -25,9 +26,11 @@ export default function SearchMovieTile({ movie, onClick }) {
         }}
       />
       <div className="flex flex-col">
-        <p className="text-neutral-100 font-medium">{title}</p>
+        <p className="text-neutral-100 font-medium">
+          {highlightTextAdvanced(title, search)}
+        </p>
         <p className="text-neutral-500 text-sm line-clamp-2 max-w-[250px]">
-          {description}
+          {highlightTextAdvanced(description, search)}
         </p>
       </div>
     </motion.div>

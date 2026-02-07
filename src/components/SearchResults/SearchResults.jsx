@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useMemo, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import SearchMovieTile from "../SearchMovieTile/SearchMovieTile";
 import { allVideos } from "../MovieModal/allVideos";
 
 export default function SearchResults({ search, onSelect }) {
-  const filtered = React.useMemo(() => {
+  const filtered = useMemo(() => {
     if (!search.trim()) return [];
     return allVideos.filter((item) =>
-      item.title.toLowerCase().includes(search.toLowerCase())
+      item.title.toLowerCase().includes(search.toLowerCase()),
     );
   }, [search]);
+
+  // Ref pour le premier élément
+  const firstResultRef = useRef(null);
+
+  // Scroll automatique sur le premier résultat
+  useEffect(() => {
+    if (firstResultRef.current) {
+      firstResultRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [filtered]);
 
   return (
     <motion.div
@@ -20,12 +30,17 @@ export default function SearchResults({ search, onSelect }) {
     >
       {filtered.length > 0 ? (
         <div className="bg-neutral-800 rounded drop-shadow-xl border-neutral-700 border-[1px] max-h-96 overflow-y-auto">
-          {filtered.map((movie) => (
-            <SearchMovieTile
-              key={movie.dataset + "_" + movie.id}
-              movie={movie}
-              onClick={() => onSelect(movie)}
-            />
+          {filtered.map((movie, index) => (
+            <div
+              key={`${movie.dataset}-${movie.id}`}
+              ref={index === 0 ? firstResultRef : null}
+            >
+              <SearchMovieTile
+                movie={movie}
+                onClick={() => onSelect(movie)}
+                search={search}
+              />
+            </div>
           ))}
         </div>
       ) : (
