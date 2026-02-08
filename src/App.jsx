@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import NavBar from "./components/NavBar/NavBar";
@@ -6,60 +6,85 @@ import SideBar from "./components/SideBar/SideBar";
 import MovieModal from "./components/MovieModal/MovieModal";
 import Movie from "./components/Movie/Movie";
 import MusicPlayer from "./components/MusicPlayer";
-import TitleLibrary from "./components/Movie/TitleLibrary"; // ✅ NEW
+import TitleLibrary from "./components/Movie/TitleLibrary";
 
 import { Sparkles } from "lucide-react";
 
 import { selectMovieModal } from "./redux/reducers/movieModalSlice";
 import {
   selectSelectedGenre,
-  setSelectedGenre,
+  setMeetingYear,
+  setDorarSource,
+  openTitleLibrary,
 } from "./redux/reducers/selectedGenresSlice";
 
 import Scene from "./Visitors/Scene";
 import EffetcNewFix from "./Visitors/EffetcNewFix";
 import { allVideos } from "./components/MovieModal/allVideos";
 
+/* =====================================================
+   📦 PREPARE DATA ONCE (ULTRA CLEAN)
+===================================================== */
+const meetingByYear = {};
+const dorarBySource = {};
+
+allVideos.forEach((v) => {
+  if (v.dataset === "meeting") {
+    const y = Number(v.year);
+    meetingByYear[y] ??= [];
+    meetingByYear[y].push(v);
+  }
+
+  if (v.dataset === "dorar") {
+    dorarBySource[v.source] ??= [];
+    dorarBySource[v.source].push(v);
+  }
+});
+
+/* ordre stable */
+Object.values(meetingByYear).forEach((arr) =>
+  arr.sort((a, b) => Number(a.id) - Number(b.id)),
+);
+Object.values(dorarBySource).forEach((arr) =>
+  arr.sort((a, b) => Number(a.id) - Number(b.id)),
+);
+
 function App() {
   const dispatch = useDispatch();
   const { enabled: movieModalEnabled } = useSelector(selectMovieModal);
   const selectedGenre = useSelector(selectSelectedGenre);
 
-  const [selectedYear, setSelectedYear] = useState(null);
   const years = [1, 2, 3, 4, 5];
 
-  /* ================= FILTRAGE CENTRAL ================= */
-  const filteredVideos = useMemo(() => {
-    if (!selectedGenre) return [];
+  /* ================= CONTENT SOURCE ================= */
+  const videos = useMemo(() => {
+    if (!selectedGenre?.dataset) return [];
 
-    // 📅 MEETINGS
-    if (selectedGenre.id === "meeting") {
-      return allVideos.filter(
-        (v) =>
-          v.dataset === "meeting" && (!selectedYear || v.year === selectedYear),
-      );
+    // 📅 MEETING
+    if (selectedGenre.dataset === "meeting") {
+      return meetingByYear[selectedGenre.meetingYear] || [];
     }
 
     // 📚 DORAR
-    if (selectedGenre.id === "dorar" && selectedGenre.source) {
-      return allVideos.filter(
-        (v) => v.dataset === "dorar" && v.source === selectedGenre.source,
-      );
+    if (selectedGenre.dataset === "dorar") {
+      return dorarBySource[selectedGenre.dorarSource] || [];
     }
 
-    // 📦 AUTRES DATASETS
-    return allVideos.filter((v) => v.dataset === selectedGenre.id);
-  }, [selectedGenre, selectedYear]);
+    // 🗂 AUTRES DATASETS (motoun, nour-alyakine, benjoomaa, etc.)
+    return allVideos
+      .filter((v) => v.dataset === selectedGenre.dataset)
+      .sort((a, b) => Number(a.id) - Number(b.id)); // ordre stable
+  }, [selectedGenre]);
 
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
 
-      <div className="flex flex-1">
+      <div className="flex flex-1 flex-row-reverse">
         <SideBar />
 
         <div className="flex-1 p-4">
-          {!selectedGenre && (
+          {!selectedGenre?.dataset && (
             <div
               style={{
                 fontFamily: "'Arabic Typesetting', serif",
@@ -71,9 +96,9 @@ function App() {
             </div>
           )}
 
-          {selectedGenre && (
+          {selectedGenre?.dataset && (
             <>
-              {/* ===== HEADER ===== */}
+              {/* HEADER */}
               <div className="flex justify-center mb-3">
                 <Scene
                   text="صلوا على الحبيب محمد ﷺ ❤️"
@@ -94,8 +119,8 @@ function App() {
                 />
               </div>
 
-              {/* ================= DORAR BUTTONS ================= */}
-              {selectedGenre.id === "dorar" && (
+              {/* DORAR */}
+              {selectedGenre.dataset === "dorar" && (
                 <div className="flex justify-center gap-3 mb-6 flex-wrap">
                   {[
                     {
@@ -124,7 +149,7 @@ function App() {
                       icon: (
                         <Sparkles size={22} className="ml-2 text-yellow-300" />
                       ),
-                      openLibrary: true, // ⭐
+                      openLibrary: true,
                     },
                   ].map((btn) => (
                     <button
@@ -136,27 +161,22 @@ function App() {
                         lineHeight: "0.9",
                       }}
                       className={`px-5 py-2 rounded font-bold transition flex items-center justify-center gap-2 ${
-                        selectedGenre.source === btn.source
+                        selectedGenre.dorarSource === btn.source
                           ? "bg-cyan-600 text-white"
                           : "bg-gray-700 text-yellow-400 hover:bg-cyan-700"
                       }`}
-                      onClick={() =>
-                        dispatch(
-                          setSelectedGenre(
-                            btn.openLibrary
-                              ? {
-                                  id: "TitleLibrary", // ✅
-                                  title: btn.label,
-                                  source: btn.source,
-                                }
-                              : {
-                                  id: "dorar",
-                                  title: btn.label,
-                                  source: btn.source,
-                                },
-                          ),
-                        )
-                      }
+                      onClick={() => {
+                        if (btn.openLibrary) {
+                          dispatch(openTitleLibrary({ title: btn.label }));
+                        } else {
+                          dispatch(
+                            setDorarSource({
+                              source: btn.source,
+                              title: btn.label,
+                            }),
+                          );
+                        }
+                      }}
                     >
                       <span>{btn.label}</span>
                       {btn.icon && btn.icon}
@@ -165,18 +185,19 @@ function App() {
                 </div>
               )}
 
-              {/* ================= YEARS ================= */}
-              {selectedGenre.id === "meeting" && (
+              {/* YEARS */}
+              {/* YEARS */}
+              {selectedGenre.dataset === "meeting" && (
                 <div className="flex justify-center gap-2 mb-4">
-                  {years.map((y) => (
+                  {[...years].reverse().map((y) => (
                     <button
                       key={y}
                       className={`px-4 py-2 rounded font-bold ${
-                        selectedYear === y
+                        selectedGenre.meetingYear === y
                           ? "bg-cyan-600 text-white"
                           : "bg-gray-700 text-yellow-400"
                       }`}
-                      onClick={() => setSelectedYear(y)}
+                      onClick={() => dispatch(setMeetingYear(y))}
                     >
                       السنة {y}
                     </button>
@@ -184,21 +205,21 @@ function App() {
                 </div>
               )}
 
-              {/* ================= CONTENT ================= */}
-              {/* ================= CONTENT ================= */}
-              {selectedGenre.id === "TitleLibrary" ? (
+              {/* CONTENT */}
+              {selectedGenre.openLibrary ? (
                 <div dir="rtl">
-                  {" "}
-                  {/* ← ajouté pour lecture RTL */}
-                  <TitleLibrary /> {/* ✅ LISTE 70 TITRES */}
+                  <TitleLibrary />
                 </div>
               ) : (
                 <div
                   className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                   dir="rtl"
                 >
-                  {filteredVideos.map((video) => (
-                    <Movie key={`${video.dataset}-${video.id}`} video={video} />
+                  {videos.map((video) => (
+                    <Movie
+                      key={`${video.dataset}-${video.year}-${video.id}`}
+                      video={video}
+                    />
                   ))}
                 </div>
               )}
