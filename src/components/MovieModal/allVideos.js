@@ -22,6 +22,7 @@ import nafahat3Data from "../../data/dorardata/dorar6/nafahat3.json";
 import ethraData from "../../data/dorardata/dorar6/dataDrV.json";
 import drFadelData from "../../data/dorardata/dorar6/datatharaV.json";
 import shortData from "../../data/dorardata/dorar6/datash.json";
+import databayan from "../../data/dorardata/dorar6/databayan.json";
 
 import bjomaaData from "../../data/bjomaaData.json";
 
@@ -78,6 +79,20 @@ const fusedNafahat3Data = [
   ...normalizeData(shortData).map((v) => ({
     ...v,
     sourceChannel: "dr.fadelcast",
+  })),
+
+  ...normalizeData(databayan).map((v) => ({
+    ...v,
+    sourceChannel: "LamasatBayania",
+
+    // ✅ thumbnail depuis yt-dlp
+    thumbnail:
+      v.thumbnails && v.thumbnails.length > 0
+        ? v.thumbnails[0].url
+        : "/images/default-video.jpg",
+
+    // ✅ sécurité ID unique (important)
+    id: `bayan-${v.id}`,
   })),
 ];
 
