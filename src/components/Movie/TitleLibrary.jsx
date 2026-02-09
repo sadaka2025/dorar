@@ -152,7 +152,7 @@ export default function TitleLibrary() {
         </div>
 
         {/* 📜 LISTE COMPLÈTE */}
-        <ul className="space-y-2 list-decimal pl-8">
+        <ul className="space-y-2 list-decimal list-inside pl-4">
           {filteredVideos.map((video) => (
             <li key={video.id}>
               <span

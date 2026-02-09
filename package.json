@@ -1,6 +1,6 @@
 {
-  "name": "movie-vision",
-  "version": "0.1.0",
+  "name": "courses-tv",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "1.9.5",
@@ -15,7 +15,8 @@
     "react-icons": "4.10.1",
     "react-redux": "8.1.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "2.1.4"
+    "web-vitals": "2.1.4",
+    "type": "module"
   },
   "scripts": {
     "start": "react-scripts start",
