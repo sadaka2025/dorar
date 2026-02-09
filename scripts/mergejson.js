@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "fs/promises";
 
 const bayanPath =
-  "C:/Users/mimod/OneDrive/Bureau/Courses.tv/src/data/dorardata/dorar6/databayan.json";
+  "C:/Users/mimod/OneDrive/Bureau/Courses.tv/src/data/dorardata/dorar6/datatharaV.json";
 
 const drfPath =
   "C:/Users/mimod/OneDrive/Bureau/Courses.tv/src/data/dorardata/dorar6/dataDrV.json";
