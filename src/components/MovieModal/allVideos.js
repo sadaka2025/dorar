@@ -1,5 +1,3 @@
-// allVideos.js
-
 /* ===================== IMPORTS ===================== */
 import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
@@ -18,52 +16,44 @@ import nafahat1Data from "../../data/dorardata/dorar4/nafahat1.json";
 import nafahat2Data from "../../data/dorardata/dorar5/nafahat2.json";
 import nafahat3Data from "../../data/dorardata/dorar6/nafahat3.json";
 
-// ✅ NOUVEAUX JSON YT-DLP
-import ethraData from "../../data/dorardata/dorar6/dataDrV.json";
-import drFadelData from "../../data/dorardata/dorar6/datatharaV.json";
+import drFadelData from "../../data/dorardata/dorar6/dataDrV.json";
 import shortData from "../../data/dorardata/dorar6/datash.json";
 
 import bjomaaData from "../../data/bjomaaData.json";
 
-/* ===================== ADAPTER ===================== */
+/* ===================== UTILS ===================== */
+
+// Normalise les champs texte
 const normalizeTextField = (value) => {
   if (typeof value === "string") return value;
-  if (value && typeof value === "object" && "text" in value) {
-    return value.text;
-  }
+  if (value && typeof value === "object" && "text" in value) return value.text;
   return "";
 };
 
-const normalizeData = (data) => {
-  if (Array.isArray(data)) {
-    return data.map((v) => ({
-      ...v,
-      title: normalizeTextField(v.title),
-      description: normalizeTextField(v.description),
-    }));
-  }
-
-  if (data && Array.isArray(data.entries)) {
-    return data.entries.map((v) => ({
-      ...v,
-      title: normalizeTextField(v.title),
-      description: normalizeTextField(v.description),
-      url: v.url || (v.id ? `https://www.youtube.com/watch?v=${v.id}` : ""),
-    }));
-  }
-
+// ✅ Renvoie un tableau sûr depuis n'importe quel JSON
+const safeEntries = (data) => {
+  if (!data) return [];
+  if (Array.isArray(data)) return data;
+  if (Array.isArray(data.entries)) return data.entries;
+  if (Array.isArray(data.videos)) return data.videos;
+  // Si entries ou videos existent mais ne sont pas des tableaux, on les met dans un tableau
+  if (data.entries) return [data.entries];
+  if (data.videos) return [data.videos];
   return [];
 };
 
-/* ===================== FUSION NAFahat3 ===================== */
+// Normalise un tableau d'objets pour avoir title, description et url
+const normalizeData = (data) =>
+  safeEntries(data).map((v) => ({
+    ...v,
+    title: normalizeTextField(v.title),
+    description: normalizeTextField(v.description),
+    url: v.url || (v.id ? `https://www.youtube.com/watch?v=${v.id}` : ""),
+  }));
+
 /* ===================== FUSION NAFahat3 ===================== */
 const fusedNafahat3Data = [
   ...normalizeData(nafahat3Data),
-
-  ...normalizeData(ethraData).map((v) => ({
-    ...v,
-    sourceChannel: "ethra.a",
-  })),
 
   ...normalizeData(drFadelData).map((v) => ({
     ...v,
@@ -83,13 +73,13 @@ const fusedNafahat3Data = [
 
 /* ===================== ALL VIDEOS ===================== */
 export const allVideos = [
-  /* ================= MOTOUN ================= */
+  // MOTOUN
   ...normalizeData(motounData).map((v) => ({ ...v, dataset: "motoun" })),
 
-  /* ================= NOUR AL YAKINE ================= */
+  // NOUR AL YAKINE
   ...normalizeData(nourData).map((v) => ({ ...v, dataset: "nour" })),
 
-  /* ================= MEETINGS ================= */
+  // MEETINGS
   ...normalizeData(year1Meetings).map((v) => ({
     ...v,
     dataset: "meeting",
@@ -116,7 +106,7 @@ export const allVideos = [
     year: 5,
   })),
 
-  /* ================= DORAR ================= */
+  // DORAR
   ...normalizeData(bayanData).map((v) => ({
     ...v,
     dataset: "dorar",
@@ -143,16 +133,16 @@ export const allVideos = [
     source: "nafahat2",
   })),
 
-  /* ================= FUSION NAFahat3 ================= */
+  // FUSION NAFahat3 + DrFadel + ShortData
   ...fusedNafahat3Data.map((v) => ({
     ...v,
     dataset: "dorar",
     source: "nafahat3",
   })),
 
-  /* ================= BJOMAA ================= */
+  // BJOMAA
   ...normalizeData(bjomaaData).map((v) => ({ ...v, dataset: "bjomaa" })),
 
-  /* ================= FIQH ================= */
+  // FIQH
   ...normalizeData(fiqhData).map((v) => ({ ...v, dataset: "fiqh" })),
 ];

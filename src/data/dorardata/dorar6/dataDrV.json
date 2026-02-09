@@ -1,88 +1,379 @@
 {
+  "0": {
+    "id": "3cpLABtQhJs",
+    "type": "short",
+    "title": "فيديو قصير 1",
+    "url": "https://www.youtube.com/watch?v=3cpLABtQhJs",
+    "description": "مقطع قصير من يوتيوب.",
+    "channel": "YouTube Shorts",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/3cpLABtQhJs/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "1": {
+    "id": "jTCEDME2Kkc",
+    "type": "short",
+    "title": "فيديو قصير 2",
+    "url": "https://www.youtube.com/watch?v=jTCEDME2Kkc",
+    "description": "مقطع قصير من يوتيوب.",
+    "channel": "YouTube Shorts",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/jTCEDME2Kkc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "2": {
+    "id": "fsubYmxPaKo",
+    "type": "short",
+    "title": "فيديو قصير 3",
+    "url": "https://www.youtube.com/watch?v=fsubYmxPaKo",
+    "description": "مقطع قصير من يوتيوب.",
+    "channel": "YouTube Shorts",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/fsubYmxPaKo/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "3": {
+    "id": "gLvxwWLKGCI",
+    "type": "short",
+    "title": "فيديو قصير 4",
+    "url": "https://www.youtube.com/watch?v=gLvxwWLKGCI",
+    "description": "مقطع قصير من يوتيوب.",
+    "channel": "YouTube Shorts",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/gLvxwWLKGCI/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "4": {
+    "id": "zsMkIoe_vJw",
+    "type": "short",
+    "title": "فيديو قصير 5",
+    "url": "https://www.youtube.com/watch?v=zsMkIoe_vJw",
+    "description": "مقطع قصير من يوتيوب.",
+    "channel": "YouTube Shorts",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/zsMkIoe_vJw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "5": {
+    "id": "pwG9MTkvGMc",
+    "type": "short",
+    "title": "فيديو قصير 6",
+    "url": "https://www.youtube.com/watch?v=pwG9MTkvGMc",
+    "description": "مقطع قصير من يوتيوب.",
+    "channel": "YouTube Shorts",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/pwG9MTkvGMc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "6": {
+    "id": "DGbDOInS0ec",
+    "type": "video",
+    "title": "فيديو 2",
+    "url": "https://www.youtube.com/watch?v=DGbDOInS0ec",
+    "description": "فيديو من يوتيوب.",
+    "channel": "YouTube",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/DGbDOInS0ec/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "7": {
+    "id": "e096TYkVOIo",
+    "type": "video",
+    "title": "فيديو 3",
+    "url": "https://www.youtube.com/watch?v=e096TYkVOIo",
+    "description": "فيديو من يوتيوب.",
+    "channel": "YouTube",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/e096TYkVOIo/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "8": {
+    "id": "WkYzN77axn0",
+    "type": "video",
+    "title": "فيديو 4",
+    "url": "https://www.youtube.com/watch?v=WkYzN77axn0",
+    "description": "فيديو من يوتيوب.",
+    "channel": "YouTube",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/WkYzN77axn0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
+  "9": {
+    "id": "hsDAqYPfNn8",
+    "type": "video",
+    "title": "فيديو 5",
+    "url": "https://www.youtube.com/watch?v=hsDAqYPfNn8",
+    "description": "فيديو من يوتيوب.",
+    "channel": "YouTube",
+    "channel_id": null,
+    "thumbnails": [
+      {
+        "url": "https://img.youtube.com/vi/hsDAqYPfNn8/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    ],
+    "textPdf": null,
+    "fawaaidPdf": null
+  },
   "id": "merged-fadel-channels",
-  "channel": "Dr Fadel (Fusion)",
-  "channel_id": "UCczwPOyye-GlCRtVuyDiP1g",
   "title": "Dr Fadel – Toutes les chaînes",
-  "availability": null,
-  "channel_follower_count": 3280,
-  "description": "اضافة لقناتي ‎‏‪⁨@ethra.a⁩‬‏   إثراء :  قناة لنشر العلم النافع وكل ما يخص الدين الأسلامي وتفسير القرآن الكريم والسنة النبوية واللغة العربية.  اسأل الله لنا ولكم التوفيق واسأله ان يكون هذا الحساب حسنة جارية لي ولكم ولِأهلي ولأصدقائي وللمسلمين والمسلمات والمؤمنين والمؤمنات الأحياء منهم والأموات \n\nملاحظة:  القناة ليست تابعة لأي عالم او شيخ فأنا عبد فقير الى الله اردت أن اجعل هذه القناة منبر لنشر العلم وان اكسب الاجر والحسناة  ورضى الله عليَّ وعلى والدَيَّ .  اسأل الله ان يتقبل مني هذا العمل القليل بحق الأسلام مني واسألهُ العافية في الدارين\n\n#اشترك_بل_قناة_وفعلو_الجرس_ليصلكم_كل_جديد \n#القرآن_الكريم #السنة_النبوية #تفسير_القرآن #اللغة_العربية",
-  "tags": [],
-  "thumbnails": [
-    {
-      "url": "https://yt3.googleusercontent.com/84-uXcAuGaIyiNC5oJyGNqCB4RB18PO0Klq_usAFA2HEJzmUBPBUlIYrvG7cGZF9taWyjVnhaw=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "height": 175,
-      "width": 1060,
-      "preference": -10,
-      "id": "0",
-      "resolution": "1060x175"
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/84-uXcAuGaIyiNC5oJyGNqCB4RB18PO0Klq_usAFA2HEJzmUBPBUlIYrvG7cGZF9taWyjVnhaw=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "height": 188,
-      "width": 1138,
-      "preference": -10,
-      "id": "1",
-      "resolution": "1138x188"
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/84-uXcAuGaIyiNC5oJyGNqCB4RB18PO0Klq_usAFA2HEJzmUBPBUlIYrvG7cGZF9taWyjVnhaw=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "height": 283,
-      "width": 1707,
-      "preference": -10,
-      "id": "2",
-      "resolution": "1707x283"
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/84-uXcAuGaIyiNC5oJyGNqCB4RB18PO0Klq_usAFA2HEJzmUBPBUlIYrvG7cGZF9taWyjVnhaw=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "height": 351,
-      "width": 2120,
-      "preference": -10,
-      "id": "3",
-      "resolution": "2120x351"
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/84-uXcAuGaIyiNC5oJyGNqCB4RB18PO0Klq_usAFA2HEJzmUBPBUlIYrvG7cGZF9taWyjVnhaw=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "height": 377,
-      "width": 2276,
-      "preference": -10,
-      "id": "4",
-      "resolution": "2276x377"
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/84-uXcAuGaIyiNC5oJyGNqCB4RB18PO0Klq_usAFA2HEJzmUBPBUlIYrvG7cGZF9taWyjVnhaw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "height": 424,
-      "width": 2560,
-      "preference": -10,
-      "id": "5",
-      "resolution": "2560x424"
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/84-uXcAuGaIyiNC5oJyGNqCB4RB18PO0Klq_usAFA2HEJzmUBPBUlIYrvG7cGZF9taWyjVnhaw=s0",
-      "id": "banner_uncropped",
-      "preference": -5
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/nn39j7g4VybFEGO-fd3HBcGw8NYr8DqpReYlBjqa0MkNa1ZCrg5NN_kjK4orAwNoaKtRd60nMe0=s900-c-k-c0x00ffffff-no-rj",
-      "height": 900,
-      "width": 900,
-      "id": "7",
-      "resolution": "900x900"
-    },
-    {
-      "url": "https://yt3.googleusercontent.com/nn39j7g4VybFEGO-fd3HBcGw8NYr8DqpReYlBjqa0MkNa1ZCrg5NN_kjK4orAwNoaKtRd60nMe0=s0",
-      "id": "avatar_uncropped",
-      "preference": 1
-    }
-  ],
-  "uploader_id": "@ethra.a",
-  "uploader_url": "https://www.youtube.com/@ethra.a",
-  "modified_date": null,
-  "view_count": null,
-  "playlist_count": 1592,
-  "uploader": "إثراء",
-  "channel_url": "https://www.youtube.com/channel/UCczwPOyye-GlCRtVuyDiP1g",
-  "_type": "playlist",
+  "channel": "Dr Fadel (Fusion)",
+  "playlist_count": 1602,
   "entries": [
+    {
+      "id": "3cpLABtQhJs",
+      "type": "short",
+      "title": "فيديو قصير 1",
+      "url": "https://www.youtube.com/watch?v=3cpLABtQhJs",
+      "description": "مقطع قصير من يوتيوب.",
+      "channel": "YouTube Shorts",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/3cpLABtQhJs/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "jTCEDME2Kkc",
+      "type": "short",
+      "title": "فيديو قصير 2",
+      "url": "https://www.youtube.com/watch?v=jTCEDME2Kkc",
+      "description": "مقطع قصير من يوتيوب.",
+      "channel": "YouTube Shorts",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/jTCEDME2Kkc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "fsubYmxPaKo",
+      "type": "short",
+      "title": "فيديو قصير 3",
+      "url": "https://www.youtube.com/watch?v=fsubYmxPaKo",
+      "description": "مقطع قصير من يوتيوب.",
+      "channel": "YouTube Shorts",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/fsubYmxPaKo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "gLvxwWLKGCI",
+      "type": "short",
+      "title": "فيديو قصير 4",
+      "url": "https://www.youtube.com/watch?v=gLvxwWLKGCI",
+      "description": "مقطع قصير من يوتيوب.",
+      "channel": "YouTube Shorts",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/gLvxwWLKGCI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "zsMkIoe_vJw",
+      "type": "short",
+      "title": "فيديو قصير 5",
+      "url": "https://www.youtube.com/watch?v=zsMkIoe_vJw",
+      "description": "مقطع قصير من يوتيوب.",
+      "channel": "YouTube Shorts",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/zsMkIoe_vJw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "pwG9MTkvGMc",
+      "type": "short",
+      "title": "فيديو قصير 6",
+      "url": "https://www.youtube.com/watch?v=pwG9MTkvGMc",
+      "description": "مقطع قصير من يوتيوب.",
+      "channel": "YouTube Shorts",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/pwG9MTkvGMc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "DGbDOInS0ec",
+      "type": "video",
+      "title": "فيديو 2",
+      "url": "https://www.youtube.com/watch?v=DGbDOInS0ec",
+      "description": "فيديو من يوتيوب.",
+      "channel": "YouTube",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/DGbDOInS0ec/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "e096TYkVOIo",
+      "type": "video",
+      "title": "فيديو 3",
+      "url": "https://www.youtube.com/watch?v=e096TYkVOIo",
+      "description": "فيديو من يوتيوب.",
+      "channel": "YouTube",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/e096TYkVOIo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "WkYzN77axn0",
+      "type": "video",
+      "title": "فيديو 4",
+      "url": "https://www.youtube.com/watch?v=WkYzN77axn0",
+      "description": "فيديو من يوتيوب.",
+      "channel": "YouTube",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/WkYzN77axn0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
+    {
+      "id": "hsDAqYPfNn8",
+      "type": "video",
+      "title": "فيديو 5",
+      "url": "https://www.youtube.com/watch?v=hsDAqYPfNn8",
+      "description": "فيديو من يوتيوب.",
+      "channel": "YouTube",
+      "channel_id": null,
+      "thumbnails": [
+        {
+          "url": "https://img.youtube.com/vi/hsDAqYPfNn8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      ],
+      "textPdf": null,
+      "fawaaidPdf": null,
+      "source_channel": "lamasat-bayania"
+    },
     {
       "_type": "url",
       "ie_key": "Youtube",
@@ -126,7 +417,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -171,7 +462,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -216,7 +507,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -261,7 +552,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -306,7 +597,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -351,7 +642,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -396,7 +687,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -441,7 +732,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -486,7 +777,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -531,7 +822,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -576,7 +867,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -621,7 +912,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -666,7 +957,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -711,7 +1002,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -756,7 +1047,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -801,7 +1092,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -846,7 +1137,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -891,7 +1182,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -936,7 +1227,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -981,7 +1272,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1026,7 +1317,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1071,7 +1362,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1116,7 +1407,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1161,7 +1452,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1206,7 +1497,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1251,7 +1542,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1296,7 +1587,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1341,7 +1632,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1386,7 +1677,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1431,7 +1722,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1476,7 +1767,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1521,7 +1812,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1566,7 +1857,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1611,7 +1902,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1656,7 +1947,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1701,7 +1992,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1746,7 +2037,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -1791,7 +2082,7 @@
       "live_status": null,
       "channel_is_verified": null,
       "__x_forwarded_for_ip": null,
-      "source_channel": "lamasat-bayania"
+      "source_channel": "dr-fadel-bodcast"
     },
     {
       "_type": "url",
@@ -71723,20 +72014,5 @@
       "__x_forwarded_for_ip": null,
       "source_channel": "dr-fadel-bodcast"
     }
-  ],
-  "extractor_key": "YoutubeTab",
-  "extractor": "youtube:tab",
-  "webpage_url": "https://www.youtube.com/@ethra.a/videos",
-  "original_url": "https://www.youtube.com/@ethra.a/videos",
-  "webpage_url_basename": "videos",
-  "webpage_url_domain": "youtube.com",
-  "release_year": null,
-  "epoch": 1770257344,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2025.12.08",
-    "current_git_head": null,
-    "release_git_head": "7a52ff29d86efc8f3adeba977b2009ce40b8e52e",
-    "repository": "yt-dlp/yt-dlp"
-  }
+  ]
 }

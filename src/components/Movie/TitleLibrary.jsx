@@ -15,17 +15,20 @@ export default function TitleLibrary() {
   // 🔹 Contenu sira
   const siraprof = `من هو الدكتور فاضل السامرائي؟
 ========================
-هو/ أبو محمد فاضل بن صالح بن مهدي بن خليل البدري من عشيرة 'البدري' إحدى عشائر سامراء ولد في سامراء عام 1933م في عائلة متوسطة الحالة الاقتصادية، كبيرة في الحالة الاجتماعية والدينية. أخذه والده منذ نعومة أظفاره إلى مسجد حسن باشا أحد مساجد سامراء لتعلم القرآن الكريم وكشف ذلك عن حدة ذكاءه حيث تعلم القرآن الكريم في مدة وجيزة.
+هو/ أبو محمد فاضل بن صالح ...`; // ton texte complet ici
 
-رحلته في طلب العلم:
-أكمل الدراسة الابتدائية والمتوسطة والثانوية في سامراء ثم انتقل إلى بغداد في مدينة الأعظمية ليدخل دورة تربوية لإعداد المعلمين وتخرج فيها عام 1953م، وكان متفوقًا في المراحل الدراسية كافة...`;
+  // 🔹 Sécurité extraction vidéos
+  const safeEntries = (data) => {
+    if (!data) return [];
+    if (Array.isArray(data)) return data;
+    if (Array.isArray(data.entries)) return data.entries;
+    if (Array.isArray(data.videos)) return data.videos;
+    return [];
+  };
 
-  // 🔎 Extraction propre des vidéos
-  const videos = (data.entries || data.videos || []).filter(
-    (v) => v.id && v.title,
-  );
+  const videos = safeEntries(data).filter((v) => v.id && v.title);
 
-  // 🧠 Détection automatique thème / sourate depuis le titre
+  // 🧠 Détection thème
   const detectTheme = (title) => {
     if (title.includes("الفاتحة")) return "الفاتحة";
     if (title.includes("الإخلاص")) return "الإخلاص";
@@ -38,13 +41,11 @@ export default function TitleLibrary() {
     return "عام";
   };
 
-  // 📂 Enrichissement des données
-  const enrichedVideos = useMemo(() => {
-    return videos.map((v) => ({
-      ...v,
-      theme: detectTheme(v.title),
-    }));
-  }, [videos]);
+  // 📂 Enrichissement
+  const enrichedVideos = useMemo(
+    () => videos.map((v) => ({ ...v, theme: detectTheme(v.title) })),
+    [videos],
+  );
 
   // 🔍 Recherche + filtre
   const filteredVideos = enrichedVideos.filter((v) => {
@@ -53,13 +54,11 @@ export default function TitleLibrary() {
     return matchSearch && matchTheme;
   });
 
-  // 📂 Liste unique des thèmes
   const themes = ["all", ...new Set(enrichedVideos.map((v) => v.theme))];
 
   return (
     <div className={dark ? "bg-gray-900 text-white" : "bg-white text-black"}>
       <div className="p-4 max-w-5xl mx-auto">
-        {/* 🌙 Dark mode + Retour + سيرته */}
         <div className="flex justify-between items-center mb-4 gap-2 flex-wrap">
           <h2
             className="text-xl font-bold"
@@ -76,7 +75,6 @@ export default function TitleLibrary() {
           </h2>
 
           <div className="flex gap-2 flex-wrap">
-            {/* Bouton Dark/Light */}
             <button
               onClick={() => setDark(!dark)}
               className="px-3 py-1 rounded border"
@@ -84,7 +82,6 @@ export default function TitleLibrary() {
               {dark ? "☀️ Light" : "🌙 Dark"}
             </button>
 
-            {/* Bouton Retour */}
             <button
               onClick={() =>
                 dispatch(
@@ -100,7 +97,6 @@ export default function TitleLibrary() {
               ← Retour
             </button>
 
-            {/* Bouton سيرته */}
             <button
               onClick={() => setShowSira(true)}
               className="px-3 py-1 rounded-xl shadow-lg font-semibold transition-transform hover:scale-105 bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black"
@@ -110,7 +106,6 @@ export default function TitleLibrary() {
           </div>
         </div>
 
-        {/* 🔹 Modal سيرة الدكتور avec FiqhDetailsModal */}
         {showSira && (
           <FiqhDetailsModal
             data={{ title: "سيرة الدكتور فاضل السامرائي", details: siraprof }}
@@ -118,7 +113,6 @@ export default function TitleLibrary() {
           />
         )}
 
-        {/* 🔍 Recherche */}
         <input
           type="text"
           placeholder="🔍 ابحث في العناوين..."
@@ -134,7 +128,6 @@ export default function TitleLibrary() {
           }}
         />
 
-        {/* 📂 Filtres thèmes */}
         <div className="flex flex-wrap gap-2 mb-4">
           {themes.map((theme) => (
             <button
@@ -151,7 +144,6 @@ export default function TitleLibrary() {
           ))}
         </div>
 
-        {/* 📜 LISTE COMPLÈTE */}
         <ul className="space-y-2 list-decimal list-inside pl-4">
           {filteredVideos.map((video) => (
             <li key={video.id}>
@@ -162,7 +154,7 @@ export default function TitleLibrary() {
                   fontSize: "30px",
                   padding: "0.75rem",
                   transition: "color 0.3s",
-                  textAlign: "right", // droite à gauche
+                  textAlign: "right",
                 }}
                 onClick={() =>
                   dispatch(showMovie({ ...video, dataset: "dorar" }))
