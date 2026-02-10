@@ -16,33 +16,27 @@ import nafahat1Data from "../../data/dorardata/dorar4/nafahat1.json";
 import nafahat2Data from "../../data/dorardata/dorar5/nafahat2.json";
 import nafahat3Data from "../../data/dorardata/dorar6/nafahat3.json";
 
-import drFadelData from "../../data/dorardata/dorar6/dataDrV.json";
 import shortData from "../../data/dorardata/dorar6/datash.json";
-
 import bjomaaData from "../../data/bjomaaData.json";
 
 /* ===================== UTILS ===================== */
 
-// Normalise les champs texte
 const normalizeTextField = (value) => {
   if (typeof value === "string") return value;
   if (value && typeof value === "object" && "text" in value) return value.text;
   return "";
 };
 
-// ✅ Renvoie un tableau sûr depuis n'importe quel JSON
 const safeEntries = (data) => {
   if (!data) return [];
   if (Array.isArray(data)) return data;
   if (Array.isArray(data.entries)) return data.entries;
   if (Array.isArray(data.videos)) return data.videos;
-  // Si entries ou videos existent mais ne sont pas des tableaux, on les met dans un tableau
   if (data.entries) return [data.entries];
   if (data.videos) return [data.videos];
   return [];
 };
 
-// Normalise un tableau d'objets pour avoir title, description et url
 const normalizeData = (data) =>
   safeEntries(data).map((v) => ({
     ...v,
@@ -51,11 +45,29 @@ const normalizeData = (data) =>
     url: v.url || (v.id ? `https://www.youtube.com/watch?v=${v.id}` : ""),
   }));
 
+/* ===================== DATA DR FADEL (PUBLIC) ===================== */
+
+// ⚠️ synchronisation avec ton TitleLibrary
+let drFadelPublicData = [];
+
+try {
+  const req = new XMLHttpRequest();
+  req.open("GET", "/data/dataDrV_with_subtitles.json", false); // SYNCHRONE
+  req.send(null);
+  if (req.status === 200) {
+    const json = JSON.parse(req.responseText);
+    drFadelPublicData = Array.isArray(json) ? json : Object.values(json);
+  }
+} catch (e) {
+  console.warn("Dr Fadel data not loaded yet");
+}
+
 /* ===================== FUSION NAFahat3 ===================== */
+
 const fusedNafahat3Data = [
   ...normalizeData(nafahat3Data),
 
-  ...normalizeData(drFadelData).map((v) => ({
+  ...drFadelPublicData.map((v) => ({
     ...v,
     sourceChannel: "dr.fadelcast",
   })),
@@ -71,78 +83,26 @@ const fusedNafahat3Data = [
   })),
 ];
 
-/* ===================== ALL VIDEOS ===================== */
-export const allVideos = [
-  // MOTOUN
-  ...normalizeData(motounData).map((v) => ({ ...v, dataset: "motoun" })),
+/* ===================== ALL VIDEOS (COMME AVANT) ===================== */
 
-  // NOUR AL YAKINE
+export const allVideos = [
+  ...normalizeData(motounData).map((v) => ({ ...v, dataset: "motoun" })),
   ...normalizeData(nourData).map((v) => ({ ...v, dataset: "nour" })),
 
-  // MEETINGS
-  ...normalizeData(year1Meetings).map((v) => ({
-    ...v,
-    dataset: "meeting",
-    year: 1,
-  })),
-  ...normalizeData(year2Meetings).map((v) => ({
-    ...v,
-    dataset: "meeting",
-    year: 2,
-  })),
-  ...normalizeData(year3Meetings).map((v) => ({
-    ...v,
-    dataset: "meeting",
-    year: 3,
-  })),
-  ...normalizeData(year4Meetings).map((v) => ({
-    ...v,
-    dataset: "meeting",
-    year: 4,
-  })),
-  ...normalizeData(year5Meetings).map((v) => ({
-    ...v,
-    dataset: "meeting",
-    year: 5,
-  })),
+  ...normalizeData(year1Meetings).map((v) => ({ ...v, dataset: "meeting", year: 1 })),
+  ...normalizeData(year2Meetings).map((v) => ({ ...v, dataset: "meeting", year: 2 })),
+  ...normalizeData(year3Meetings).map((v) => ({ ...v, dataset: "meeting", year: 3 })),
+  ...normalizeData(year4Meetings).map((v) => ({ ...v, dataset: "meeting", year: 4 })),
+  ...normalizeData(year5Meetings).map((v) => ({ ...v, dataset: "meeting", year: 5 })),
 
-  // DORAR
-  ...normalizeData(bayanData).map((v) => ({
-    ...v,
-    dataset: "dorar",
-    source: "bayan",
-  })),
-  ...normalizeData(hikmaData).map((v) => ({
-    ...v,
-    dataset: "dorar",
-    source: "hikma",
-  })),
-  ...normalizeData(bookDorarData).map((v) => ({
-    ...v,
-    dataset: "dorar",
-    source: "book",
-  })),
-  ...normalizeData(nafahat1Data).map((v) => ({
-    ...v,
-    dataset: "dorar",
-    source: "nafahat1",
-  })),
-  ...normalizeData(nafahat2Data).map((v) => ({
-    ...v,
-    dataset: "dorar",
-    source: "nafahat2",
-  })),
+  ...normalizeData(bayanData).map((v) => ({ ...v, dataset: "dorar", source: "bayan" })),
+  ...normalizeData(hikmaData).map((v) => ({ ...v, dataset: "dorar", source: "hikma" })),
+  ...normalizeData(bookDorarData).map((v) => ({ ...v, dataset: "dorar", source: "book" })),
+  ...normalizeData(nafahat1Data).map((v) => ({ ...v, dataset: "dorar", source: "nafahat1" })),
+  ...normalizeData(nafahat2Data).map((v) => ({ ...v, dataset: "dorar", source: "nafahat2" })),
 
-  // FUSION NAFahat3 + DrFadel + ShortData
-  ...fusedNafahat3Data.map((v) => ({
-    ...v,
-    dataset: "dorar",
-    source: "nafahat3",
-  })),
+  ...fusedNafahat3Data.map((v) => ({ ...v, dataset: "dorar", source: "nafahat3" })),
 
-  // BJOMAA
   ...normalizeData(bjomaaData).map((v) => ({ ...v, dataset: "bjomaa" })),
-
-  // FIQH
   ...normalizeData(fiqhData).map((v) => ({ ...v, dataset: "fiqh" })),
 ];

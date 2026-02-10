@@ -1,23 +1,50 @@
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useDispatch } from "react-redux";
 import { showMovie } from "../../redux/reducers/movieModalSlice";
 import { setSelectedGenre } from "../../redux/reducers/selectedGenresSlice";
-import data from "../../data/dorardata/dorar6/dataDrV.json";
-import FiqhDetailsModal from "../MovieModal/FiqhDetailsModal"; // ✅ modal
+import FiqhDetailsModal from "../MovieModal/FiqhDetailsModal";
 
 export default function TitleLibrary() {
   const dispatch = useDispatch();
+
+  /* =======================
+     📦 STATE
+  ======================= */
+  const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [dark, setDark] = useState(false);
   const [activeTheme, setActiveTheme] = useState("all");
-  const [showSira, setShowSira] = useState(false); // état modal sira
+  const [showSira, setShowSira] = useState(false);
 
-  // 🔹 Contenu sira
+  /* =======================
+     📥 DATA LOAD
+  ======================= */
+  useEffect(() => {
+    fetch("/data/dataDrV_with_subtitles.json")
+      .then((res) => res.json())
+      .then((json) => setData(json))
+      .catch(console.error);
+  }, []);
+
+  /* =======================
+     ⏳ DEBOUNCE SEARCH
+  ======================= */
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedSearch(search), 250);
+    return () => clearTimeout(t);
+  }, [search]);
+
+  /* =======================
+     📝 SIRA TEXT
+  ======================= */
   const siraprof = `من هو الدكتور فاضل السامرائي؟
 ========================
-الدكتور فاضل صالح السامرائي هو واحد من علماء اللغة العربية المعاصرين الذين تبحَّروا في علوم اللغة، وقد اختار أن يكون همه الأكبر أن يضيفَ إلى ما قدَّمه السابقون من خدمة لكتاب الله سبحانه، وأن يستكشف ما فيه من أسرار بيانية، وقد قضى وقتًا طويلًا في البحث والتفكير في أسرار الإعجاز اللغوي في القرآن الكريم، ووفَّقه الله سبحانه إلى أن يُوصل ما رآه في القرآن الكريم من أسرار لغوية معجزة إلى أعداد كبيرة من المتخصصين ومن غير المتخصصين، سواء عبر مؤلفاته المتعددة، أو عبر برنامج "لمسات بيانية" الذي كان يذاع على قناة الشارقة الفضائية، وحاز قَبولَ أعدادٍ كبيرة من الناس، ولعل من أسباب ذلك القبول ـ إضافة إلى سعة علم الرجل ـ عمق رؤاه واعتماده على إقناع العقول بالأدلة والشواهد،...`; // ton texte complet ici
+الدكتور فاضل صالح السامرائي هو واحد من علماء اللغة العربية المعاصرين الذين تبحَّروا في علوم اللغة، وقد اختار أن يكون همه الأكبر أن يضيفَ إلى ما قدَّمه السابقون من خدمة لكتاب الله سبحانه، وأن يستكشف ما فيه من أسرار بيانية، وقد قضى وقتًا طويلًا في البحث والتفكير في أسرار الإعجاز اللغوي في القرآن الكريم، ووفَّقه الله سبحانه إلى أن يُوصل ما رآه في القرآن الكريم من أسرار لغوية معجزة إلى أعداد كبيرة من المتخصصين ومن غير المتخصصين، سواء عبر مؤلفاته المتعددة، أو عبر برنامج "لمسات بيانية" الذي كان يذاع على قناة الشارقة الفضائية، وحاز قَبولَ أعدادٍ كبيرة من الناس، ولعل من أسباب ذلك القبول ـ إضافة إلى سعة علم الرجل ـ عمق رؤاه واعتماده على إقناع العقول بالأدلة والشواهد.`;
 
-  // 🔹 Sécurité extraction vidéos
+  /* =======================
+     🛡 SAFE EXTRACT
+  ======================= */
   const safeEntries = (data) => {
     if (!data) return [];
     if (Array.isArray(data)) return data;
@@ -26,10 +53,66 @@ export default function TitleLibrary() {
     return [];
   };
 
-  const videos = safeEntries(data).filter((v) => v.id && v.title);
+  const videos = safeEntries(data).filter((v) => v?.id && v?.title);
 
-  // 🧠 Détection thème
-  // ✅ Liste complète des السور
+  /* =======================
+     🔤 NORMALIZATION
+  ======================= */
+  const STOP_WORDS = [
+    "في",
+    "من",
+    "على",
+    "الى",
+    "إلى",
+    "عن",
+    "ما",
+    "ماذا",
+    "لماذا",
+    "قال",
+    "يقول",
+    "يعني",
+    "اه",
+    "نعم",
+    "لا",
+    "هو",
+    "هي",
+    "هذا",
+    "هذه",
+    "ذلك",
+    "تلك",
+    "كان",
+    "كانت",
+    "يكون",
+    "تكون",
+  ];
+  const semanticMatch = (line, query) => {
+    const qWords = normalize(query)
+      .split(" ")
+      .filter((w) => w.length > 2 && !STOP_WORDS.includes(w));
+
+    const lineNorm = normalize(line);
+
+    if (qWords.length === 0) return false;
+
+    // يجب أن تتحقق كل كلمات البحث المهمة
+    return qWords.every((word) => lineNorm.includes(word));
+  };
+
+  const normalize = (s = "") =>
+    s
+      .toLowerCase()
+      .replace(/[إأآا]/g, "ا")
+      .replace(/[ىي]/g, "ي")
+      .replace(/[ة]/g, "ه")
+      .replace(/[ؤ]/g, "و")
+      .replace(/[ئ]/g, "ي")
+      .replace(/[^ء-يa-z0-9\s]/gi, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  /* =======================
+     📚 THEMES
+  ======================= */
   const surahList = [
     "الفاتحة",
     "البقرة",
@@ -147,79 +230,163 @@ export default function TitleLibrary() {
     "الناس",
   ];
 
-  // ✅ Règles thématiques réelles des titres
   const themeRules = [
     { theme: "لمسات بيانية", keywords: ["لمسات بيانية"] },
     { theme: "أسماء الله الحسنى", keywords: ["أسماء الله", "الحسنى"] },
-    {
-      theme: "إعجاز بياني",
-      keywords: ["إعجاز", "بلاغة", "سر التعبير", "التعبير القرآني"],
-    },
-    {
-      theme: "الفروق اللغوية",
-      keywords: ["الفرق بين", "لماذا", "اختيار", "استعمال", "دلالة"],
-    },
-    { theme: "تفسير لفظة", keywords: ["معنى", "لفظة", "كلمة", "تعبير"] },
+    { theme: "إعجاز بياني", keywords: ["إعجاز", "بلاغة", "سر التعبير"] },
+    { theme: "الفروق اللغوية", keywords: ["الفرق بين", "لماذا", "اختيار"] },
+    { theme: "تفسير لفظة", keywords: ["معنى", "لفظة", "كلمة"] },
     {
       theme: "قصص الأنبياء",
       keywords: ["موسى", "إبراهيم", "يوسف", "نوح", "آدم", "عيسى"],
     },
     {
       theme: "مشاهد القيامة",
-      keywords: ["القيامة", "الجنة", "النار", "الحساب", "العذاب"],
+      keywords: ["القيامة", "الجنة", "النار", "الحساب"],
     },
   ];
-  // 🧠 Détection thème intelligente
-  const detectTheme = (title = "") => {
-    // 🔹 Détection par sourate
-    for (const surah of surahList) {
-      if (title.includes(surah)) {
-        return `سورة ${surah}`;
-      }
-    }
 
-    // 🔹 Détection par mots-clés réels
+  const detectTheme = (title = "") => {
+    for (const surah of surahList) {
+      if (title.includes(surah)) return `سورة ${surah}`;
+    }
     for (const rule of themeRules) {
       for (const key of rule.keywords) {
-        if (title.includes(key)) {
-          return rule.theme;
-        }
+        if (title.includes(key)) return rule.theme;
       }
     }
-
     return "عام";
   };
-  // 📂 Enrichissement
-  const enrichedVideos = useMemo(
-    () => videos.map((v) => ({ ...v, theme: detectTheme(v.title) })),
-    [videos],
-  );
 
-  // 🔍 Recherche + filtre
-  const filteredVideos = enrichedVideos.filter((v) => {
-    const matchSearch = v.title.includes(search);
-    const matchTheme = activeTheme === "all" || v.theme === activeTheme;
-    return matchSearch && matchTheme;
-  });
+  /* =======================
+     🧠 INDEXING ENGINE
+  ======================= */
+  const enrichedVideos = useMemo(() => {
+    return videos.map((v) => {
+      const normTitle = normalize(v.title || "");
+      const normSubtitle = normalize(v.subtitle || "");
+
+      const subtitleLines = (v.subtitle || "")
+        .split(/[\n.?!]+/)
+        .filter((l) => l.trim() !== "");
+
+      // ✅ كشف Shorts (محسّن)
+      const isShort =
+        /فيديو\s*قصير/i.test(v.title || "") ||
+        /\bshort\b/i.test(v.title || "") ||
+        /youtube\.com\/shorts\//i.test(v.url || "");
+
+      return {
+        ...v,
+        theme: detectTheme(v.title),
+        _normTitle: normTitle,
+        _normSubtitle: normSubtitle,
+
+        _isShort: isShort,
+        subtitleLines,
+      };
+    });
+  }, [videos]);
+
+  /* =======================
+     🔍 SEARCH ENGINE
+  ======================= */
+  const filteredVideos = useMemo(() => {
+    const q = normalize(debouncedSearch).trim();
+    const qWords = q.split(" ").filter((w) => w.length > 1);
+
+    return enrichedVideos.filter((v) => {
+      // ❌ إقصاء shorts
+      if (v._isShort) return false;
+
+      // 🎯 فلترة الثيم
+      const matchTheme = activeTheme === "all" || v.theme === activeTheme;
+      if (!matchTheme) return false;
+
+      // 🔹 لا بحث = عرض الجميع
+      if (!qWords.length) return true;
+
+      // ✅ شرط 1: في العنوان
+      const titleMatch = qWords.every((word) => v._normTitle.includes(word));
+
+      // ✅ شرط 2: في الترجمة
+      const subtitleMatch = v.subtitleLines?.some((line) =>
+        qWords.every((word) => normalize(line).includes(word)),
+      );
+
+      // ❗ لا عنوان ولا ترجمة = إقصاء
+      return titleMatch || subtitleMatch;
+    });
+  }, [debouncedSearch, activeTheme, enrichedVideos]);
 
   const themes = ["all", ...new Set(enrichedVideos.map((v) => v.theme))];
+
+  /* =======================
+     🎨 UI
+  ======================= */
+  // 🎨 Highlight dynamique (titre + sous-titre)
+  const highlightText = (originalText = "", query = "") => {
+    if (!query || !originalText) return originalText;
+
+    const q = normalize(query);
+    const normText = normalize(originalText);
+
+    if (!normText.includes(q)) return originalText;
+
+    const result = [];
+    let lastIndex = 0;
+
+    // regex safe
+    const regex = new RegExp(q, "gi");
+    let match;
+
+    while ((match = regex.exec(normText)) !== null) {
+      const start = match.index;
+      const end = start + q.length;
+
+      // texte avant
+      result.push(originalText.slice(lastIndex, start));
+
+      // mot surligné
+      result.push(
+        <span
+          key={start + "-" + end}
+          style={{
+            backgroundColor: "#ffe066",
+            color: "#000",
+            padding: "0 4px",
+            borderRadius: "5px",
+            fontWeight: "bold",
+            boxShadow: "0 0 6px rgba(255, 224, 102, 0.6)",
+          }}
+        >
+          {originalText.slice(start, end)}
+        </span>,
+      );
+
+      lastIndex = end;
+    }
+
+    // reste du texte
+    result.push(originalText.slice(lastIndex));
+
+    return result;
+  };
 
   return (
     <div className={dark ? "bg-gray-900 text-white" : "bg-white text-black"}>
       <div className="p-4 max-w-5xl mx-auto">
+        {/* HEADER */}
         <div className="flex justify-between items-center mb-4 gap-2 flex-wrap">
           <h2
             className="text-xl font-bold"
             style={{
               fontFamily: "'Arabic Typesetting', serif",
               fontSize: "26px",
-              padding: "0.75rem",
               color: "red",
-              transition: "color 0.3s",
             }}
           >
-            📚 ابداعات الدكتور فاضل السامرائي انقر عنوان للمشاهدة (
-            {videos.length})
+            📚 ابداعات الدكتور فاضل السامرائي ({videos.length})
           </h2>
 
           <div className="flex gap-2 flex-wrap">
@@ -240,14 +407,14 @@ export default function TitleLibrary() {
                   }),
                 )
               }
-              className="px-3 py-1 rounded-xl shadow-lg font-semibold transition-transform hover:scale-105 bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black"
+              className="px-3 py-1 rounded-xl shadow-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black"
             >
               ← Retour
             </button>
 
             <button
               onClick={() => setShowSira(true)}
-              className="px-3 py-1 rounded-xl shadow-lg font-semibold transition-transform hover:scale-105 bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black"
+              className="px-3 py-1 rounded-xl shadow-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#b78e2a] text-black"
             >
               سيرته
             </button>
@@ -261,40 +428,38 @@ export default function TitleLibrary() {
           />
         )}
 
+        {/* SEARCH */}
         <input
           type="text"
-          placeholder="🔍 ابحث في العناوين..."
+          placeholder="🔍 بحث ذكي في العناوين + التفريغ النصي"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="w-full mb-3 px-3 py-2 rounded border text-black"
           style={{
             fontFamily: "'Arabic Typesetting', serif",
             fontSize: "26px",
-            padding: "0.75rem",
             color: "red",
-            transition: "color 0.3s",
           }}
         />
 
+        {/* THEMES */}
         <div className="flex flex-wrap gap-2 mb-4">
           {themes.map((theme) => (
             <button
               key={theme}
               onClick={() => setActiveTheme(theme)}
-              className={`px-3 py-1 rounded text-sm border ${
-                activeTheme === theme
-                  ? "bg-blue-600 text-white"
-                  : "bg-transparent"
-              }`}
+              className={`px-3 py-1 rounded text-sm border ${activeTheme === theme ? "bg-blue-600 text-white" : "bg-transparent"}`}
             >
               {theme === "all" ? "الكل" : theme}
             </button>
           ))}
         </div>
 
+        {/* LIST */}
         <ul className="space-y-2 list-decimal list-inside pl-4">
           {filteredVideos.map((video) => (
             <li key={video.id}>
+              {/* Titre avec highlight */}
               <span
                 className="hover:underline text-blue-500 cursor-pointer"
                 style={{
@@ -308,8 +473,33 @@ export default function TitleLibrary() {
                   dispatch(showMovie({ ...video, dataset: "dorar" }))
                 }
               >
-                {video.title}
+                {highlightText(video.title, debouncedSearch)}
               </span>
+
+              {/* Sous-titre ligne par ligne si le mot est présent */}
+              {video.subtitleLines && debouncedSearch && (
+                <div
+                  className="mt-2 text-sm opacity-80"
+                  style={{
+                    fontFamily: "'Arabic Typesetting', serif",
+                    fontSize: "22px",
+                    textAlign: "right",
+                    lineHeight: "1.6",
+                    color: dark ? "#e5e5e5" : "#333",
+                  }}
+                >
+                  {video.subtitleLines
+                    .filter((line) =>
+                      normalize(line).includes(normalize(debouncedSearch)),
+                    )
+                    .map((line, idx) => (
+                      <div key={idx}>
+                        {highlightText(line, debouncedSearch)}
+                      </div>
+                    ))}
+                </div>
+              )}
+
               <div className="text-xs opacity-70 mt-1 text-right">
                 🎧 استماع | 📂 {video.theme}
               </div>

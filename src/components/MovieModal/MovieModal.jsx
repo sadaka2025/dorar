@@ -123,6 +123,11 @@ export default function MovieModal() {
       label: "مميزات الكتاب",
       css: "bg-amber-600 hover:bg-amber-700",
     },
+     {
+      key: "subtitle",
+      label: "محتوى اللقاء",
+      css: "bg-amber-600 hover:bg-amber-700",
+    },
   ];
 
   return (

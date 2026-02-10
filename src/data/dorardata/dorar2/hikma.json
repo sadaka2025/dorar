@@ -1,7 +1,7 @@
 [
   {
     "id": 55,
-    "title": "الدرس 1",
+    "title": "الدرس 1  احكام الطهارة",
     "description": {
       "highlight": "احكام الطهارة",
       "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
@@ -13,7 +13,7 @@
   },
   {
     "id": 56,
-    "title": "الدرس 2",
+    "title": "الدرس 2  احكام الصلاة",
     "description": {
       "highlight": "احكام الصلاة",
       "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
@@ -24,10 +24,10 @@
   },
   {
     "id": 57,
-    "title": "الدرس 3",
+    "title": "الدرس 3 ج1 احكام الزكاة",
     "description": {
       "highlight": "أحكام الزكاة",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة - الشيخ الحبيب بن طاهر"
+      "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
     },
     "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
     "url": "https://www.youtube.com/watch?v=PlnIQFLj8FY&list=PL32DC49BA0F93A008&index=1&pp=iAQB",
@@ -35,10 +35,10 @@
   },
   {
     "id": 58,
-    "title": "4 الدرس",
+    "title": "الدرس 4 ج2  احكام الزكاة",
     "description": {
       "highlight": "أحكام الزكاة",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة - الشيخ الحبيب بن طاهر"
+      "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
     },
     "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
     "url": "https://www.youtube.com/watch?v=1K23Nzk_qOM&list=PL32DC49BA0F93A008&index=2&pp=iAQB",
@@ -46,10 +46,10 @@
   },
   {
     "id": 59,
-    "title": "الدرس 5",
+    "title": "الدرس 5 ج3  احكام الزكاة",
     "description": {
       "highlight": "أحكام الزكاة",
-      "text": "مع تطبيق المذهب المالكي على القضايا المعاصرة - الشيخ الحبيب بن طاهر"
+      "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
     },
     "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
     "url": "https://www.youtube.com/watch?v=Hck-x-nM3CE&list=PL32DC49BA0F93A008&index=3&pp=iAQB",
@@ -57,7 +57,7 @@
   },
   {
     "id": 60,
-    "title": "الدرس 6",
+    "title": "الدرس 6  احكام الصوم",
     "description": {
       "highlight": "احكام الصوم",
       "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
@@ -68,10 +68,10 @@
   },
   {
     "id": 61,
-    "title": "الدرس 7",
+    "title": "الدرس 7  احكام الحج",
     "description": {
       "highlight": "احكام الحج",
-      "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
+      "text": "   الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
     },
     "thumbnail": "/PDFs/hbibfiqh/allfiqh.jpeg",
     "url": "",
@@ -79,7 +79,7 @@
   },
   {
     "id": 62,
-    "title": "الدرس 8",
+    "title": "الدرس 8  احكام الاضحية ",
     "description": {
       "highlight": "احكام الاضحية",
       "text": " الشيخ عبد الحميد الزواوي شرح كتاب الحبيب بن طاهر"
