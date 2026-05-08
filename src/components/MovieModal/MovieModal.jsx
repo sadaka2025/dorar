@@ -23,7 +23,6 @@ export default function MovieModal() {
   );
   if (!enabled || !video) return null;
 
-  // ======= Détection du type d'URL =======
   const isEmbedVideo =
     typeof video.url === "string" &&
     (video.url.includes("youtu") || video.url.includes("drive.google"));
@@ -35,23 +34,17 @@ export default function MovieModal() {
     !isEmbedVideo &&
     !isLocalVideo;
 
-  // ======= Générer URL pour iframe =======
   const getEmbedUrl = (url) => {
     if (!url) return "";
-    if (url.includes("youtube.com/watch")) {
-      const id = new URL(url).searchParams.get("v");
-      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
-    }
-    if (url.includes("youtu.be/")) {
-      const id = url.split("youtu.be/")[1];
-      return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
-    }
+    if (url.includes("youtube.com/watch"))
+      return `https://www.youtube.com/embed/${new URL(url).searchParams.get("v")}?autoplay=1&rel=0`;
+    if (url.includes("youtu.be/"))
+      return `https://www.youtube.com/embed/${url.split("youtu.be/")[1]}?autoplay=1&rel=0`;
     if (url.includes("drive.google.com"))
       return url.replace("/view", "/preview");
     return url;
   };
 
-  // ======= Description (texte ou objet) =======
   const renderDescription = (description) => {
     if (!description) return null;
     if (typeof description === "string") return description;
@@ -67,7 +60,6 @@ export default function MovieModal() {
     return null;
   };
 
-  // ======= Boutons PDF dynamiques =======
   const pdfButtons = [
     {
       key: "textPdf",
@@ -111,7 +103,6 @@ export default function MovieModal() {
     },
   ];
 
-  // ======= Boutons modals dynamiques =======
   const modalButtons = [
     {
       key: "siraprof",
@@ -123,16 +114,21 @@ export default function MovieModal() {
       label: "مميزات الكتاب",
       css: "bg-amber-600 hover:bg-amber-700",
     },
-     {
+    {
       key: "subtitle",
       label: "محتوى اللقاء",
+      css: "bg-amber-600 hover:bg-amber-700",
+    },
+    {
+      key: "analysis",
+      label: "فائدة علمية من اللقاء",
       css: "bg-amber-600 hover:bg-amber-700",
     },
   ];
 
   return (
     <>
-      {/* ================= MODAL PRINCIPAL ================= */}
+      {/* MODAL PRINCIPAL */}
       <motion.div
         className="fixed inset-0 z-40 bg-black/80 flex justify-center items-center p-4 overflow-y-auto"
         initial={{ opacity: 0 }}
@@ -143,7 +139,6 @@ export default function MovieModal() {
           initial={{ scale: 0.85 }}
           animate={{ scale: 1 }}
         >
-          {/* HEADER */}
           <div className="flex justify-end p-3">
             <button
               onClick={() => dispatch(hide())}
@@ -157,22 +152,15 @@ export default function MovieModal() {
             {/* MINIATURE */}
             <div className="md:w-1/2 p-4">
               <div
-                onClick={() => {
-                  if (isWebSite) {
-                    window.open(video.url, "_blank");
-                  } else {
-                    setIsVideoOpen(true);
-                  }
-                }}
+                onClick={() =>
+                  isWebSite
+                    ? window.open(video.url, "_blank")
+                    : setIsVideoOpen(true)
+                }
                 className="relative cursor-pointer rounded-lg overflow-hidden"
               >
-                // MINIATURE
                 <img
-                  src={
-                    video.thumbnail ||
-                    (video.thumbnails && video.thumbnails[0]?.url) || // fallback yt-dlp
-                    "/images/default-thumbnail.png" // fallback global
-                  }
+                  src={video.thumbnail || "/images/default-thumbnail.png"}
                   alt={video.title}
                   className="w-full h-full object-cover"
                 />
@@ -187,7 +175,7 @@ export default function MovieModal() {
               <h1
                 className="font-arabic text-yellow-400"
                 style={{
-                  fontFamily: "'Arabic Typesetting' , serif",
+                  fontFamily: "'Arabic Typesetting', serif",
                   fontSize: "40px",
                 }}
               >
@@ -215,7 +203,6 @@ export default function MovieModal() {
               </p>
 
               <div className="flex flex-col gap-3 pt-4">
-                {/* PDF Buttons */}
                 {pdfButtons.map((btn) =>
                   video[btn.key] ? (
                     <button
@@ -228,7 +215,6 @@ export default function MovieModal() {
                   ) : null,
                 )}
 
-                {/* Modal Buttons */}
                 {modalButtons.map((btn) =>
                   video[btn.key] ? (
                     <button
@@ -246,7 +232,6 @@ export default function MovieModal() {
                   ) : null,
                 )}
 
-                {/* Matns */}
                 {video.matns?.map((matn) => (
                   <a
                     key={matn.key}
@@ -264,58 +249,40 @@ export default function MovieModal() {
         </motion.div>
       </motion.div>
 
-      {/* ================= MODAL VIDEO ================= */}
+      {/* VIDEO MODAL */}
       <AnimatePresence>
         {isVideoOpen && !isWebSite && (
           <motion.div
-            className="fixed inset-0 z-50"
+            className="fixed inset-0 z-50 flex justify-center items-center bg-black"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {/* ================= FOND ================= */}
-            <div
-              className="absolute inset-0 z-0"
-              style={{
-                backgroundImage: 'url("/images/1.avif")',
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            />
-
-            {/* ================= VIDEO / IFRAME ================= */}
+            {/* VIDEO / IFRAME plein écran */}
             {isEmbedVideo ? (
               <iframe
                 src={getEmbedUrl(video.url)}
-                className="absolute inset-0 w-full h-full z-10"
+                className="w-full h-full"
                 allow="autoplay; fullscreen"
                 allowFullScreen
               />
             ) : (
-              <video
-                autoPlay
-                controls
-                className="fixed inset-0 w-full h-full object-cover z-10"
-              >
+              <video autoPlay controls className="w-full h-full object-contain">
                 <source src={video.url} type="video/mp4" />
               </video>
             )}
 
-            {/* ========== OVERLAY (OPTIONNEL) ========== */}
-            <div className="absolute inset-0 z-15 bg-black/20 pointer-events-none" />
-
-            {/* ================= CADRE PNG ================= */}
+            {/* Cadre PNG */}
             <img
               src="/images/tester.png"
-              className="absolute inset-0 w-full h-full z-20 pointer-events-none"
+              className="absolute inset-0 w-full h-full pointer-events-none"
               alt="frame"
             />
 
-            {/* ================= CLOSE ================= */}
+            {/* Bouton CLOSE */}
             <button
               onClick={() => setIsVideoOpen(false)}
-              className="absolute top-6 right-6 z-30 text-white text-4xl"
+              className="absolute top-6 right-6 text-white text-4xl"
             >
               <AiOutlineClose />
             </button>
@@ -323,15 +290,7 @@ export default function MovieModal() {
         )}
       </AnimatePresence>
 
-      {/* ================= SOUS MODALS ================= */}
-      {childModal && (
-        <VideoInfoModal
-          open={!!childModal}
-          onClose={() => setChildModal(null)}
-          title={childModal.title}
-          content={childModal.details}
-        />
-      )}
+      {/* FIQH MODAL */}
       {childModal && (
         <FiqhDetailsModal
           data={childModal}

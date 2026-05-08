@@ -1,10 +1,10 @@
 import { readFile, writeFile } from "fs/promises";
 
 const bayanPath =
-  "C:/Users/mimod/OneDrive/Bureau/Courses.tv/src/data/dorardata/dorar6/datash.json";
+  "C:/Users/mimod/OneDrive/Bureau/Courses.tv/src/data/dorardata/dorar6/data.json";
 
 const drfPath =
-  "C:/Users/mimod/OneDrive/Bureau/Courses.tv/src/data/dorardata/dorar6/dataDrV.json";
+  "C:/Users/mimod/OneDrive/Bureau/Courses.tv/src/data/dorardata/dorar6/data_converted.json";
 
 const bayan = JSON.parse(await readFile(bayanPath, "utf8"));
 const drf = JSON.parse(await readFile(drfPath, "utf8"));

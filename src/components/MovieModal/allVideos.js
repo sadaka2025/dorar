@@ -3,11 +3,11 @@ import motounData from "../../data/motoun.json";
 import nourData from "../../data/nour-alyakine.json";
 import fiqhData from "../../data/fiqh.json";
 
-import year1Meetings from "../../data/years/year1/meetings-flat.json";
-import year2Meetings from "../../data/years/year2/meetings-flat.json";
-import year3Meetings from "../../data/years/year3/meetings-flat.json";
-import year4Meetings from "../../data/years/year4/meetings-flat.json";
-import year5Meetings from "../../data/years/year5/meetings-flat.json";
+import year1Meetings from "../../data/yearsmeeting/year1/meetings-flat.json";
+import year2Meetings from "../../data/yearsmeeting/year2/meetings-flat.json";
+import year3Meetings from "../../data/yearsmeeting/year3/meetings-flat.json";
+import year4Meetings from "../../data/yearsmeeting/year4/meetings-flat.json";
+import year5Meetings from "../../data/yearsmeeting/year5/meetings-flat.json";
 
 import bayanData from "../../data/dorardata/dorar1/bayan.json";
 import hikmaData from "../../data/dorardata/dorar2/hikma.json";
@@ -89,19 +89,63 @@ export const allVideos = [
   ...normalizeData(motounData).map((v) => ({ ...v, dataset: "motoun" })),
   ...normalizeData(nourData).map((v) => ({ ...v, dataset: "nour" })),
 
-  ...normalizeData(year1Meetings).map((v) => ({ ...v, dataset: "meeting", year: 1 })),
-  ...normalizeData(year2Meetings).map((v) => ({ ...v, dataset: "meeting", year: 2 })),
-  ...normalizeData(year3Meetings).map((v) => ({ ...v, dataset: "meeting", year: 3 })),
-  ...normalizeData(year4Meetings).map((v) => ({ ...v, dataset: "meeting", year: 4 })),
-  ...normalizeData(year5Meetings).map((v) => ({ ...v, dataset: "meeting", year: 5 })),
+  ...normalizeData(year1Meetings).map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 1,
+  })),
+  ...normalizeData(year2Meetings).map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 2,
+  })),
+  ...normalizeData(year3Meetings).map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 3,
+  })),
+  ...normalizeData(year4Meetings).map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 4,
+  })),
+  ...normalizeData(year5Meetings).map((v) => ({
+    ...v,
+    dataset: "meeting",
+    year: 5,
+  })),
 
-  ...normalizeData(bayanData).map((v) => ({ ...v, dataset: "dorar", source: "bayan" })),
-  ...normalizeData(hikmaData).map((v) => ({ ...v, dataset: "dorar", source: "hikma" })),
-  ...normalizeData(bookDorarData).map((v) => ({ ...v, dataset: "dorar", source: "book" })),
-  ...normalizeData(nafahat1Data).map((v) => ({ ...v, dataset: "dorar", source: "nafahat1" })),
-  ...normalizeData(nafahat2Data).map((v) => ({ ...v, dataset: "dorar", source: "nafahat2" })),
+  ...normalizeData(bayanData).map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "bayan",
+  })),
+  ...normalizeData(hikmaData).map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "hikma",
+  })),
+  ...normalizeData(bookDorarData).map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "book",
+  })),
+  ...normalizeData(nafahat1Data).map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "nafahat1",
+  })),
+  ...normalizeData(nafahat2Data).map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "nafahat2",
+  })),
 
-  ...fusedNafahat3Data.map((v) => ({ ...v, dataset: "dorar", source: "nafahat3" })),
+  ...fusedNafahat3Data.map((v) => ({
+    ...v,
+    dataset: "dorar",
+    source: "nafahat3",
+  })),
 
   ...normalizeData(bjomaaData).map((v) => ({ ...v, dataset: "bjomaa" })),
   ...normalizeData(fiqhData).map((v) => ({ ...v, dataset: "fiqh" })),
