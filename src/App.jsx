@@ -55,25 +55,21 @@ function App() {
   const selectedGenre = useSelector(selectSelectedGenre);
 
   const years = [1, 2, 3, 4, 5];
+  const activeDataset = selectedGenre?.dataset || "meeting";
 
   /* ================= CONTENT SOURCE ================= */
   const videos = useMemo(() => {
-    if (!selectedGenre?.dataset) return [];
-
-    // 📅 MEETING
-    if (selectedGenre.dataset === "meeting") {
-      return meetingByYear[selectedGenre.meetingYear] || [];
+    if (activeDataset === "meeting") {
+      return meetingByYear[selectedGenre?.meetingYear || 1] || [];
     }
 
-    // 📚 DORAR
-    if (selectedGenre.dataset === "dorar") {
-      return dorarBySource[selectedGenre.dorarSource] || [];
+    if (activeDataset === "dorar") {
+      return dorarBySource[selectedGenre?.dorarSource] || [];
     }
 
-    // 🗂 AUTRES DATASETS (motoun, nour-alyakine, benjoomaa, etc.)
     return allVideos
-      .filter((v) => v.dataset === selectedGenre.dataset)
-      .sort((a, b) => Number(a.id) - Number(b.id)); // ordre stable
+      .filter((v) => v.dataset === activeDataset)
+      .sort((a, b) => Number(a.id) - Number(b.id));
   }, [selectedGenre]);
 
   return (
@@ -84,18 +80,6 @@ function App() {
         <SideBar />
 
         <div className="flex-1 p-4">
-          {!selectedGenre?.dataset && (
-            <div
-              style={{
-                fontFamily: "'Arabic Typesetting', serif",
-                fontSize: "26px",
-                color: "yellow",
-              }}
-            >
-              اختر قسمًا من القائمة الجانبية
-            </div>
-          )}
-
           {selectedGenre?.dataset && (
             <>
               {/* HEADER */}

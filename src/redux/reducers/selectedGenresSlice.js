@@ -4,17 +4,18 @@ import { createSlice } from "@reduxjs/toolkit";
    INITIAL STATE
 ========================= */
 const initialState = {
-  dataset: null, // "meeting" | "dorar" | ...
-  title: null,
+  dataset: "meeting", // ✅ contenu affiché directement
+
+  title: "السنة 1",
 
   // meeting
-  meetingYear: null, // number
+  meetingYear: 1, // ✅ pas null
 
   // dorar
-  dorarSource: null, // "bayan" | "hikma" | ...
-  openLibrary: false, // TitleLibrary
-};
+  dorarSource: null, // ok si tu veux choisir plus tard
 
+  openLibrary: false,
+};
 /* =========================
    SLICE
 ========================= */
